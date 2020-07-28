@@ -336,22 +336,98 @@
 
 	<section xml:id="sec-expression-rel">
 		<title>関係式</title>
-		<p>いくつかの式の<dfn en="relation">関係</dfn>をあらわした<dfn>関係式</dfn>には、方程式や不等式、合同式などがある。</p>
-		<p>不等式は、両辺に負の数を乗除するときを除けば、次のように方程式と同様の変形が可能である。</p>
-		<theorem>
-			<title>不等式の性質</title>
-			<statement>
-				<m>a &lt; b</m>かつ<m>c</m>が実数のとき、次の不等式が成り立つ。
-				<md>
-					<mrow>a + c &amp;&lt; b + c</mrow>
-					<mrow>a - c &amp;&lt; b - c</mrow>
-					<mrow>ac &amp;&lt; bc &amp; (c &gt; 0)</mrow>
-					<mrow>ac &amp;&gt; bc &amp; (c &lt; 0)</mrow>
-					<mrow>\frac{a}{c} &amp;&lt; \frac{b}{c} &amp; (c &gt; 0)</mrow>
-					<mrow>\frac{a}{c} &amp;&gt; \frac{b}{c} &amp; (c &lt; 0)</mrow>
-				</md>
-			</statement>
-		</theorem>
+		<introduction>いくつかの式の<dfn en="relation">関係</dfn>をあらわした<dfn>関係式</dfn>には、方程式や不等式、合同式などがある。</introduction>
+
+		<subsection xml:id="ssec-expression-equation">
+			<title>等式と方程式</title>
+			<p>関係式のうち最も基本的なものは、いくつかの式が等しいことを表す等式である。</p>
+			<definition>
+				<title>等式</title>
+				<statement>
+					等号<m>=</m>を含み、数の相等関係を表す関係式<m>a = b</m>を<dfn en="equation">等式</dfn>という。
+					等式<m>a = b</m>で、等号の左側にある辺<m>a</m>を<dfn>左辺</dfn>、右側にある辺<m>b</m>を<dfn>右辺</dfn>という。
+					等式<m>a = b</m>が成り立つとき、<m>a</m>と<m>b</m>は<dfn en="equal to">等しい</dfn>という。
+				</statement>
+			</definition>
+
+			<definition>
+				<title>3つ以上の辺からなる等式</title>
+				<statement>
+					<m>a = b</m>かつ<m>b = c</m>のとき、<m>a = b = c</m>と表すことがある。
+					<md>
+						<mrow>a = b = c \Longleftrightarrow (a = b) \wedge (b = c) \Longleftrightarrow \begin{cases} a = b \\ b = c \end{cases}</mrow>
+					</md>
+					等式<m>a = b = c</m>の最も左側にある辺<m>a</m>を<dfn>第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn>第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn>第3辺</dfn>という。
+				</statement>
+			</definition>
+
+			<definition>
+				<title>方程式</title>
+				<statement>
+					未知の数<m>x</m>を含み、特定の<m>x</m>の値について成り立つ等式を、<m>x</m>についての<dfn>方程式</dfn>という。
+					方程式が成り立つ<m>x</m>の値を求めることを、方程式を<dfn en="solve">解く</dfn>といい、求めた<m>x</m>の値を方程式の<dfn en="solution">解</dfn>という。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-expression-inequation">
+			<title>不等式</title>
+			<definition>
+				<title>不等式</title>
+				<statement>
+					不等号<m>&lt;, &gt;, \leqq, \geqq</m>のいずれかを含み、数の大小関係を表す関係式を<dfn en="inequation">不等式</dfn>という。
+					不等号はそれぞれ、次の意味をもつ。
+					<md>
+						<mrow>a &amp;&lt;  b &amp; (a\text{は}b\text{より小さい(less than)})</mrow>
+						<mrow>a &amp;&gt;  b &amp; (a\text{は}b\text{より大きい(greater than)})</mrow>
+						<mrow>a &amp;\leqq b &amp; (a\text{は}b\text{以下である(小さいかまたは等しい, less than or equal to)})</mrow>
+						<mrow>a &amp;\geqq b &amp; (a\text{は}b\text{以上である(大きいかまたは等しい, greater than or equal to)})</mrow>
+					</md>
+					等式の場合と同様に、これらの式で不等号の左側にある辺<m>a</m>を<dfn>左辺</dfn>、右側にある辺<m>b</m>を<dfn>右辺</dfn>という。
+				</statement>
+			</definition>
+			<p>不等号<m>\leqq, \geqq</m>はそれぞれ、等号の線を一本省略して<m>\leq, \geq</m>と書くことも多い。</p>
+
+			<p>不等式は、両辺に負の数を乗除するときを除けば、次のように方程式と同様の変形が可能である。
+				<strong>両辺に負の数を乗除するときは、不等号の向きが逆になる</strong>ことに注意が必要である。</p>
+			<theorem>
+				<title>不等式の性質</title>
+				<statement>
+					<m>a &lt; b</m>かつ<m>c</m>が実数のとき、次の不等式が成り立つ。
+					<md>
+						<mrow>a + c &amp;&lt; b + c</mrow>
+						<mrow>a - c &amp;&lt; b - c</mrow>
+						<mrow>ac &amp;&lt; bc &amp; (c &gt; 0)</mrow>
+						<mrow>ac &amp;&gt; bc &amp; (c &lt; 0)</mrow>
+						<mrow>\frac{a}{c} &amp;&lt; \frac{b}{c} &amp; (c &gt; 0)</mrow>
+						<mrow>\frac{a}{c} &amp;&gt; \frac{b}{c} &amp; (c &lt; 0)</mrow>
+					</md>
+				</statement>
+			</theorem>
+
+			<p>不等式は、不等号を複数用いることで、3つ以上の式の関係を表すことができる。</p>
+			<definition>
+				<title>3つ以上の辺からなる不等式</title>
+				<statement>
+					<m>a &lt; b</m>かつ<m>b &lt; c</m>のとき、<m>a &lt; b &lt; c</m>と表すことがある。<m>&lt;</m>以外の不等号についても、同様に表すことができる。
+					<md>
+						<mrow>a &lt; b &lt; c \Longleftrightarrow (a &lt; b) \wedge (b &lt; c) \Longleftrightarrow \begin{cases} a &lt; b \\ b &lt; c \end{cases}</mrow>
+					</md>
+					等式の場合と同様に、<m>a &lt; b &lt; c</m>で最も左側にある辺<m>a</m>を<dfn>第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn>第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn>第3辺</dfn>という。
+				</statement>
+			</definition>
+			<p>この方法と同じ考え方で<m>a &lt; b &gt; c</m>のような書き方をすることも考えられる。しかし、大小関係が同じ向きに並んでいないと不等式の意味を理解しづらいので、このような書き方はあまり行わない。</p>
+
+			<p><m>-3x + 1 &lt; 5</m>のように、未知の数を含む不等式を考えることもできる。
+				このような不等式では、条件を満たす<m>x</m>は特定の値ではなく、不等式で表される範囲になることが多い。
+				条件を満たす<m>x</m>の範囲を求めることを、不等式を<dfn en="solve">解く</dfn>といい、求めた範囲を不等式の<dfn en="solution">解</dfn>という。</p>
+			<example>
+				<title>不等式の解を求める例</title>
+				不等式<m>-3x + 1 &lt; 5</m>を解くことを考える。
+				この不等式について、左辺の項を<m>x</m>を含む項の<m>-3x</m>のみにするため、両辺から1を引くと<m>-3x + 1 - 1 &lt; 5 - 1</m>となり、計算すると<m>-3x &lt; 4</m>となる。
+				左辺を<m>x</m>のみにするため、両辺を<m>-3</m>で割ると、<m>-3 &lt; 0</m>なので不等号の向きが逆になり、<m>x &gt; - \frac{4}{3}</m>となる。
+			</example>
+		</subsection>
 	</section>
 
 </chapter>

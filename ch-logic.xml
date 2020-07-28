@@ -50,6 +50,7 @@
 				</statement>
 			</definition>
 			<p>特に、真である命題を<dfn en="theorem">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
+			<p>命題を文字で表す場合、propositionの頭文字の<m>p</m>を用い、複数の命題を文字で表すときは<m>q</m>や<m>r</m>も用いることが多い。流儀によっては、命題を大文字の<m>P</m>や<m>Q</m>で表すことも多い。</p>
 			<example>
 				<title>命題の例</title>
 				<statement>
@@ -72,11 +73,39 @@
 					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn>否定</dfn>」といい、<m>\overline{p}</m>と表す。
 				</statement>
 			</definition>
+			<p>数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em>少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p>
 		</subsection>
 
-		<subsection xml:id="ssec-logic-demorgan">
-			<title>de Morganの法則</title>
-			<p>命題については、次のde Morganの法則が成り立つ。</p>
+		<subsection xml:id="ssec-logic-proplaw">
+			<title>命題に関する計算法則</title>
+			<p>「または」や「かつ」、「でない」については、次のような等式が成り立つ。</p>
+			<theorem>
+				<title>命題に関する計算法則</title>
+				<statement>
+					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
+					<md>
+						<mrow>p \vee   q &amp;= q \vee   p &amp; (\text{交換法則})</mrow>
+						<mrow>p \wedge q &amp;= q \wedge p &amp; (\text{交換法則})</mrow>
+						<mrow>(p \vee   q) \vee   r &amp;= p \vee   (q \vee   r) &amp; (\text{結合法則})</mrow>
+						<mrow>(p \wedge q) \wedge r &amp;= p \wedge (q \wedge r) &amp; (\text{結合法則})</mrow>
+					</md>
+				</statement>
+			</theorem>
+
+			<p>命題に関する分配法則も成り立つが、数の分配法則と異なる部分もある。</p>
+			<theorem>
+				<title>命題に関する分配法則</title>
+				<statement>
+					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
+					<md>
+						<mrow>(p \vee   q) \wedge r = (p \wedge r) \vee   (q \wedge r)</mrow>
+						<mrow>(p \wedge q) \vee   r = (p \vee   r) \wedge (q \vee   r)</mrow>
+					</md>
+					2番目の式は数の分配法則とは異なるので、注意が必要である。
+				</statement>
+			</theorem>
+
+			<p>さらに命題については、次のde Morganの法則が成り立つ。</p>
 			<theorem>
 				<title>de Morganの法則</title>
 				<statement>
@@ -258,18 +287,35 @@
 		</subsection>
 
 		<subsection xml:id="ssec-logic-law">
-			<title>集合に関する法則</title>
+			<title>集合に関する計算法則</title>
 			<p>和集合や共通部分、補集合については、次のような等式が成り立つ。</p>
 			<theorem>
-				<title>集合の分配法則</title>
+				<title>集合に関する計算法則</title>
 				<statement>
 					<m>A, B, C</m>が集合のとき、次の等式が成り立つ。
 					<md>
-						<mrow>(A \cap B) \cup C = (A \cup C) \cap (B \cup C)</mrow>
+						<mrow>A \cup B &amp;= B \cup A &amp; (\text{交換法則})</mrow>
+						<mrow>A \cap B &amp;= B \cap A &amp; (\text{交換法則})</mrow>
+						<mrow>(A \cup B) \cup C &amp;= A \cup (B \cup C) &amp; (\text{結合法則})</mrow>
+						<mrow>(A \cap B) \cap C &amp;= A \cap (B \cap C) &amp; (\text{結合法則})</mrow>
 					</md>
 				</statement>
 			</theorem>
 
+			<p>集合に関する分配法則も成り立つ。</p>
+			<theorem>
+				<title>集合に関する分配法則</title>
+				<statement>
+					<m>A, B, C</m>が集合のとき、次の等式が成り立つ。
+					<md>
+						<mrow>(A \cup B) \cap C = (A \cap C) \cup (B \cap C)</mrow>
+						<mrow>(A \cap B) \cup C = (A \cup C) \cap (B \cup C)</mrow>
+					</md>
+					2番目の式は数の分配法則とは異なるので、注意が必要である。
+				</statement>
+			</theorem>
+
+			<p>補集合と和集合、共通部分の間には、次のde Morganの法則が成り立つ。</p>
 			<theorem>
 				<title>de Morganの法則</title>
 				<statement>
