@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="791px" preserveAspectRatio="none" style="width:1009px;height:791px;" version="1.1" viewBox="0 0 1009 791" width="1009px" zoomAndPan="magnify"><defs/><g><ellipse cx="365.4375" cy="20" fill="#009000" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="333" x="198.9375" y="50"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="313" x="208.9375" y="76.2399">最初の2次方程式をAx^2 + Bx + C = 0 (A≠0)とする</text><polygon fill="#DDDDFF" points="346.4375,111.0758,384.4375,111.0758,396.4375,123.0758,384.4375,135.0758,346.4375,135.0758,334.4375,123.0758,346.4375,111.0758" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="346.4375" y="129.1798">B = 0?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="312.4375" y="119.0438">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="396.4375" y="119.0438">no</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="85" x="82.5" y="145.0758"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="92.5" y="171.3157">Ax^2+C=0</text><polygon fill="#DDDDFF" points="97.5,220.3477,152.5,220.3477,164.5,232.3477,152.5,244.3477,97.5,244.3477,85.5,232.3477,97.5,220.3477" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="55" x="97.5" y="238.4517">AC &lt;= 0?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="63.5" y="228.3157">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="164.5" y="228.3157">no</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="85" x="22.5" y="254.3477"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="32.5" y="280.5876">x^2 = -C/A</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="110" x="10" y="329.6196"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="20" y="355.8596">x = ± √{-C/A}</text><ellipse cx="65" cy="415.8915" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="65" cy="415.8915" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="90" x="140" y="254.3477"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="150" y="280.5876">実数解なし</text><ellipse cx="185" cy="340.6196" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="185" cy="340.6196" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><polygon fill="#DDDDFF" points="586.875,145.0758,624.875,145.0758,636.875,157.0758,624.875,169.0758,586.875,169.0758,574.875,157.0758,586.875,145.0758" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="586.875" y="163.1798">A = 1?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="552.875" y="153.0438">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="636.875" y="153.0438">no</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="118" x="351" y="179.0758"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="361" y="205.3157">x^2 + Bx + C = 0</text><polygon fill="#DDDDFF" points="356,254.3477,464,254.3477,476,266.3477,464,278.3477,356,278.3477,344,266.3477,356,254.3477" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="108" x="356" y="272.4517">B/2はCの平方根?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="322" y="262.3157">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="476" y="262.3157">no</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="108" x="280" y="288.3477"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="290" y="314.5876">(x + B/2)^2=0</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="293" y="334.8596">と因数分解</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="68" x="300" y="383.8915"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="310" y="410.1315">x = -B/2</text><ellipse cx="334" cy="470.1635" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="334" cy="470.1635" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="106" x="433" y="357.0275"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="83" x="443" y="383.2674">(x+a)(x+b)=0</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="446" y="403.5393">と因数分解</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="75" x="448.5" y="452.5713"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="55" x="458.5" y="478.8112">x = -a, -b</text><ellipse cx="486" cy="538.8432" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="486" cy="538.8432" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><polygon fill="#DDDDFF" points="424.5,288.3477,547.5,288.3477,559.5,308.6196,547.5,328.8915,424.5,328.8915,412.5,308.6196,424.5,288.3477" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="490" y="345.1315">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="424.5" y="304.5876">足してB,掛けてCの</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="427.5" y="324.8596">2数a,bが見つかる?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="559.5" y="304.5876">no</text><polygon fill="#DDDDFF" points="754.75,179.0758,848.75,179.0758,860.75,191.0758,848.75,203.0758,754.75,203.0758,742.75,191.0758,754.75,179.0758" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="754.75" y="197.1798">B,CがAの倍数?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="720.75" y="187.0438">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="860.75" y="187.0438">no</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="146" x="631" y="213.0758"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="641" y="239.3157">分配法則を用いて、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="121" x="644" y="259.5876">Aについて括り出す</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="185" x="611.5" y="308.6196"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="165" x="621.5" y="334.8596">A(x^2 + (B/A)x + (C/A)) = 0</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="174" x="617" y="383.8915"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="154" x="627" y="410.1315">最初へ戻り、括り出した</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="112" x="630" y="430.4034">後の方程式を解く</text><ellipse cx="704" cy="490.4354" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="704" cy="490.4354" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="146" x="826.5" y="265.2118"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="836.5" y="291.4517">たすき掛けを行い、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="839.5" y="311.7236">a,b,c,dを見つける</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="137" x="831" y="360.7556"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117" x="841" y="386.9955">(ax + b)(cx + d) = 0</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="101" x="849" y="436.0275"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="859" y="462.2674">x = -b/a, -d/c</text><ellipse cx="899.5" cy="522.2994" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="899.5" cy="522.2994" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><polygon fill="#DDDDFF" points="840,213.0758,959,213.0758,971,225.0758,959,237.0758,840,237.0758,828,225.0758,840,213.0758" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="903.5" y="253.3157">yes</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="840" y="231.1798">たすき掛けできる?</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="17" x="971" y="221.0438">no</text><polygon fill="#DDDDFF" points="605.875,593.9792,617.875,605.9792,605.875,617.9792,593.875,605.9792,605.875,593.9792" style="stroke: #9090FF; stroke-width: 1.5;"/><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="221" x="495.375" y="637.9792"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="201" x="505.375" y="664.2191">解の公式を使う or 平方完成する</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="195" x="508.375" y="698.2511"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175" x="518.375" y="724.491">x = (-b ± √{b^2 - 4ac}) / 2a</text><ellipse cx="605.875" cy="769.523" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="605.875" cy="769.523" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="365.4375" x2="365.4375" y1="30" y2="50"/><polygon fill="#FF9090" points="361.4375,40,365.4375,50,369.4375,40,365.4375,44" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="65" x2="65" y1="294.6196" y2="329.6196"/><polygon fill="#FF9090" points="61,319.6196,65,329.6196,69,319.6196,65,323.6196" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="65" x2="65" y1="369.8915" y2="404.8915"/><polygon fill="#FF9090" points="61,394.8915,65,404.8915,69,394.8915,65,398.8915" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="185" x2="185" y1="294.6196" y2="329.6196"/><polygon fill="#FF9090" points="181,319.6196,185,329.6196,189,319.6196,185,323.6196" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="85.5" x2="65" y1="232.3477" y2="232.3477"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="65" x2="65" y1="232.3477" y2="254.3477"/><polygon fill="#FF9090" points="61,244.3477,65,254.3477,69,244.3477,65,248.3477" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="164.5" x2="185" y1="232.3477" y2="232.3477"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="185" x2="185" y1="232.3477" y2="254.3477"/><polygon fill="#FF9090" points="181,244.3477,185,254.3477,189,244.3477,185,248.3477" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="125" x2="125" y1="185.3477" y2="220.3477"/><polygon fill="#FF9090" points="121,210.3477,125,220.3477,129,210.3477,125,214.3477" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="334" x2="334" y1="348.8915" y2="383.8915"/><polygon fill="#FF9090" points="330,373.8915,334,383.8915,338,373.8915,334,377.8915" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="334" x2="334" y1="424.1635" y2="459.1635"/><polygon fill="#FF9090" points="330,449.1635,334,459.1635,338,449.1635,334,453.1635" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="486" x2="486" y1="417.5713" y2="452.5713"/><polygon fill="#FF9090" points="482,442.5713,486,452.5713,490,442.5713,486,446.5713" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="486" x2="486" y1="492.8432" y2="527.8432"/><polygon fill="#FF9090" points="482,517.8432,486,527.8432,490,517.8432,486,521.8432" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="486" x2="486" y1="328.8915" y2="357.0275"/><polygon fill="#FF9090" points="482,347.0275,486,357.0275,490,347.0275,486,351.0275" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="559.5" x2="571.5" y1="308.6196" y2="308.6196"/><polygon fill="#FF9090" points="567.5,448.2994,571.5,458.2994,575.5,448.2994,571.5,452.2994" style="stroke: #FF9090; stroke-width: 1.5;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="571.5" x2="571.5" y1="308.6196" y2="605.9792"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="571.5" x2="593.875" y1="605.9792" y2="605.9792"/><polygon fill="#FF9090" points="583.875,601.9792,593.875,605.9792,583.875,609.9792,587.875,605.9792" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="344" x2="334" y1="266.3477" y2="266.3477"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="334" x2="334" y1="266.3477" y2="288.3477"/><polygon fill="#FF9090" points="330,278.3477,334,288.3477,338,278.3477,334,282.3477" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="476" x2="486" y1="266.3477" y2="266.3477"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="486" x2="486" y1="266.3477" y2="288.3477"/><polygon fill="#FF9090" points="482,278.3477,486,288.3477,490,278.3477,486,282.3477" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="410" x2="410" y1="219.3477" y2="254.3477"/><polygon fill="#FF9090" points="406,244.3477,410,254.3477,414,244.3477,410,248.3477" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="704" x2="704" y1="273.6196" y2="308.6196"/><polygon fill="#FF9090" points="700,298.6196,704,308.6196,708,298.6196,704,302.6196" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="704" x2="704" y1="348.8915" y2="383.8915"/><polygon fill="#FF9090" points="700,373.8915,704,383.8915,708,373.8915,704,377.8915" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="704" x2="704" y1="444.4354" y2="479.4354"/><polygon fill="#FF9090" points="700,469.4354,704,479.4354,708,469.4354,704,473.4354" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="899.5" x2="899.5" y1="325.7556" y2="360.7556"/><polygon fill="#FF9090" points="895.5,350.7556,899.5,360.7556,903.5,350.7556,899.5,354.7556" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="899.5" x2="899.5" y1="401.0275" y2="436.0275"/><polygon fill="#FF9090" points="895.5,426.0275,899.5,436.0275,903.5,426.0275,899.5,430.0275" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="899.5" x2="899.5" y1="476.2994" y2="511.2994"/><polygon fill="#FF9090" points="895.5,501.2994,899.5,511.2994,903.5,501.2994,899.5,505.2994" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="899.5" x2="899.5" y1="237.0758" y2="265.2118"/><polygon fill="#FF9090" points="895.5,255.2118,899.5,265.2118,903.5,255.2118,899.5,259.2118" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="971" x2="983" y1="225.0758" y2="225.0758"/><polygon fill="#FF9090" points="979,406.5275,983,416.5275,987,406.5275,983,410.5275" style="stroke: #FF9090; stroke-width: 1.5;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="983" x2="983" y1="225.0758" y2="605.9792"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="983" x2="617.875" y1="605.9792" y2="605.9792"/><polygon fill="#FF9090" points="627.875,601.9792,617.875,605.9792,627.875,609.9792,623.875,605.9792" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="742.75" x2="704" y1="191.0758" y2="191.0758"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="704" x2="704" y1="191.0758" y2="213.0758"/><polygon fill="#FF9090" points="700,203.0758,704,213.0758,708,203.0758,704,207.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="860.75" x2="899.5" y1="191.0758" y2="191.0758"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="899.5" x2="899.5" y1="191.0758" y2="213.0758"/><polygon fill="#FF9090" points="895.5,203.0758,899.5,213.0758,903.5,203.0758,899.5,207.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="574.875" x2="410" y1="157.0758" y2="157.0758"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="410" x2="410" y1="157.0758" y2="179.0758"/><polygon fill="#FF9090" points="406,169.0758,410,179.0758,414,169.0758,410,173.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="636.875" x2="801.75" y1="157.0758" y2="157.0758"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="801.75" x2="801.75" y1="157.0758" y2="179.0758"/><polygon fill="#FF9090" points="797.75,169.0758,801.75,179.0758,805.75,169.0758,801.75,173.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="605.875" x2="605.875" y1="617.9792" y2="637.9792"/><polygon fill="#FF9090" points="601.875,627.9792,605.875,637.9792,609.875,627.9792,605.875,631.9792" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="605.875" x2="605.875" y1="678.2511" y2="698.2511"/><polygon fill="#FF9090" points="601.875,688.2511,605.875,698.2511,609.875,688.2511,605.875,692.2511" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="605.875" x2="605.875" y1="738.523" y2="758.523"/><polygon fill="#FF9090" points="601.875,748.523,605.875,758.523,609.875,748.523,605.875,752.523" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="334.4375" x2="125" y1="123.0758" y2="123.0758"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="125" x2="125" y1="123.0758" y2="145.0758"/><polygon fill="#FF9090" points="121,135.0758,125,145.0758,129,135.0758,125,139.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="396.4375" x2="605.875" y1="123.0758" y2="123.0758"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="605.875" x2="605.875" y1="123.0758" y2="145.0758"/><polygon fill="#FF9090" points="601.875,135.0758,605.875,145.0758,609.875,135.0758,605.875,139.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="365.4375" x2="365.4375" y1="90.2719" y2="111.0758"/><polygon fill="#FF9090" points="361.4375,101.0758,365.4375,111.0758,369.4375,101.0758,365.4375,105.0758" style="stroke: #FF9090; stroke-width: 1.0;"/><!--MD5=[b30004de171a0c3d07ce8d14bfbcaf04]
+@startuml quad-eq
+!include plantuml.puml
+
+start
+:最初の2次方程式をAx^2 + Bx + C = 0 (A≠0)とする;
+if (B = 0?) then (yes)
+	:Ax^2+C=0;
+	if (AC <= 0?) then (yes)
+		:x^2 = -C/A;
+		:x = ± √{-C/A};
+		stop
+	else (no)
+		:実数解なし;
+		stop
+	endif
+else (no)
+	if (A = 1?) then (yes)
+		:x^2 + Bx + C = 0;
+		if (B/2はCの平方根?) then (yes)
+			:(x + B/2)^2=0 \n と因数分解;
+			:x = -B/2;
+			stop
+		else (no)
+			if (足してB,掛けてCの\n 2数a,bが見つかる?) then (yes)
+				:(x+a)(x+b)=0 \n と因数分解;
+				:x = -a, -b;
+				stop
+			else (no)
+			endif
+		endif
+	else (no)
+		if (B,CがAの倍数?) then (yes)
+			:分配法則を用いて、\n Aについて括り出す;
+			:A(x^2 + (B/A)x + (C/A)) = 0;
+			:最初へ戻り、括り出した\n 後の方程式を解く;
+			stop
+		else (no)
+			if (たすき掛けできる?) then (yes)
+				:たすき掛けを行い、\n a,b,c,dを見つける;
+				:(ax + b)(cx + d) = 0;
+				:x = -b/a, -d/c;
+				stop
+			else (no)
+			endif
+		endif
+	endif
+	:解の公式を使う or 平方完成する;
+	:x = (-b ± √{b^2 - 4ac}) / 2a;
+	stop
+endif
+
+@enduml
+
+@startuml quad-eq
+skinparam Shadowing false
+skinparam PackageBorderColor #909090
+
+skinparam ClassBorderColor #9090ff
+skinparam ClassBackgroundColor transparent
+skinparam ClassHeaderBackgroundColor #ddddff
+
+skinparam ActivityBackgroundColor #ddddff
+skinparam ActivityBorderColor #9090ff
+skinparam ActivityDiamondBackgroundColor #ddddff
+skinparam ActivityDiamondBorderColor #9090ff
+skinparam ActivityEndColor #009000
+skinparam ActivityStartColor #009000
+
+skinparam ArrowColor #ff9090
+skinparam ArrowThickness 3
+skinparam DefaultFontName "Noto Sans CJK JP"
+skinparam DefaultFontSize 14
+
+start
+:最初の2次方程式をAx^2 + Bx + C = 0 (A≠0)とする;
+if (B = 0?) then (yes)
+	:Ax^2+C=0;
+	if (AC <= 0?) then (yes)
+		:x^2 = -C/A;
+		:x = ± √{-C/A};
+		stop
+	else (no)
+		:実数解なし;
+		stop
+	endif
+else (no)
+	if (A = 1?) then (yes)
+		:x^2 + Bx + C = 0;
+		if (B/2はCの平方根?) then (yes)
+			:(x + B/2)^2=0 \n と因数分解;
+			:x = -B/2;
+			stop
+		else (no)
+			if (足してB,掛けてCの\n 2数a,bが見つかる?) then (yes)
+				:(x+a)(x+b)=0 \n と因数分解;
+				:x = -a, -b;
+				stop
+			else (no)
+			endif
+		endif
+	else (no)
+		if (B,CがAの倍数?) then (yes)
+			:分配法則を用いて、\n Aについて括り出す;
+			:A(x^2 + (B/A)x + (C/A)) = 0;
+			:最初へ戻り、括り出した\n 後の方程式を解く;
+			stop
+		else (no)
+			if (たすき掛けできる?) then (yes)
+				:たすき掛けを行い、\n a,b,c,dを見つける;
+				:(ax + b)(cx + d) = 0;
+				:x = -b/a, -d/c;
+				stop
+			else (no)
+			endif
+		endif
+	endif
+	:解の公式を使う or 平方完成する;
+	:x = (-b ± √{b^2 - 4ac}) / 2a;
+	stop
+endif
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 18:35:57 JST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>

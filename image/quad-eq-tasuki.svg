@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="613px" preserveAspectRatio="none" style="width:576px;height:613px;" version="1.1" viewBox="0 0 576 613" width="576px" zoomAndPan="magnify"><defs/><g><ellipse cx="145" cy="20" fill="#009000" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="217" x="36.5" y="50"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="197" x="46.5" y="76.2399">最初の式をAx^2 + Bx + Cとする</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="232" x="29" y="154.2719"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="39" y="180.5118">ac = Aになる2数a,cを選び、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="212" x="39" y="200.7838">A,↓,a,cの順に、1列目に縦に書く</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="235" x="27.5" y="234.8157"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="183" x="37.5" y="261.0557">bd = Cになる2数b,dを選び、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="215" x="37.5" y="281.3276">C,↓,b,dの順に、2列目に縦に書く</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="270" x="10" y="325.3596"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="164" x="20" y="351.5995">bc, ad, ad + bcを求めて、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="250" x="20" y="371.8714">bc, ad, ad+bcの順に、3列目に縦に書く</text><polygon fill="#DDDDFF" points="145,110.2719,157,122.2719,145,134.2719,133,122.2719,145,110.2719" style="stroke: #9090FF; stroke-width: 1.5;"/><polygon fill="#DDDDFF" points="106.5,405.9034,183.5,405.9034,195.5,417.9034,183.5,429.9034,106.5,429.9034,94.5,417.9034,106.5,405.9034" style="stroke: #9090FF; stroke-width: 1.5;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="77" x="106.5" y="424.0074">ad + bc = B?</text><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="275" x="290" y="234.8157"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="255" x="300" y="261.0557">a,b,c,dの組み合わせは正しくないので、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="199" x="300" y="281.3276">最初に戻ってa,b,c,dを選び直す</text><rect fill="#DDDDFF" height="80.8157" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="247" x="21.5" y="480.1753"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="227" x="31.5" y="506.4152">a,b,c,dの組み合わせは正しいので、</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="211" x="34.5" y="526.6871">Ax^2 + Bx + C = (ax + b)(cx + d) と</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="31.5" y="546.959">因数分解できる</text><ellipse cx="145" cy="591.991" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="145" cy="591.991" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="30" y2="50"/><polygon fill="#FF9090" points="141,40,145,50,149,40,145,44" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="214.8157" y2="234.8157"/><polygon fill="#FF9090" points="141,224.8157,145,234.8157,149,224.8157,145,228.8157" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="295.3596" y2="325.3596"/><polygon fill="#FF9090" points="141,315.3596,145,325.3596,149,315.3596,145,319.3596" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="134.2719" y2="154.2719"/><polygon fill="#FF9090" points="141,144.2719,145,154.2719,149,144.2719,145,148.2719" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="195.5" x2="427.5" y1="417.9034" y2="417.9034"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="427.5" x2="427.5" y1="295.3596" y2="417.9034"/><polygon fill="#FF9090" points="423.5,305.3596,427.5,295.3596,431.5,305.3596,427.5,301.3596" style="stroke: #FF9090; stroke-width: 1.0;"/><polygon fill="#FF9090" points="423.5,182.0438,427.5,172.0438,431.5,182.0438,427.5,178.0438" style="stroke: #FF9090; stroke-width: 1.5;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="427.5" x2="427.5" y1="122.2719" y2="234.8157"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="427.5" x2="157" y1="122.2719" y2="122.2719"/><polygon fill="#FF9090" points="167,118.2719,157,122.2719,167,126.2719,163,122.2719" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="385.9034" y2="405.9034"/><polygon fill="#FF9090" points="141,395.9034,145,405.9034,149,395.9034,145,399.9034" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="90.2719" y2="110.2719"/><polygon fill="#FF9090" points="141,100.2719,145,110.2719,149,100.2719,145,104.2719" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="429.9034" y2="480.1753"/><polygon fill="#FF9090" points="141,470.1753,145,480.1753,149,470.1753,145,474.1753" style="stroke: #FF9090; stroke-width: 1.0;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="149" y="458.6753">yes</text><line style="stroke: #FF9090; stroke-width: 1.5;" x1="145" x2="145" y1="560.991" y2="580.991"/><polygon fill="#FF9090" points="141,570.991,145,580.991,149,570.991,145,574.991" style="stroke: #FF9090; stroke-width: 1.0;"/><!--MD5=[fce2f72262bb8ec10c5476dbc6245865]
+@startuml quad-eq-tasuki
+!include plantuml.puml
+
+start
+:最初の式をAx^2 + Bx + Cとする;
+repeat
+	:ac = Aになる2数a,cを選び、\nA,↓,a,cの順に、1列目に縦に書く;
+	:bd = Cになる2数b,dを選び、\nC,↓,b,dの順に、2列目に縦に書く;
+	:bc, ad, ad + bcを求めて、\nbc, ad, ad+bcの順に、3列目に縦に書く;
+backward :a,b,c,dの組み合わせは正しくないので、\n最初に戻ってa,b,c,dを選び直す;
+repeat while (ad + bc = B?)
+	-> yes;
+	:a,b,c,dの組み合わせは正しいので、\n Ax^2 + Bx + C = (ax + b)(cx + d) と\n因数分解できる;
+	stop
+@enduml
+
+@startuml quad-eq-tasuki
+skinparam Shadowing false
+skinparam PackageBorderColor #909090
+
+skinparam ClassBorderColor #9090ff
+skinparam ClassBackgroundColor transparent
+skinparam ClassHeaderBackgroundColor #ddddff
+
+skinparam ActivityBackgroundColor #ddddff
+skinparam ActivityBorderColor #9090ff
+skinparam ActivityDiamondBackgroundColor #ddddff
+skinparam ActivityDiamondBorderColor #9090ff
+skinparam ActivityEndColor #009000
+skinparam ActivityStartColor #009000
+
+skinparam ArrowColor #ff9090
+skinparam ArrowThickness 3
+skinparam DefaultFontName "Noto Sans CJK JP"
+skinparam DefaultFontSize 14
+
+start
+:最初の式をAx^2 + Bx + Cとする;
+repeat
+	:ac = Aになる2数a,cを選び、\nA,↓,a,cの順に、1列目に縦に書く;
+	:bd = Cになる2数b,dを選び、\nC,↓,b,dの順に、2列目に縦に書く;
+	:bc, ad, ad + bcを求めて、\nbc, ad, ad+bcの順に、3列目に縦に書く;
+backward :a,b,c,dの組み合わせは正しくないので、\n最初に戻ってa,b,c,dを選び直す;
+repeat while (ad + bc = B?)
+	-> yes;
+	:a,b,c,dの組み合わせは正しいので、\n Ax^2 + Bx + C = (ax + b)(cx + d) と\n因数分解できる;
+	stop
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 18:35:57 JST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>

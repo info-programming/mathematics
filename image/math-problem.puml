@@ -1,0 +1,19 @@
+@startuml math-problem
+!include plantuml.puml
+
+|現実の世界|
+start
+:1.現実の問題;
+-> 数学の形式で表現(express)する;
+|数学の世界|
+:2.数学的な表現
+(数式(expression));
+-> 計算する(compute, calculate)
+※computer: 計算機, calculator(calc): 電卓;
+:3.数学的な結果;
+|現実の世界|
+-> 解釈する;
+:4.現実の結果;
+stop
+
+@enduml

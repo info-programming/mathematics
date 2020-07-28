@@ -1,0 +1,15 @@
+@startuml quad-eq-tasuki
+!include plantuml.puml
+
+start
+:最初の式をAx^2 + Bx + Cとする;
+repeat
+	:ac = Aになる2数a,cを選び、\nA,↓,a,cの順に、1列目に縦に書く;
+	:bd = Cになる2数b,dを選び、\nC,↓,b,dの順に、2列目に縦に書く;
+	:bc, ad, ad + bcを求めて、\nbc, ad, ad+bcの順に、3列目に縦に書く;
+backward :a,b,c,dの組み合わせは正しくないので、\n最初に戻ってa,b,c,dを選び直す;
+repeat while (ad + bc = B?)
+	-> yes;
+	:a,b,c,dの組み合わせは正しいので、\n Ax^2 + Bx + C = (ax + b)(cx + d) と\n因数分解できる;
+	stop
+@enduml

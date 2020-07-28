@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chapter xml:id="ch-expression">
+	<title>項と式</title>
+	<introduction>
+		<p>本章では、本稿で扱う最も基本的な概念として項や式を定義し、一般的な多項式の変形について述べる。</p>
+		<p><xref ref="sec-expression-symbol"/>節では、数学で扱う各種の記号を整理し、式と項を定義する。
+		<xref ref="sec-expression-exp"/>節では、数の指数と冪乗を定義する。
+		<xref ref="sec-expression-poly"/>節では、多項式とその次数について述べる。
+		<xref ref="sec-expression-fact"/>節では、多項式の展開と因数分解について述べる。</p>
+	</introduction>
+
+	<section xml:id="sec-expression-symbol">
+		<title>記号と式</title>
+		<p>数学で扱う記号には、<m>0, 1, -2, 0.1, \sqrt{2}, \frac{2}{3}</m>などの<ruby r="すう"><dfn en="number">数</dfn></ruby>や、<m>x, y, z, a, b, \alpha, \beta, \pi</m>などの<dfn>文字</dfn>、<m>+, -, \times, \div, =, &gt;</m>などの<ruby r="えんざんし"><dfn en="operator">演算子</dfn></ruby>などがある。</p>
+		<p>文字には、その文字に対応する数があり、この数を<ruby r="あたい"><dfn en="value">値</dfn></ruby>という。
+		文字は値が定まっているかによって、変数と定数に分けられる。
+		方程式で用いる<m>x, y</m>などのように、その文字に<em>対応する値が未知である文字</em>を、<dfn en="variable">変数</dfn>という。
+		一方、円周率<m>\pi = 3.1415 \cdots</m>のように、その文字に<em>対応する値が定まっている文字</em>を、<ruby r="ていすう"><dfn en="constant">定数</dfn></ruby>という。通常の数も値が定まっているので、定数の一種である。</p>
+
+		<p>数学の基本的となる演算には、加法・減法・乗法・除法がある。
+		このうち乗法については、記号<m>\times</m>を省略し、<m>2 \times x \times y = 2xy</m>と表記することが多い。
+		乗法を省略して書くことから分かるように、数学では乗法で繋がれたまとまりを基本的なまとまりとして扱うことが多く、これを<dfn en="term">項</dfn>と呼ぶ。</p>
+		<definition>
+			<title>項</title>
+			<statement>
+				1つ以上の<em>数と文字が乗法で繋がれたもの</em>を、<dfn en="term">項</dfn>という。
+			</statement>
+		</definition>
+		<p>例えば、数や文字のみの<m>0, 0.1, a, \pi</m>は項である。
+		また、数と文字が掛けられた<m>2a, -abc, \sqrt{2}xy</m>も項である。</p>
+
+		<definition>
+			<title>式</title>
+			<statement>
+				数や文字、演算子などからなる文字の列を、「何らかの事柄を数学的な形で表現(express)したもの」という意味で、<dfn en="expression">式</dfn>という。
+			</statement>
+		</definition>
+	</section>
+
+	<section xml:id="sec-expression-exp">
+		<title>指数と冪乗</title>
+		<subsection xml:id="ssec-expression-exp">
+			<title>指数と冪乗</title>
+			<p>同じ文字や数を何回も掛け合わせる場合には、<m>a \times a = a^2</m>のように右上に掛け合わせる回数を書き表す。
+			このとき、右上の数字を<m>a^2</m>の<dfn en="index">指数</dfn>という。
+			このように<m>a^n</m>の形で表記される数を、<m>a</m>の<ruby r="べきじょう"><dfn>冪乗</dfn></ruby>もしくは<ruby r="るいじょう"><dfn>累乗</dfn></ruby>という。</p>
+			<definition>
+				<title>冪乗・累乗</title>
+				<statement>
+					任意の数<m>a</m>と自然数<m>n</m>について、次のように<m>a^n</m>を定義し、<m>a</m>の<m>n</m>乗という。
+					<md>
+						<mrow>a^n = \underbrace{a \times a \times \cdots \times a}_{n\text{個}}</mrow>
+					</md>
+				</statement>
+			</definition>
+
+			<p>冪乗については、次の指数法則が成り立つことが重要である。</p>
+			<theorem>
+				<title>指数法則</title>
+				<statement>
+					<m>a</m>を実数、<m>m, n</m>を正の整数とするとき、次の等式が成り立つ。
+					<md>
+						<mrow>a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n</mrow>
+					</md>
+				</statement>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-expression-extentz">
+			<title>指数の整数への拡張</title>
+			<p>指数法則を用いると、冪乗の指数を正の整数以外に拡張することができる。
+			以下では、指数を0、負の整数、有理数の範囲に拡張していく。
+			まず、<m>a^m = a^{m + 0} = a^m \times a^0</m>と考えられるので、<m>a^0 = 1</m>と定義するのが自然である。</p>
+			<definition>
+				<title>指数の0への拡張</title>
+				<statement>
+					任意の実数<m>a</m>について、<m>a^0 = 1</m>と定義する。
+				</statement>
+			</definition>
+
+			<p>次に、指数を負の整数に拡張する。
+			<m>1 = a^0 = a^{n+(-n)} a^n \times a^{-n}</m>と考えられるので、<m>a^{-n} = \frac{1}{a^n}</m>と定義するのが自然である。</p>
+			<definition>
+				<title>指数の負の整数への拡張</title>
+				<statement>
+					任意の実数<m>a</m>と自然数<m>n</m>について、<m>a^{-n} = \frac{1}{a^n}</m>と定義する。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-expression-extentq">
+			<title>指数の有理数への拡張</title>
+			<p>次に、指数を有理数に拡張する。
+			<m>a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}</m>と考えられるので、2乗して<m>a</m>になる数を考えればよいことが分かる。
+			ここで、2乗して<m>a</m>になる数を<m>a</m>の<dfn en="square root">平方根</dfn>と呼ぶ。また、同様にして<m>a</m>の<dfn>冪乗根</dfn>を定義する。</p>
+			<definition>
+				<title>平方根</title>
+				<statement>
+					任意の0以上の実数<m>a</m>について、<m>b^2 = a</m>となる数<m>b</m>を<m>a</m>の<dfn en="square root">平方根</dfn>と呼ぶ。
+					特に、<m>a</m>の平方根のうち正のものを<m>\sqrt{a}</m>と表す。
+				</statement>
+			</definition>
+
+			<definition>
+				<title>冪乗根</title>
+				<statement>
+					任意の0以上の実数<m>a</m>と自然数<m>n</m>について、<m>b^n = a</m>となる数<m>b</m>を<m>a</m>のn乗根、または<m>a</m>の<dfn>冪乗根</dfn>と呼ぶ。
+					特に、<m>a</m>の<m>n</m>乗根のうち正のものを<m>\sqrt[n]{a}</m>と表す。
+				</statement>
+			</definition>
+
+			<example>
+				<title>冪乗根の例</title>
+				<statement>
+					4の平方根は2と-2なので、<m>\sqrt{4} = \sqrt[2]{4} = 2</m>となる。
+					また、27の3乗根は3なので、<m>\sqrt[3]{27} = 3</m>となる。
+				</statement>
+			</example>
+
+			<p>冪乗根については、次の計算法則が成り立つ。</p>
+			<theorem>
+				<title>冪乗根の性質</title>
+				<statement>
+					<m>a, b</m>を正の数、<m>m, n</m>を有理数とするとき、次の等式が成り立つ。
+					<md>
+						<mrow>\sqrt[n]{a} \sqrt[n]{b} = \sqrt[n]{ab}, \frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}, \sqrt[n]{a^m} = (\sqrt[n]{a})^m, \sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}</mrow>
+					</md>
+				</statement>
+			</theorem>
+
+			<p>冪乗根の考え方を用いると、<m>a = a^1 = \underbrace{a^\frac{1}{n} \times a^\frac{1}{n} \times \cdots \times a^\frac{1}{n}}_{n\text{個}}</m>と考えられるので、<m>a^\frac{1}{n}</m>を<m>n</m>乗根に対応させればよいことが分かる。</p>
+			<definition>
+				<title>指数の有理数への拡張</title>
+				<statement>
+					任意の0以上の実数<m>a</m>と自然数<m>m, n</m>について、<m>a^\frac{1}{n} = \sqrt[n]{a}</m>と定義する。
+					また、<m>a^\frac{m}{n} = (\sqrt[n]{a})^m, a^{-\frac{m}{n}} = \frac{1}{a^\frac{m}{n}}</m>と定義する。
+				</statement>
+			</definition>
+
+			<p>先の指数法則は、指数を有理数の範囲にまで拡張しても成り立つ。</p>
+			<theorem>
+				<title>指数法則</title>
+				<statement>
+					<m>a</m>を実数、<m>m, n</m>を有理数とするとき、次の等式が成り立つ。
+					<md>
+						<mrow>a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n</mrow>
+					</md>
+				</statement>
+			</theorem>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-expression-poly">
+		<title>多項式</title>
+		<definition>
+			<title>多項式</title>
+			<statement>
+				<em>1つ以上の項からなる式</em>を<dfn en="polynomial">多項式</dfn>という。
+			</statement>
+		</definition>
+		<p>例えば式のうち、<m>2 + \sqrt{2}</m>や<m>a + b</m>、<m>2x + 3y</m>などは多項式の例である。
+		また、左辺と右辺に式がある<m>a + b = 3</m>などの方程式や、<m>2a &lt; 3</m>などの不等式もまた、式の例である。</p>
+		<p>なお、1つしか項がない多項式を<dfn>単項式</dfn>と呼ぶことや、多項式の別の呼び方として<dfn>整式</dfn>と呼ぶこともある。ただ一般的には、これらすべてをまとめて「多項式」と呼ぶことが多い。</p>
+
+		<p>多項式の性質を分析するときには、各項の次数や係数に着目することが多い。</p>
+		<definition>
+			<title>係数と次数</title>
+			<statement>
+				項が<m>ax^n</m>と表されるとき、<m>a</m>をこの項の<m>x</m>についての<dfn>係数</dfn>といい、指数<m>n</m>をこの項の<m>x</m>についての<dfn>次数</dfn>という。
+				このとき、この項<m>ax^n</m>は<m>x</m>について<m>n</m><ruby r="じ">次</ruby>の項であるという。
+				数1や<m>\pi</m>などの<em>定数の次数は0</em>とし、0次の項として扱う。
+				ただし、数<em>0については次数は定義しない</em>。
+			</statement>
+		</definition>
+		<p>数や定数については、<m>1 = 1 \times a^0</m>と解釈できるため、0次の項とする。
+		また数0については、<m>0 \times x</m>とも<m>0 \times x^2</m>とも解釈できてしまうため、次数を定めないことが多い。
+		なお、項に含まれる文字が1つだけの場合や、どの文字について述べているのか明らかな場合には、「<m>x</m>についての」という言葉は省略することが多い。</p>
+
+		<definition>
+			<title>多項式の次数</title>
+			<statement>
+				多項式に含まれる文字<m>x</m>に着目して各項の次数を調べたとき、最大のものをその多項式の<dfn>次数</dfn>という。
+				また、この多項式は<m>x</m>について<m>n</m>次式であるという。
+			</statement>
+		</definition>
+		<p>例えば、多項式<m>1 + 2x^2 + x</m>は<m>x</m>について2次式であるという。</p>
+
+		<p>多項式では、次数の大きい項ほど多項式の値に与える影響が大きくなるので、次数の大きい項から順に並べることが多い。
+		多項式を<em>次数の高い項から順に並べる</em>ことを、その多項式を「<ruby r="こうべき"><dfn>降冪</dfn></ruby>の順に整理する」という。
+		逆に、次数の低い項から順に並べることは、「<ruby r="しょうべき">昇冪</ruby>の順に整理する」という。
+		例えば、多項式<m>1 + 2x^2 + x</m>を降冪の順に整理すると<m>2x^2 + x + 1</m>になり、昇冪の順に整理すると<m>1 + x + 2x^2</m>になる。</p>
+		<p>降冪の順に整理しても式の見た目がよくならない場合などは、降冪の順から逸脱しても見た目の美しさを優先することもある。
+		例えば、多項式<m>x^2 + y^2 + xy + 2x + 2y + 1</m>を<m>x</m>について降冪の順に整理すると<m>x^2 + (y + 2)x + y^2 + 2y + 1</m>となる。
+		このように、降冪の順にすることで多項式における<m>x</m>と<m>y</m>の対称性が分かりにくくなる場合には、あえて降冪の順に並べないこともある。</p>
+	</section>
+
+	<section xml:id="sec-expression-fact">
+		<title>展開と因数分解</title>
+		<subsection xml:id="ssec-expression-law">
+			<title>計算法則</title>
+			<p>四則演算のうち加法と乗法では、計算法則と呼ばれる次の法則が成り立つ。計算や証明を行うときには、この計算法則を活用することが基本となる。</p>
+			<theorem>
+				<title>計算法則</title>
+				<statement>
+					<m>a, b, c</m>を実数とするとき、次の等式が成り立つ。
+					<md>
+						<mrow>a + b &amp;= b + a &amp; (\text{加法の交換法則})</mrow>
+						<mrow>a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})</mrow>
+						<mrow>(a + b) + c &amp;= a + (b + c) &amp; (\text{加法の結合法則})</mrow>
+						<mrow>(a \times b) \times c &amp;= a \times (b \times c) &amp; (\text{乗法の結合法則})</mrow>
+						<mrow>(a + b) \times c &amp;= ac + bc, a \times (b + c) = ab + ac &amp; (\text{分配法則})</mrow>
+					</md>
+				</statement>
+			</theorem>
+
+			<p>これらの計算法則は、加法や乗法以外の、減法や除法では成り立たない。また、文字の列(文字列)について「カイ」と「イカ」が異なるように、数学以外の世界でも、交換法則が成り立たないことが多い。
+			また、結合法則が成り立つことで、3つ以上の数の和や積を考える場合も順序を考慮しなくて良くなる。そのため、括弧を書かずに和や積を<m>a + b + c</m>や<m>abc</m>と書くことができるようになる。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-expression-expand">
+			<title>展開と因数分解</title>
+			<p>計算法則を利用して式変形することで、便利な公式が得られることがある。</p>
+			<theorem>
+				<title>展開・因数分解の公式1</title>
+				<statement>
+					<m>a, b, c, d</m>を実数とするとき、次の等式が成り立つ。
+					<md>
+						<mrow>(a + b)(c + d) &amp;= ac + ad + bc + bd</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>(a + b)(c + d) &amp;= (a + b)c + (a + b)d &amp; (\text{分配法則})</mrow>
+						<mrow>               &amp;= ac + bc + ad + bd   &amp; (\text{分配法則})</mrow>
+						<mrow>               &amp;= ac + ad + bc + bd   &amp; (\text{加法の交換法則})</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<p>計算法則を利用した式変形の例として、展開や因数分解がある。</p>
+			<theorem>
+				<title>展開・因数分解の公式2</title>
+				<statement>
+					<m>a, b, c</m>を実数とするとき、次の等式が成り立つ。これらの等式で左辺から右辺に変形する操作を<dfn>展開</dfn>、右辺から左辺に変形する操作を<dfn>因数分解</dfn>という。
+					<md>
+						<mrow>(a + b)^2 &amp;= a^2 + 2ab + b^2</mrow>
+						<mrow>(a - b)^2 &amp;= a^2 - 2ab + b^2</mrow>
+						<mrow>(a + b)^3 &amp;= a^3 + 3a^2b + 3ab^2 + b^3</mrow>
+						<mrow>(a - b)^3 &amp;= a^3 - 3a^2b + 3ab^2 - b^3</mrow>
+						<mrow>(a + b)(a - b) &amp;= a^2 - b^2</mrow>
+						<mrow>(a + b)(a + c) &amp;= a^2 + (b + c)a + bc</mrow>
+						<mrow>(a + b)(a^2 - ab + b^2) &amp;= a^3 - b^3</mrow>
+						<mrow>(a - b)(a^2 + ab + b^2) &amp;= a^3 - b^3</mrow>
+					</md>
+				</statement>
+				<proof>
+					<m>(a + b)^2 = a^2 + 2ab + b^2</m>は次のように示される。他も同様。
+					<md>
+						<mrow>(a + b)^2 &amp;= (a + b)(a + b)</mrow>
+						<mrow>          &amp;= aa + ab + ba + bb</mrow>
+						<mrow>          &amp;= aa + ab + ab + bb &amp; (\text{乗法の交換法則})</mrow>
+						<mrow>          &amp;= aa + 2ab + bb</mrow>
+						<mrow>          &amp;= a^2 + 2ab + b^2</mrow>
+					</md>
+				</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-expression-tasuki">
+			<title>襷掛けによる因数分解</title>
+			<p>特に因数分解は、方程式の解を求めるときに用いられる。式を因数分解して<m>(x - a)(x - b) = 0</m>の形に変形できれば、<m>x - a = 0</m>か<m>x - b = 0</m>の<strong>少なくとも一方が</strong>成り立つ。
+			<m>x</m>は同時に2つの値をとることはできないので、<m>x = a</m>または<m>x = b</m>となり、方程式を満たす<m>x</m>の値を求められる。
+			ここでは、「<m>AB = 0</m>であれば<m>A = 0</m>か<m>B = 0</m>の<strong>少なくとも一方が</strong>0である」ことを用いている。</p>
+
+			<p>より高度な因数分解として、<dfn><ruby r="たすき">襷</ruby>掛け</dfn>と呼ばれる、次の式に基づく因数分解がある。</p>
+			<theorem>
+				<title>展開・因数分解の公式3</title>
+				<statement>
+					<m>a, b, c, d, x</m>を実数とするとき、次の等式が成り立つ。
+					<md>
+						<mrow>(ax + b)(cx + d) = acx^2 + (ad + bc)x + bd</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>(ax + b)(cx + d) &amp;= axcx + axd + bcx + bd</mrow>
+						<mrow>               &amp;= acx^2 + adx + bcx  + bd &amp; (\text{乗法の交換法則})</mrow>
+						<mrow>               &amp;= acx^2 + (ad + bc)x + bd &amp; (\text{分配法則})</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<p>この等式は、展開を行う場合には普通に展開しているのとほぼ変わらないため、あまり役立たない。
+				因数分解を行う場合には、<m>a, b, c, d</m>が比較的小さな数や簡単な式である場合は、次に示す襷掛けという方法で因数分解を行うことができる。</p>
+			<algorithm>
+				<title><ruby r="たすき">襷</ruby>掛け</title>
+				<statement>
+					<m>Ax^2+Bx+C</m>を<m>(ax + b)(cx + d)</m>の形に因数分解する場合、次のようにする。
+					<ol>
+						<li>「掛けて<m>x^2</m>の係数(<m>A</m>)」になる2数<m>a, c</m>を適当に選び、選んだ2数と<m>A</m>を縦に並べて記す。</li>
+						<li>「掛けて定数項の係数(<m>C</m>)」になる2数<m>b, d</m>を適当に選び、選んだ2数と<m>C</m>を(1)で記した右側に縦に並べて記す。</li>
+						<li><m>(\text{左下の数}c) \times (\text{右上の数}b) = bc</m>と<m>(\text{左上の数}a)\times(\text{右下の数}d) = ad</m>を、(2)で記した右側に縦に並べて記す。</li>
+						<li>(3)で記した2数の和(<m>ad + bc</m>)が<m>x</m>の係数(<m>B</m>)に一致すれば、この<m>a, b, c, d</m>は正しい組み合わせなので因数分解できる。一致しなければ(1)へ戻る。</li>
+					</ol>
+					<md>
+						<mrow>A &amp;&amp; C</mrow>
+						<mrow>\downarrow &amp;&amp; \downarrow</mrow>
+						<mrow>a &amp;&amp; b &amp;&amp;  \longrightarrow bc</mrow>
+						<mrow>c &amp;&amp; d &amp;&amp;  \longrightarrow ad</mrow>
+						<mrow>&amp;&amp;&amp;&amp; B = ad + bc</mrow>
+					</md>
+				</statement>
+			</algorithm>
+
+			<p>襷掛けの手順を図<xref ref="fig-quad-eq-tasuki"/>に示す。</p>
+			<figure xml:id="fig-quad-eq-tasuki">
+				<image source="image/quad-eq-tasuki" width="75%"/>
+				<caption>襷掛けの手順</caption>
+			</figure>
+		</subsection>
+
+		<subsection xml:id="ssec-expression-quad">
+			<title>解の公式の利用</title>
+			<p>襷掛けは<m>a, b, c, d</m>が比較的小さな数や簡単な式である場合は便利な方法だが、そうでない場合は、次に示す2次方程式の解の公式を用いる方が早いことも多い。</p>
+			<theorem>
+				<title>2次方程式の解の公式</title>
+				<statement>
+					<m>a, b, c</m>を実数とするとき、2次方程式<m>ax^2 + bx + c = 0</m>の解<m>x</m>は、次の式で表される。
+					<md>
+						<mrow>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</mrow>
+					</md>
+				</statement>
+			</theorem>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-expression-rel">
+		<title>関係式</title>
+		<p>いくつかの式の<dfn en="relation">関係</dfn>をあらわした<dfn>関係式</dfn>には、方程式や不等式、合同式などがある。</p>
+		<p>不等式は、両辺に負の数を乗除するときを除けば、次のように方程式と同様の変形が可能である。</p>
+		<theorem>
+			<title>不等式の性質</title>
+			<statement>
+				<m>a &lt; b</m>かつ<m>c</m>が実数のとき、次の不等式が成り立つ。
+				<md>
+					<mrow>a + c &amp;&lt; b + c</mrow>
+					<mrow>a - c &amp;&lt; b - c</mrow>
+					<mrow>ac &amp;&lt; bc &amp; (c &gt; 0)</mrow>
+					<mrow>ac &amp;&gt; bc &amp; (c &lt; 0)</mrow>
+					<mrow>\frac{a}{c} &amp;&lt; \frac{b}{c} &amp; (c &gt; 0)</mrow>
+					<mrow>\frac{a}{c} &amp;&gt; \frac{b}{c} &amp; (c &lt; 0)</mrow>
+				</md>
+			</statement>
+		</theorem>
+	</section>
+
+</chapter>

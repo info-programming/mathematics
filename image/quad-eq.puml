@@ -1,0 +1,52 @@
+@startuml quad-eq
+!include plantuml.puml
+
+start
+:最初の2次方程式をAx^2 + Bx + C = 0 (A≠0)とする;
+if (B = 0?) then (yes)
+	:Ax^2+C=0;
+	if (AC <= 0?) then (yes)
+		:x^2 = -C/A;
+		:x = ± √{-C/A};
+		stop
+	else (no)
+		:実数解なし;
+		stop
+	endif
+else (no)
+	if (A = 1?) then (yes)
+		:x^2 + Bx + C = 0;
+		if (B/2はCの平方根?) then (yes)
+			:(x + B/2)^2=0 \n と因数分解;
+			:x = -B/2;
+			stop
+		else (no)
+			if (足してB,掛けてCの\n 2数a,bが見つかる?) then (yes)
+				:(x+a)(x+b)=0 \n と因数分解;
+				:x = -a, -b;
+				stop
+			else (no)
+			endif
+		endif
+	else (no)
+		if (B,CがAの倍数?) then (yes)
+			:分配法則を用いて、\n Aについて括り出す;
+			:A(x^2 + (B/A)x + (C/A)) = 0;
+			:最初へ戻り、括り出した\n 後の方程式を解く;
+			stop
+		else (no)
+			if (たすき掛けできる?) then (yes)
+				:たすき掛けを行い、\n a,b,c,dを見つける;
+				:(ax + b)(cx + d) = 0;
+				:x = -b/a, -d/c;
+				stop
+			else (no)
+			endif
+		endif
+	endif
+	:解の公式を使う or 平方完成する;
+	:x = (-b ± √{b^2 - 4ac}) / 2a;
+	stop
+endif
+
+@enduml

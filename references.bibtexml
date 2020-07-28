@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file xmlns="http://bibtexml.sf.net/">
+
+<entry id="simon2"><book>
+	<author>Herbert A. Simon</author>
+	<title>システムの科学</title>
+	<publisher>パーソナルメディア</publisher>
+	<year>1999</year>
+	<isbn>489362167X</isbn>
+	<note>稲葉元吉・吉原英樹訳</note>
+</book></entry>
+
+<entry id="newell"><article>
+	<author>
+		<person>Allen Newell</person>
+		<person>J. C. Shaw</person>
+		<person>Herbert A. Simon</person>
+	</author>
+	<title>Elements of a Theory of Human Problem Solving</title>
+	<journal>Psychological Review</journal>
+	<year>1958</year>
+	<doi>10.1037/h0048495</doi>
+	<volume>65</volume>
+	<number>3</number>
+	<pages>151-166</pages>
+</article></entry>
+
+<entry id="oecd"><book>
+	<author>OECD</author>
+	<title>PISA 2003 Assessment Framework: Mathematics, Reading, Science and Problem Solving Knowledge and Skills</title>
+	<year>2003</year>
+	<url>http://www.oecd.org/education/school/programmeforinternationalstudentassessmentpisa/33694881.pdf</url>
+	<publisher>Organisation for Economic Co-operation and Development</publisher>
+	<isbn>9264101721</isbn>
+	<pages>38-40</pages>
+</book></entry>
+
+</file>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chapter xml:id="ch-logic">
+	<title>論理</title>
+	<introduction>
+		<p>本章では、論理に基づく問題解決の枠組みや、集合、命題などの基礎的な概念を示した上で、一般的な証明法について述べる。</p>
+		<p><xref ref="sec-logic-problem"/>節では、問題解決の基本的な枠組みを示す。</p>
+		<p><xref ref="sec-logic-prop"/>節では、論理の基礎となる命題と推論について述べる。</p>
+		<p><xref ref="sec-logic-set"/>節では、現代数学の基礎となっている集合について述べる。</p>
+	</introduction>
+
+	<section xml:id="sec-logic-problem">
+		<title>問題解決</title>
+		<p>数学では、未知の事柄がある状況を<dfn en="problem">問題</dfn>として捉え、問題を<dfn en="solve">解決</dfn>して未知の事柄を明らかにすることを目的とする。
+		より厳密には、未知の事柄がある状態を「<dfn en="As-Is">現在の状態</dfn>」、未知の事柄が明らかになった状態を「<dfn en="To-Be">目標の状態</dfn>」として、<strong>現在の状態と理想の状態の間に差があること</strong>を、<dfn en="problem">問題</dfn>だと定義する<xref ref="bib-simon2"/><xref ref="bib-newell"/>。
+		図<xref ref="fig-problem"/>に、問題とその解の関係を示す。</p>
+		<p>また、ある問題について<strong>現在の状態から目標の状態へ至る道筋</strong>を、その問題の<dfn en="solution">解</dfn>という。
+		解は必ず1つであるとは限らず、解が複数あることや、解が1つもないこともある。
+		解が複数ある場合、早く目標に到達できる解もあれば、目標に達するまで時間がかかる解や、高速だが正確性に欠ける解、機械を使えば計算できるが人手で扱うのは難しい解など、さまざまなものがある。
+		そのため、その場その場の状況に応じて、適した解を選ぶ必要がある。</p>
+		<definition>
+			<title>問題</title>
+			<statement>
+				<dfn strong="0" en="To-Be">目標とする状態</dfn>と<dfn strong="0" en="As-Is">現在の状態</dfn>の間に<em>差</em>があるとき、この差を<dfn en="problem">問題</dfn>という<xref ref="bib-simon2"/>。
+				<em>現在の状態から目標とする状態に至る方法を見つける</em>ことを<dfn en="problem solving">問題解決</dfn>といい、この方法をその問題の<dfn en="solution">解</dfn>という<xref ref="bib-newell"/>。
+			</statement>
+		</definition>
+
+		<figure xml:id="fig-problem">
+			<image source="image/problem" width="50%"/>
+			<caption>問題の定義</caption>
+		</figure>
+
+		<p>より具体的な数学による問題解決の過程を、図<xref ref="fig-math-problem"/>に示す<xref ref="bib-oecd"/>。</p>
+		<figure xml:id="fig-math-problem">
+			<image source="image/math-problem" width="75%"/>
+			<caption>OECDによるモデル</caption>
+		</figure>
+	</section>
+
+	<section xml:id="sec-logic-prop">
+		<title>命題論理</title>
+		<subsection xml:id="ssec-logic-prop">
+			<title>命題</title>
+			<p>数学が基盤とする論理学では、客観的な分析が可能な文を<dfn en="proposition">命題</dfn>として扱い、複数の命題を推論で接続することで論理を展開する。</p>
+			<definition>
+				<title>命題</title>
+				<statement>
+					<em>「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn en="proposition">命題</dfn>という。
+					命題<m>p</m>が「正しい」とき、<m>p</m>は<dfn en="true">真</dfn>であるという。また、<m>p</m>が真でないとき、<m>p</m>は<dfn en="false">偽</dfn>であるという。
+				</statement>
+			</definition>
+			<p>特に、真である命題を<dfn en="theorem">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
+			<example>
+				<title>命題の例</title>
+				<statement>
+					「富士山は高い山である」という文は、「高い」という形容詞に対する解釈が人によって異なるため、命題でない。
+					富士山の近辺に住んでいる人は「富士山は高い」と解釈する可能性が高いが、エベレストの近辺に住んでいる人は「富士山は高くない」と解釈する可能性が高い。
+					一方、「富士山は天保山より高い山である」という文にも、同じように「高い」という形容詞が含まれる。
+					だがこの文では、「富士山(の標高)」と「天保山(の標高)」という数値で大小比較可能なものを比べているため、誰が判断しても真になると考えられ、命題だといえる。
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-andornot">
+			<title>「かつ」「または」「でない」</title>
+			<p>命題についての基本的な操作には、1つの命題に対する<dfn>否定</dfn>や、2つ以上の命題に対する「<dfn>かつ</dfn>(連言)」「<dfn>または</dfn>(選言)」がある。</p>
+			<definition>
+				<title>連言・選言・否定</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、<m>p, q</m>の<em>両方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>かつ</dfn><m>q</m>」といい、<m>p \wedge q</m>と表すことがある。
+					また、<m>p, q</m>の<em>少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>または</dfn><m>q</m>」といい、<m>p \vee q</m>と表すことがある。
+					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn>否定</dfn>」といい、<m>\overline{p}</m>と表す。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-demorgan">
+			<title>de Morganの法則</title>
+			<p>命題については、次のde Morganの法則が成り立つ。</p>
+			<theorem>
+				<title>de Morganの法則</title>
+				<statement>
+					<m>p, q</m>が命題のとき、次の等式が成り立つ。
+					<md>
+						<mrow>\overline{p \wedge q} &amp; = \overline{p} \vee   \overline{q}</mrow>
+						<mrow>\overline{p \vee   q} &amp; = \overline{p} \wedge \overline{q}</mrow>
+					</md>
+				</statement>
+				<proof>真理値表を用いて示す。</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-inference">
+			<title>推論「ならば」</title>
+			<p>命題を用いてより高度な命題を表すには、次の<dfn en="inference">推論</dfn>を表す規則が必要となる。</p>
+			<definition>
+				<title>推論</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、「<em>もし<m>p</m>が成り立つならば、<m>q</m>も成り立つ</em>」という命題を「<m>p</m><dfn>ならば</dfn><m>q</m>」といい、<m>p \Longrightarrow q</m>と表す。
+					命題<m>p \Longrightarrow q</m>は、「<strong><m>p</m>が偽</strong>のとき」か「<m>p</m>も<m>q</m>も真のとき」に真となる。
+					<md>
+						<mrow>[ p \Longrightarrow q ] = [ \overline{p} \vee (p \wedge q) ] = [ (\overline{p} \vee p) \wedge (\overline{p} \vee q)] (\text{分配法則}) = [ \overline{p} \vee q ] (\text{排中律})</mrow>
+					</md>
+					命題<m>p \Longrightarrow q</m>について、<m>p</m>を<m>p \Longrightarrow q</m>の<dfn>仮定</dfn>、<m>q</m>を<m>p \Longrightarrow q</m>の<dfn>結論</dfn>という。
+					また、<m>q</m>を<m>p</m>の<dfn en="necessary condition">必要条件</dfn>、<m>p</m>を<m>q</m>の<dfn en="sufficient condition">十分条件</dfn>という。
+				</statement>
+			</definition>
+			<p>必要条件と十分条件は、「<m>p \Longrightarrow q</m>」の「<m>\Longrightarrow</m>」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
+
+			<example>
+				<title>推論の例</title>
+				<statement>
+					「宝くじに当たったら家を買う」という命題では、命題「宝くじに当たる」が仮定、命題「家を買う」が結論である。
+					この命題の真偽について考えると、宝くじに当たった場合には、家を買った場合には真、そうでなければ偽となる。
+					一方、宝くじに当たらなかった場合には、家を買おうと買うまいと、この命題では何も言っていないので、偽だとは言えず真となる。
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-eq">
+			<title>同値</title>
+			<p>この推論規則を用いて、2つの命題が「同じ」であるという関係を定義する。</p>
+			<definition>
+				<title>同値</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、<m>p \Longrightarrow q</m>かつ<m>q \Longrightarrow p</m>であれば、<m>p</m>と<m>q</m>は<dfn>同値</dfn>であるといい、<m>p \Longleftrightarrow q</m>と表す。
+					<md>
+						<mrow>[ p \Longleftrightarrow q ] = [ p \Longrightarrow q ] \wedge [ q \Longrightarrow p ]</mrow>
+					</md>
+					このとき、<m>q</m>を<m>p</m>の<dfn>必要十分条件</dfn>であるといい、<m>p</m>も<m>q</m>の必要十分条件であるという。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-contra">
+			<title>逆・裏・対偶</title>
+
+			<p>更に、推論を用いた命題について、逆や裏、対偶を定義できる。</p>
+			<definition>
+				<title>逆・裏・対偶</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、命題<m>p \Longrightarrow q</m>に対し、<m>q \Longrightarrow p</m>を元の命題の<dfn>逆</dfn>、<m>\overline{p} \Longrightarrow \overline{q}</m>を元の命題の<dfn>裏</dfn>、<m>\overline{q} \Longrightarrow \overline{p}</m>を元の命題の<dfn>対偶</dfn>という。
+				</statement>
+			</definition>
+
+			<p>このうち、命題<m>p \Longrightarrow q</m>と逆<m>q \Longrightarrow p</m>について、前者は<m>\overline{p} \vee q</m>、後者は<m>\overline{q} \vee p</m>であるので、<strong>命題とその逆の真偽は一致しない</strong>。
+			また、命題<m>p \Longrightarrow q</m>と対偶<m>\overline{q} \Longrightarrow \overline{p}</m>については、次の定理が成り立つ。</p>
+			<theorem>
+				<title>命題とその対偶</title>
+				<statement>
+					命題とその対偶の真偽は一致する。つまり、<m>p, q</m>を命題とするとき、
+					<md>
+						<mrow>[ \overline{q} \Longrightarrow \overline{p} ] = [ p \Longrightarrow q ]</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>[ \overline{q} \Longrightarrow \overline{p} ] = [\overline{\overline{q}} \vee \overline{p}] = [ q \vee \overline{p}] = [ \overline{p} \vee q] = [ p \Longrightarrow q ]</mrow>
+					</md>
+				</proof>
+			</theorem>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-logic-set">
+		<title>集合</title>
+		<subsection xml:id="ssec-logic-set">
+			<title>集合と要素</title>
+			<p>複雑な思考を行うには、いろいろなものを個別に考えるのではなく、共通する性質を取り上げてひとまとめにして、抽象的に考える必要がある。
+			数学において、複数のものをまとめて表すための最も基本的な道具が、ここで述べる集合である。</p>
+			<definition>
+				<title>集合</title>
+				<statement>
+					「あるものがそれに<em>属するかどうかが明確に定まっている</em>ものの<em>集まり</em>」のことを<dfn en="set">集合</dfn>という。
+				</statement>
+			</definition>
+
+			<p>集合についてもっとも基本的な関係は、集合とそれに含まれる「もの」の関係である。</p>
+			<definition>
+				<title>要素</title>
+				<statement>
+					集合に含まれる「もの」をその集合の<dfn en="element">要素</dfn>という。
+					集合の表し方には、次の2つがある。
+					<ul>
+						<li><dfn en="intensive">内包</dfn>的な表現: 条件<m>P(x)</m>を満たす<m>x</m>の集合を<m>\{x|P(x)\}</m>のように、集合に含まれる要素が満たす条件を記して表す。</li>
+						<li><dfn en="extensive">外延</dfn>的な表現: <m>\{0,1,2\}</m>のように、0,1,2からなる集合の要素を直接書き並べて表す。</li>
+					</ul>
+					集合<m>A</m>に要素<m>x</m>が含まれることを、<m>x \in A</m>と表す。
+					また、「空の集合」<m>\{\}</m>を<dfn en="empty set">空集合</dfn>といい、<m>\emptyset</m>で表す。
+					空集合の記号<m>\emptyset</m>は丸またはゼロに斜線を引いた記号で、ギリシャ文字の<ruby r="ファイ">Φ</ruby>とは異なる。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-subset">
+			<title>部分集合</title>
+			<p>集合に含まれる要素については、「要素が集合に含まれる」という<ruby r="ほうがん">包含</ruby>関係を定義することができる。</p>
+			<definition>
+				<title>部分集合</title>
+				<statement>
+					集合<m>A, B</m>について、<m>x \in A</m>のときに<m>x \in B</m>となるなら、<m>A</m>は<m>B</m>の<dfn en="subset">部分集合</dfn>であるといい、<m>A \subset B</m>や<m>B \supset A</m>と表す。
+					特に、<m>A \subset B</m>かつ<m>A \supset B</m>であることを、<m>A = B</m>と表す。
+				</statement>
+			</definition>
+			<p>部分集合の記号<m>\subset, \supset</m>については、定義より集合<m>A</m>について<m>A \subset A</m>が常に成り立つ。
+			よく似た記号の不等号<m>&lt;, &gt;</m>では、数<m>A</m>について<m>A &lt; A</m>が成り立たないので、違いを理解しておく必要がある。</p>
+			<p>この定義で、「二つの集合<m>A</m>と<m>B</m>が等しい」ということが、集合の包含関係によって定義されている。
+			この定義により、<m>A = B</m>を証明したい場合には、<m>A \subset B</m>かつ<m>A \supset B</m>であることを示せば良いということが分かる。
+			これは、<m>A = B</m>を示すための有力な手がかりとなり、証明においても用いられることがある。</p>
+
+			<example>
+				<title>集合の例</title>
+				<statement>
+					<md>
+						<mrow>A &amp; = \{2, 4, 6, \cdots\}</mrow>
+						<mrow>B &amp; = \{\text{いちご}, \text{ぶどう}, \text{メロン}\}</mrow>
+						<mrow>C &amp; = \{n|n=1, 2, 3, \cdots\} = \{1, 2, 3, \cdots\}</mrow>
+						<mrow>D &amp; = \{2n|n=1, 2, 3, \cdots\} = \{2, 4, 6, \cdots\} = A</mrow>
+					</md>
+				</statement>
+			</example>
+			<p>この例では<m>\cdots</m>という省略記号を用いたが、このような書き方は曖昧さを含む。
+			例の集合<m>A</m>は<m>2, 4, 6</m>を要素に含むことが分かるが、この3つの要素から連想される条件が「正の偶数」であるのか、「2つの要素の和」であるのかが明らかでない。
+			前者であれば<m>8 \in A</m>であるが、後者であれば6の次に小さい要素は<m>4 + 6 = 10</m>となり、8は含まないことになる。
+			このような推測を他者に要請することは客観性の観点から適切でないため、できる限り<em>省略記号を使う書き方は避ける</em>ことが望ましい。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-complement">
+			<title>補集合・和集合・共通部分</title>
+			<p>何らかの形で「全体」の集合(<dfn>全体集合</dfn>)が決まっているときには、全体のうちである条件を満たさないものの集合を考えることができる。</p>
+			<definition>
+				<title>補集合</title>
+				<statement>
+					全体集合を<m>B</m>とし、<m>A</m>を<m>B</m>の部分集合とする。
+					<m>B</m>の元のうち<m>A</m>の元ではないものを<m>A</m>の<dfn en="complement">補集合</dfn>といい、次のように定義される。
+					<md>
+						<mrow>\overline{A} = \{x \in B | x \notin A \}</mrow>
+					</md>
+					<m>A</m>の補集合を表す記号としては、<m>\overline{A}</m>以外にも<m>A^c</m>がよく用いられる。
+				</statement>
+			</definition>
+			<p>補集合の記号<m>\overline{A}</m>には全体集合が<m>B</m>であることは明示されていないが、<m>B</m>にあたる全体集合がどのようなものであるかにより<m>\overline{A}</m>の要素が変わることには、注意が必要である。
+			<m>A</m>が正の偶数の集合であるとき、<m>B</m>が自然数の集合であれば<m>\overline{A}</m>は正の奇数の集合となるが、<m>B</m>が実数の集合であれば<m>\overline{A}</m>は正の奇数だけでなく、有理数や無理数も含むことになる。
+			そのため、<em>補集合を用いる場合は、何が全体集合であるかを予め定めておく</em>必要がある。</p>
+
+			<p>通常の数に対して四則演算が定義できるように、集合に対しても同様の演算を定義することができる。</p>
+			<definition>
+				<title>和集合・共通部分</title>
+				<statement>
+					<m>A, B</m>が集合のとき、次の集合をそれぞれ、<m>A</m>と<m>B</m>の<dfn en="union">和集合</dfn>、<m>A</m>と<m>B</m>の<dfn en="intersection">共通部分</dfn>という。
+					<md>
+						<mrow>A \cup B &amp; = \{x| x \in A \text{かつ}   x \in    B\}</mrow>
+						<mrow>A \cap B &amp; = \{x| x \in A \text{または} x \in    B\}</mrow>
+					</md>
+				</statement>
+			</definition>
+			<p>数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em>少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-law">
+			<title>集合に関する法則</title>
+			<p>和集合や共通部分、補集合については、次のような等式が成り立つ。</p>
+			<theorem>
+				<title>集合の分配法則</title>
+				<statement>
+					<m>A, B, C</m>が集合のとき、次の等式が成り立つ。
+					<md>
+						<mrow>(A \cap B) \cup C = (A \cup C) \cap (B \cup C)</mrow>
+					</md>
+				</statement>
+			</theorem>
+
+			<theorem>
+				<title>de Morganの法則</title>
+				<statement>
+					<m>A, B, C</m>が集合のとき、次の等式が成り立つ。
+					<md>
+						<mrow>\overline{A \cup B} &amp; = \overline{A} \cap \overline{B}</mrow>
+						<mrow>\overline{A \cap B} &amp; = \overline{A} \cup \overline{B}</mrow>
+						<mrow>\overline{A \cup B \cup C} &amp; = \overline{A} \cap \overline{B} \cap \overline{C}</mrow>
+						<mrow>\overline{A \cap B \cap C} &amp; = \overline{A} \cup \overline{B} \cup \overline{C}</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>x \in \overline{A \cup B} &amp;
+							\Longleftrightarrow x \notin A \cup B
+							\Longleftrightarrow x \notin A \text{かつ} x \notin B
+							\Longleftrightarrow x \in \overline{A} \text{かつ} x \in \overline{B}
+							\Longleftrightarrow x \in \overline{A} \cap \overline{B}</mrow>
+						<mrow>x \in \overline{A \cap B} &amp;
+							\Longleftrightarrow x \notin A \cap B
+							\Longleftrightarrow x \notin A \text{または} x \notin B
+							\Longleftrightarrow x \in \overline{A} \text{または} x \in \overline{B}
+							\Longleftrightarrow x \in \overline{A} \cup \overline{B}</mrow>
+						<mrow>\overline{A \cup B \cup C} &amp;= \overline{A \cup (B \cup C)} = \overline{A} \cap \overline{B \cup C} = \overline{A} \cap (\overline{B} \cap \overline{C}) = \overline{A} \cap \overline{B} \cap \overline{C}</mrow>
+						</md>
+				</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-number">
+			<title>数</title>
+			<p>集合の例としては、まず自然数や実数など、特定の条件を満たす数全体がある。</p>
+			<definition>
+				<title>自然数と整数</title>
+				<statement>
+					<dfn en="natural number">自然数</dfn>全体の集合を<m>\mathbb{N}</m>、<dfn en="integer">整数</dfn>全体の集合を<m>\mathbb{Z}</m>で表す。
+					<md>
+						<mrow>\mathbb{N} &amp;= \{n | n = 1, 2, \cdots \}</mrow>
+						<mrow>\mathbb{Z} &amp;= \{0\} \cup \{\pm n | n \in \mathbb{N} \}</mrow>
+					</md>
+				</statement>
+			</definition>
+			<p>整数の集合を<m>\mathbb{Z}</m>で表すのは、ドイツ語のZahlen(数)に由来する。
+			また自然数については、現代では<m>0 \in \mathbb{N}</m>とすることも多い。</p>
+
+			<definition>
+				<title>有理数と実数</title>
+				<statement>
+					<em>分数(比)の形で表すことができる数</em>、つまり有限小数や循環小数を<dfn en="rational number">有理数</dfn>といい、有理数全体の集合を<m>\mathbb{Q}</m>で表す。
+					<md>
+						<mrow>\mathbb{Q} &amp;= \{\frac{n}{m} | n \in \mathbb{N}, m \in \mathbb{Z} \}</mrow>
+					</md>
+					<m>\pi = 3.14\cdots</m>や<m>\sqrt{2} = 1.414\cdots</m>などの無限小数は分数で表すことができず、これを<dfn>無理数</dfn>という。
+					有理数と無理数を合わせて<dfn en="real number">実数</dfn>といい、実数全体の集合を<m>\mathbb{R}</m>で表す。
+				</statement>
+			</definition>
+			<p>有理数を<m>\mathbb{Q}</m>で表すのは「商」の意を表すquotientに由来する。有理数は英語を直訳すると「比で表される数」であり、この言い方の方が定義をより明瞭に表している。</p>
+		</subsection>
+	</section>
+</chapter>

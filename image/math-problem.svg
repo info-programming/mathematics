@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="466px" preserveAspectRatio="none" style="width:498px;height:466px;" version="1.1" viewBox="0 0 498 466" width="498px" zoomAndPan="magnify"><defs/><g><ellipse cx="71" cy="47.8039" fill="#009000" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="102" x="20" y="77.8039"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="82" x="30" y="104.0438">1.現実の問題</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="102" x="20" y="372.2793"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="82" x="30" y="398.5192">4.現実の結果</text><ellipse cx="71" cy="443.5512" fill="#FFFFFF" rx="11" ry="11" style="stroke: #009000; stroke-width: 1.0;"/><ellipse cx="71" cy="443.5512" fill="#009000" rx="6" ry="6" style="stroke: #7FC77F; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 2.0;" x1="15" x2="15" y1="12.532" y2="454.5512"/><rect fill="#DDDDFF" height="60.5438" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="140" x="131" y="159.4978"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="141" y="185.7377">2.数学的な表現</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="141" y="206.0096">(数式(expression))</text><rect fill="#DDDDFF" height="40.2719" rx="12.5" ry="12.5" style="stroke: #9090FF; stroke-width: 1.5;" width="116" x="143" y="290.5854"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="153" y="316.8253">3.数学的な結果</text><line style="stroke: #000000; stroke-width: 2.0;" x1="126" x2="126" y1="12.532" y2="454.5512"/><line style="stroke: #000000; stroke-width: 2.0;" x1="480" x2="480" y1="12.532" y2="454.5512"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="71" x2="71" y1="57.8039" y2="77.8039"/><polygon fill="#FF9090" points="67,67.8039,71,77.8039,75,67.8039,71,71.8039" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="71" x2="71" y1="412.5512" y2="432.5512"/><polygon fill="#FF9090" points="67,422.5512,71,432.5512,75,422.5512,71,426.5512" style="stroke: #FF9090; stroke-width: 1.0;"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="201" x2="201" y1="220.0416" y2="290.5854"/><polygon fill="#FF9090" points="197,280.5854,201,290.5854,205,280.5854,201,284.5854" style="stroke: #FF9090; stroke-width: 1.0;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="192" x="205" y="248.8135">計算する(compute, calculate)</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="270" x="205" y="269.0854">※computer: 計算機, calculator(calc): 電卓</text><line style="stroke: #FF9090; stroke-width: 1.5;" x1="71" x2="71" y1="118.0758" y2="144.4978"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="71" x2="201" y1="144.4978" y2="144.4978"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="201" x2="201" y1="144.4978" y2="159.4978"/><polygon fill="#FF9090" points="197,149.4978,201,159.4978,205,149.4978,201,153.4978" style="stroke: #FF9090; stroke-width: 1.0;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="201" x="75" y="137.9978">数学の形式で表現(express)する</text><line style="stroke: #FF9090; stroke-width: 1.5;" x1="201" x2="201" y1="330.8573" y2="357.2793"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="201" x2="71" y1="357.2793" y2="357.2793"/><line style="stroke: #FF9090; stroke-width: 1.5;" x1="71" x2="71" y1="357.2793" y2="372.2793"/><polygon fill="#FF9090" points="67,362.2793,71,372.2793,75,362.2793,71,366.2793" style="stroke: #FF9090; stroke-width: 1.0;"/><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="205" y="350.7793">解釈する</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="35.5" y="28.7719">現実の世界</text><text fill="#000000" font-family="Noto Sans CJK JP" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="268" y="28.7719">数学の世界</text><!--MD5=[19088460aa9624c454ce4545a1ece4ac]
+@startuml math-problem
+!include plantuml.puml
+
+|現実の世界|
+start
+:1.現実の問題;
+-> 数学の形式で表現(express)する;
+|数学の世界|
+:2.数学的な表現
+(数式(expression));
+-> 計算する(compute, calculate)
+※computer: 計算機, calculator(calc): 電卓;
+:3.数学的な結果;
+|現実の世界|
+-> 解釈する;
+:4.現実の結果;
+stop
+
+@enduml
+
+@startuml math-problem
+skinparam Shadowing false
+skinparam PackageBorderColor #909090
+
+skinparam ClassBorderColor #9090ff
+skinparam ClassBackgroundColor transparent
+skinparam ClassHeaderBackgroundColor #ddddff
+
+skinparam ActivityBackgroundColor #ddddff
+skinparam ActivityBorderColor #9090ff
+skinparam ActivityDiamondBackgroundColor #ddddff
+skinparam ActivityDiamondBorderColor #9090ff
+skinparam ActivityEndColor #009000
+skinparam ActivityStartColor #009000
+
+skinparam ArrowColor #ff9090
+skinparam ArrowThickness 3
+skinparam DefaultFontName "Noto Sans CJK JP"
+skinparam DefaultFontSize 14
+
+|現実の世界|
+start
+:1.現実の問題;
+-> 数学の形式で表現(express)する;
+|数学の世界|
+:2.数学的な表現
+(数式(expression));
+-> 計算する(compute, calculate)
+※computer: 計算機, calculator(calc): 電卓;
+:3.数学的な結果;
+|現実の世界|
+-> 解釈する;
+:4.現実の結果;
+stop
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 18:35:57 JST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>
