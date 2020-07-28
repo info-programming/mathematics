@@ -375,4 +375,66 @@
 			<p>有理数を<m>\mathbb{Q}</m>で表すのは「商」の意を表すquotientに由来する。有理数は英語を直訳すると「比で表される数」であり、この言い方の方が定義をより明瞭に表している。</p>
 		</subsection>
 	</section>
+
+	<section xml:id="sec-logic-infer">
+		<title>推論</title>
+		<introduction>
+			<p>いくつかの命題から一つの命題を導くことを<dfn en="inference">推論</dfn>といい、推論の過程を明らかに示したものを<dfn en="proof">証明</dfn>という。
+			推論には次に示す複数の方法があり、推論で導かれた命題がどの程度正しいかという<em>厳密性</em>の高さと、推論で導かれた命題がどの程度元の命題にないことを述べているかという<em>拡張性</em>の高さが、それぞれ異なる。
+			代表的な推論法には、厳密性の高い順に演繹・帰納・アブダクションがある。
+			このうち、演繹とアブダクションに対応する思考法が、de Bonoの垂直思考と水平思考である。</p>
+			<p><ruby r="トゥールミン">Toulmin</ruby>は、<em>前提</em>、<em>規則</em>、<em>結論</em>という3つの命題が存在し、前提に規則を適用すると結論が得られるとした<xref ref="bib-toulmin"/>。
+			この「三角ロジック」と呼ばれる形式に従えば、演繹・帰納・アブダクションの3つの推論法は、図<xref ref="fig-logic-inference"/>のように対比できる。
+			図中の点と矢印は命題を表し、「<m>A \Longrightarrow B</m>」を前提、「<m>B \Longrightarrow C</m>」を規則、「<m>A \Longrightarrow C</m>」は結論とする。
+			また、それぞれの推論法で与えられている命題を実線で、推論により導かれる命題を点線で示す。</p>
+			<figure xml:id="fig-logic-inference">
+				<image source="image/logic-inference"/>
+				<caption>推論の方法</caption>
+			</figure>
+			<p>図<xref ref="fig-logic-inference"/>の例では、<m>A</m>を「<m>x</m>はソクラテスである」、<m>B</m>を「<m>x</m>は人である」、<m>C</m>を「<m>x</m>は死ぬ」としている。
+			このとき、前提(<m>A \Longrightarrow B</m>)は「ソクラテスは人である(<m>x: \text{ソクラテス} \Longrightarrow x: \text{人}</m>)」、規則(<m>B \Longrightarrow C</m>)は「人は死ぬ(<m>x: \text{人} \Longrightarrow x: \text{死ぬ}</m>)」、結論(<m>A \Longrightarrow C</m>)は「ソクラテスは死ぬ(<m>x: \text{ソクラテス} \Longrightarrow x: \text{死ぬ}</m>)」となる。</p>
+			<definition>
+				<title>演繹・帰納・アブダクション</title>
+				<statement>
+					<ul>
+						<li><strong>前提と規則</strong>から<strong>結論</strong>を導く推論を<dfn en="deduction"><ruby r="えんえき">演繹</ruby></dfn>という。</li>
+						<li><strong>前提と結論</strong>から<strong>規則</strong>を導く推論を<dfn en="induction"><ruby r="きのう">帰納</ruby></dfn>という。</li>
+						<li><strong>規則と結論</strong>から<strong>前提</strong>を導く推論を<dfn en="abduction">アブダクション</dfn>という。</li>
+					</ul>
+				</statement>
+			</definition>
+		</introduction>
+
+		<subsection xml:id="ssec-logic-infer-deduction">
+			<title>演繹</title>
+			<p><dfn en="deduction"><ruby r="えんえき">演繹</ruby></dfn>は、前提と規則から結論を導く推論である。
+			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em>結論が真だと推論</em>する。
+			Aristotleによる三段論法<xref ref="bib-aristotle-ana"/><xref ref="bib-aristotle-ana-j"/>は演繹の代表的な推論法で、「<m>A \Longrightarrow B, B \Longrightarrow C</m>」のとき「<m>A \Longrightarrow C</m>」が成り立つという推論を行う。</p>
+			<p>演繹による推論では、前提と規則の命題が真なら、<strong>推論した結論が真であることが保証</strong>され、<em>高い厳密性</em>をもつ。
+			厳密性を重視する数学や論理学では、演繹以外の推論の使用は認められない。
+			一方、演繹では<strong>前提に含意される以上の結論を導くことはできない</strong>ため、<em>拡張性はない</em>。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-infer-induction">
+			<title>帰納</title>
+			<p><dfn en="induction"><ruby r="きのう">帰納</ruby></dfn>は、前提と結論から規則を導く推論である。
+			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」「プラトンは人である」「ゼノンは人である」という前提と、「ソクラテスは死ぬ」「プラトンは死ぬ」「ゼノンは死ぬ」という結論が与えられたときに、「人は死ぬ」という<em>規則が真だと推論</em>する<xref ref="bib-aristotle-ana2"/><xref ref="bib-aristotle-ana-j2"/><xref ref="bib-bacon"/>。
+			<em>経験則</em>や<dfn en="heuristics">ヒューリスティクス</dfn>は、帰納による推論の例である。</p>
+			<p>帰納による推論では、前提と結論が真でも、<strong>推論した規則が真であることは保証されない</strong>ため、<em>厳密性は十分でない</em>。
+			この例の場合、例えば「エピクロス」という「死なない人」の例(<em>反例</em>)がある可能性は否定できない。
+			一方、帰納では前提に含まれる個々の事例を<em>一般化</em>でき、前提の内容以上の規則を得る可能性があるため、<em>一定の拡張性</em>をもつ。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-infer-abduction">
+			<title>アブダクション</title>
+			<p><dfn en="abduction">アブダクション</dfn>は、規則と結論から前提を導く推論である。
+			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは死ぬ」という結論と「人は死ぬ」という規則が与えられたときに、「ソクラテスは人である」という<em>前提が真だと推論</em>する。
+			アブダクションに類似する手法はAristotle<xref ref="bib-aristotle-ana2"/><xref ref="bib-aristotle-ana-j2"/>も言及しているが、近代的な提唱を行ったのは<ruby r="パース">Peirce</ruby>である<xref ref="bib-yonemori"/>。</p>
+			<p>アブダクションによる推論では、結論と規則が真でも、<strong>推論した前提が真であることは保証されない</strong>。
+			この例の場合、死んだ「ソクラテス」は人ではなく、ネコやイヌなどの人以外の動物である可能性もある。</p>
+			<p>アブダクションによる推論は<em>高い拡張性</em>をもつ一方、帰納よりも<em>厳密性に乏しく</em>、このままでは命題の正しさを示すのは難しい。
+			そこで、アブダクションで得られた命題を<em>仮説</em>として、演繹により仮説の正しさを示し、帰納により実例で仮説の正しさを裏付けることがよく行われる。
+			アブダクションが果たす仮説形成の役割は、Russellが<q>仮説を形成することが科学的な仕事のなかでもっとも難しいのであり、偉大な能力が不可欠となる</q><xref ref="bib-russell"/>というように、科学において極めて重要である。</p>
+		</subsection>
+	</section>
 </chapter>

@@ -35,4 +35,159 @@
 	<pages>38-40</pages>
 </book></entry>
 
+<entry id="yonemori"><book>
+	<author>米盛 裕二</author>
+	<title>アブダクション――仮説と発見の論理</title>
+	<publisher>勁草書房</publisher>
+	<isbn>4326153938</isbn>
+	<pages>53-61</pages>
+	<year>2007</year>
+</book></entry>
+
+<entry id="descartes"><book>
+	<author>René Descartes</author>
+	<title>Discourse on the Method of Rightly Conducting the Reason, and Seeking the Truth in the Sciences</title>
+	<year>1637</year>
+	<chapter>2, 4</chapter>
+	<url>https://ebooks.adelaide.edu.au/d/descartes/rene/d44dm</url>
+</book></entry>
+
+<entry id="descartes-j"><book>
+	<author>René Descartes</author>
+	<title>方法序説</title>
+	<publisher>筑摩書房</publisher>
+	<year>2010</year>
+	<isbn>4480093060</isbn>
+	<pages>36-38, 55-58</pages>
+	<note>山田弘明訳</note>
+</book></entry>
+
+<entry id="aristotle-int"><book>
+	<author>Aristotle</author>
+	<title>On Interpretation</title>
+	<publisher>The University of Adelaide</publisher>
+	<url>https://ebooks.adelaide.edu.au/a/aristotle/interpretation</url>
+	<chapter>4-7</chapter>
+	<note>E. M. Edghill訳</note>
+</book></entry>
+
+<entry id="aristotle-int-j"><inbook>
+	<author>Aristotle</author>
+	<title>命題論</title>
+	<publisher>岩波書店</publisher>
+	<chapter>4-7</chapter>
+	<series>アリストテレス全集</series>
+	<year>2013</year>
+	<isbn>400092771X</isbn>
+	<note>早瀬篤訳, 原文16b25-18a12</note>
+</inbook></entry>
+
+<entry id="aristotle-ana"><book>
+	<author>Aristotle</author>
+	<title>Prior Analytics</title>
+	<publisher>The University of Adelaide</publisher>
+	<url>https://ebooks.adelaide.edu.au/a/aristotle/a8pra</url>
+	<volume>1</volume>
+	<chapter>4</chapter>
+	<note>A. J. Jenkinson訳</note>
+</book></entry>
+
+<entry id="aristotle-ana2"><book>
+	<author>Aristotle</author>
+	<title>Prior Analytics</title>
+	<publisher>The University of Adelaide</publisher>
+	<url>https://ebooks.adelaide.edu.au/a/aristotle/a8pra</url>
+	<volume>2</volume>
+	<chapter>23, 25</chapter>
+	<note>A. J. Jenkinson訳</note>
+</book></entry>
+
+<entry id="aristotle-ana-j"><inbook>
+	<author>Aristotle</author>
+	<title>分析論前書</title>
+	<publisher>岩波書店</publisher>
+	<chapter>4</chapter>
+	<volume>2</volume>
+	<series>アリストテレス全集</series>
+	<pages>28-37</pages>
+	<year>2014</year>
+	<isbn>4000927728</isbn>
+	<note>今井知正・河谷淳訳, 原文25b27-26b33</note>
+</inbook></entry>
+
+<entry id="aristotle-ana-j2"><inbook>
+	<author>Aristotle</author>
+	<title>分析論前書</title>
+	<publisher>岩波書店</publisher>
+	<chapter>23</chapter>
+	<volume>2</volume>
+	<series>アリストテレス全集</series>
+	<pages>292-294, 296-299</pages>
+	<year>2014</year>
+	<isbn>4000927728</isbn>
+	<note>今井知正・河谷淳訳, 原文68b7-68b35, 69a20-38</note>
+</inbook></entry>
+
+<entry id="bacon"><book>
+	<author>Francis Bacon</author>
+	<title>ノヴム・オルガヌム――新機関</title>
+	<publisher>岩波書店</publisher>
+	<isbn>4003361725</isbn>
+	<pages>39, 73</pages>
+	<year>1978</year>
+	<note>桂寿一訳</note>
+</book></entry>
+
+<entry id="aristotle-e1"><book>
+	<author>Aristotle</author>
+	<title>Metaphysics</title>
+	<publisher>The University of Adelaide</publisher>
+	<url>https://ebooks.adelaide.edu.au/p/plato/p71so</url>
+	<volume>5</volume>
+	<chapter>26-27</chapter>
+	<note>Benjamin Jowett訳</note>
+	<!--<url>http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-eng1:5.1023b</url>-->
+</book></entry>
+
+<entry id="aristotle-e2"><book>
+	<author>Aristotle</author>
+	<title>Metaphysics</title>
+	<publisher>The University of Adelaide</publisher>
+	<url>https://ebooks.adelaide.edu.au/p/plato/p71so</url>
+	<volume>8</volume>
+	<chapter>6</chapter>
+	<note>Benjamin Jowett訳</note>
+	<!--<url>http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-eng1:8.1045a</url>-->
+</book></entry>
+
+<entry id="aristotle-j"><inbook>
+	<author>Aristotle</author>
+	<title>形而上学</title>
+	<volume>8</volume>
+	<chapter>6</chapter>
+	<publisher>講談社</publisher>
+	<year>1994</year>
+	<isbn>4061591169</isbn>
+	<note>岩崎勉訳, 原文1023b, 1045a</note>
+</inbook></entry>
+
+<entry id="toulmin"><inbook>
+	<author>Stephen Toulmin</author>
+	<title>議論の技法</title>
+	<chapter>3</chapter>
+	<publisher>東京書籍</publisher>
+	<year>2015</year>
+	<isbn>4489020945</isbn>
+	<note>戸田山 和久, 福澤 一吉訳</note>
+</inbook></entry>
+
+<entry id="russell"><book>
+	<author>Bertrand Russell</author>
+	<title>History of Western Philosophy</title>
+	<publisher>George Allen And Unwin Ltd</publisher>
+	<year>1947</year>
+	<pages>566</pages>
+	<url>https://archive.org/details/westernphilosoph035502mbp</url>
+</book></entry>
+
 </file>
