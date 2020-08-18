@@ -376,6 +376,116 @@
 		</subsection>
 	</section>
 
+	<section xml:id="sec-logic-pred">
+		<title>述語論理</title>
+		<subsection xml:id="ssec-logic-propfunc">
+			<title>命題関数</title>
+			<p>命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。
+			命題には、「2は自然数である」「3は自然数である」「4は自然数である」のように、大半が同じで一部分のみが異なる命題がある。
+			これらの命題をまとめて表すために、<dfn en="propositional function">命題関数</dfn>を定義する。</p>
+			<definition>
+				<title>命題関数</title>
+				<statement>
+					変数<m>x</m>に値を代入すれば命題になり真偽が定まるものを<dfn en="propositional function">命題関数</dfn>といい、<m>P</m>という名前をつけた命題関数を<m>P(x)</m>のように表す。
+					2つの変数<m>x, y</m>に値を代入すれば真偽が定まる命題関数についても同様に、<m>P(x, y)</m>のように表す。
+				</statement>
+			</definition>
+
+			<example>
+				<title>命題関数の例</title>
+				<statement>
+					<m>P(x)</m>を「<m>x</m>は自然数である」とすると、<m>P(1)</m>は「1は自然数である」、<m>P(2)</m>は「2は自然数である」、<m>P(2.5)</m>は「2.5は自然数である」となり、いずれも命題である。
+					このうち、<m>P(1), P(2)</m>は真、<m>P(2.5)</m>は偽である。
+					また、<m>Q(x, y)</m>を「<m>x + y</m>は自然数である」とすると、<m>Q(1, 2)</m>は「<m>1 + 2</m>は自然数である」となり、命題である。
+					<m>Q(1, 2), Q(2, 0)</m>は真、<m>Q(2, 0.5), Q(-3, 1)</m>は偽である。
+					<m>P(x), Q(x, y)</m>を数式で表すと、次のようになる。
+					<md>
+						<mrow>P(x)    &amp; = \begin{cases} T &amp; (x     \in \mathbb{N}) \\ F &amp; (\text{otherwise}) \end{cases}</mrow>
+						<mrow>Q(x, y) &amp; = \begin{cases} T &amp; (x + y \in \mathbb{N}) \\ F &amp; (\text{otherwise}) \end{cases}</mrow>
+					</md>
+				</statement>
+			</example>
+			<p>命題関数を用いると、命題関数<m>P(x)</m>が真になる<m>x</m>の集合は、内包的な表記で<m>\{ x | P(x) \}</m>と表せる。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-allexist">
+			<title>「すべて」「ある」</title>
+			<p>命題には、「2は整数である」のように具体的な数についての命題もあれば、「自然数は整数である」のように、数の集合についての命題もある。
+			「自然数は整数である」という命題は、自然数という集合の要素を書き並べると、「1は整数である」かつ「2は整数である」かつ「3は整数である」かつ…となり、「<m>x</m>は整数である」という形の文を「かつ」でつなげた命題と同値だといえる。
+			<m>P(x)</m>を「<m>x</m>は整数である」とすると、次のように表せる。</p>
+			<md>
+				<mrow>\text{自然数は整数} &amp;= 1\text{は整数} \wedge 2\text{は整数} \wedge 3\text{は整数} \wedge \cdots</mrow>
+				<mrow>&amp;= P(1) \wedge P(2) \wedge P(3) \wedge \cdots = \bigwedge_{x \in \mathbb{N}} P(x)</mrow>
+			</md>
+			<p>この命題は、自然数<m>x</m>について<m>P(x)</m>が常に成り立つときに真、そうでないときに偽となる。</p>
+			<definition>
+				<title>「すべて」</title>
+				<statement>
+					集合<m>X</m>の<dfn en="all">すべて</dfn>の要素<m>x</m>について<m>P(x)</m>が真であるという命題を<m>\forall x \in X, P(x)</m>と表す。
+					この記号<m>\forall</m>は<dfn>全称量化子</dfn>といい、「for <em>a</em>ll」または「<em>a</em>ny」の頭文字である「A」を逆さにした記号である。
+					<md>
+						<mrow>\forall x \in X, P(x) \iff \bigwedge_{x \in X} P(x)</mrow>
+					</md>
+					<m>\forall x \in X</m>は、「集合<m>X</m>の<dfn en="any">任意</dfn>の要素<m>x</m>について」「集合<m>X</m>の<dfn>どの</dfn>要素<m>x</m>についても」などともいう。
+				</statement>
+			</definition>
+
+			<p>「すべて」が「かつ」に対応していると考えたとき、次のように文を「または」でつなげた命題を考えることができる。
+			「<m>x</m>は整数である」という形の文を「または」でつなげた命題は、次のように表せる。</p>
+			<md>
+				<mrow>P(1) \vee P(2) \vee P(3) \vee \cdots = \bigvee_{x \in \mathbb{N}} P(x)</mrow>
+			</md>
+			<p>この命題は、自然数のうちに<m>P(x)</m>が成り立つ<m>x</m>が存在するときに真、そうでないときに偽となる。</p>
+			<definition>
+				<title>「ある」</title>
+				<statement>
+					集合<m>X</m>の<dfn en="some">ある</dfn>要素<m>x</m>について<m>P(x)</m>が真であるという命題を<m>\exists x \in X, P(x)</m>と表す。
+					この記号<m>\exists</m>は<dfn>存在量化子</dfn>といい、「<em>e</em>xist」の頭文字である「E」を逆さにした記号である。
+					<md>
+						<mrow>\exists x \in X, P(x) \iff \bigvee_{x \in X} P(x)</mrow>
+					</md>
+					<m>\exists x \in X</m>は、「集合<m>X</m>の<dfn>少なくとも1つ</dfn>の要素<m>x</m>について」「集合<m>X</m>の<dfn>いずれか</dfn>の要素<m>x</m>について」「〜が成り立つ集合<m>X</m>の要素<m>x</m>が<dfn en="exist">存在</dfn>する」ともいう。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-duality">
+			<title>「すべて」「ある」の否定</title>
+			<p>「すべて」と「ある」を含む命題は、一方が他方の否定になるという関係がある。これは、英語における「any」と「some」の関係と同様である。</p>
+			<p>命題「<em>すべて</em>の<m>x</m>について<m>P(x)</m>が<em>成り立つ</em>(<m>\forall x \in X, P(x)</m>)」の否定は「<em>ある</em><m>x</m>について<m>P(x)</m>が<em>成り立たない</em>(<m>\exists x \in X, \overline{P(x)}</m>)」(<dfn>部分否定</dfn>)であり、「すべての<m>x</m>について<m>P(x)</m>が成り立たない(<m>\forall x \in X, \overline{P(x)}</m>)」(<dfn>全否定</dfn>)ではないことに注意が必要である。
+			また、命題「<em>ある</em><m>x</m>について<m>P(x)</m>が<em>成り立つ</em>(<m>\exists x \in X, P(x)</m>)」の否定は「<em>すべて</em>の<m>x</m>について<m>P(x)</m>が<em>成り立たない</em>(<m>\forall x \in X, \overline{P(x)}</m>)」であり、「ある<m>x</m>について<m>P(x)</m>が成り立たない(<m>\exists x \in X, \overline{P(x)}</m>)」ではない。</p>
+			<theorem>
+				<title>「すべて」「ある」の否定(de Morganの法則)</title>
+				<statement>
+					<m>X</m>を集合、<m>P</m>を命題関数とすると、次の等式が成り立つ。
+					<md>
+						<mrow>\overline{\forall x \in X, P(x)} = \exists x \in X, \overline{P(x)}</mrow>
+						<mrow>\overline{\exists x \in X, P(x)} = \forall x \in X, \overline{P(x)}</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>\overline{\forall x \in X, P(x)} &amp;= \overline{\bigwedge_{x \in X} P(x)}</mrow>
+						<mrow>&amp;= \bigvee_{  x \in X} \overline{P(x)} (\text{de Morganの法則})</mrow>
+						<mrow>&amp;= \exists x \in X, \overline{P(x)}</mrow>
+						<mrow>\overline{\exists x \in X, P(x)} &amp;= \overline{\bigvee_{  x \in X} P(x)}</mrow>
+						<mrow>&amp;= \bigwedge_{x \in X} \overline{P(x)} (\text{de Morganの法則})</mrow>
+						<mrow>&amp;= \forall x \in X, \overline{P(x)}</mrow>
+					</md>
+				</proof>
+			</theorem>
+			<p>この関係は、命題論理におけるde Morganの法則に対応している。
+			ただし、集合<m>X</m>の要素が有限個ではない(無限集合である)場合には、de Morganの法則が成り立つかどうかは明らかではない。
+			そのため、<strong>述語論理におけるde Morganの法則は定理ではなく公理として扱い、de Morganの法則が成り立つという前提で議論する</strong>ことが多い。</p>
+		</subsection>
+	</section>
+
+	<!--
+	<section xml:id="sec-logic-mode">
+		<title>様相論理</title>
+	</section>
+	-->
+
 	<section xml:id="sec-logic-infer">
 		<title>推論</title>
 		<introduction>
@@ -435,6 +545,49 @@
 			<p>アブダクションによる推論は<em>高い拡張性</em>をもつ一方、帰納よりも<em>厳密性に乏しく</em>、このままでは命題の正しさを示すのは難しい。
 			そこで、アブダクションで得られた命題を<em>仮説</em>として、演繹により仮説の正しさを示し、帰納により実例で仮説の正しさを裏付けることがよく行われる。
 			アブダクションが果たす仮説形成の役割は、Russellが<q>仮説を形成することが科学的な仕事のなかでもっとも難しいのであり、偉大な能力が不可欠となる</q><xref ref="bib-russell"/>というように、科学において極めて重要である。</p>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-logic-proof">
+		<title>証明</title>
+		<introduction>
+			<p>演繹による推論を続けて、命題の真偽を明らかにすることを<dfn en="proof">証明</dfn>という。
+			証明は「命題が真であること」を明らかにする場合が多いが、「命題が偽であること」を明らかにする場合もある。</p>
+		</introduction>
+
+		<subsection xml:id="ssec-logic-proof-direct">
+			<title>直接法</title>
+			<p>示したい命題を直接示す証明方法は、直接法と呼ばれることが多い。
+			直接法を用いる場合、前提に対して同値な変形や定理などの規則を繰り返し適用することにより、結論を示すことが多い。
+			場合によっては、結論から前提の側に向けて同値な変形を繰り返していくこともある。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-proof-counter">
+			<title>反例を用いた証明</title>
+			<p>示したい事柄が「命題<m>p \Longrightarrow q</m>が偽である(<m>\overline{p \Longrightarrow q}</m>)」ことの場合は、<dfn>反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
+			反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+			<theorem>
+				<title>反例を用いた証明</title>
+				<statement>
+					命題<m>p \Longrightarrow q</m>が偽であることを示すには、例を1つ挙げ、その例が「<m>p</m>を満たすが<m>q</m>を満たさない」ことを示せばよい。
+				</statement>
+				<proof>
+					<md>
+						<mrow>\overline{p \Longrightarrow q} = \overline{\overline{p} \vee q} = \overline{\overline{p}} \wedge \overline{q} = p \wedge \overline{q}</mrow>
+					</md>
+				</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-proof-contraposition">
+			<title>対偶を用いた証明</title>
+			<p>「命題<m>p \Longrightarrow q</m>が真である」ことを直接示しにくい場合には、元の命題の<strong>対偶</strong><m>\overline{q} \Longrightarrow \overline{p}</m>をとり、対偶を示して元の命題を示せることがある。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-proof-contradiction">
+			<title>背理法</title>
+			<p>示したい事柄が「命題<m>p \Longrightarrow q</m>が偽である(<m>\overline{p \Longrightarrow q}</m>)」ことの場合は、<dfn>反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
+			反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
 		</subsection>
 	</section>
 </chapter>
