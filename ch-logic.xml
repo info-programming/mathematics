@@ -597,7 +597,7 @@
 			<definition>
 				<title>矛盾</title>
 				<statement>
-					<m>p</m>を命題とするとき、<m>p \wedge \overline{p}</m>を<dfn en="contradiction">矛盾</dfn>という。
+					<m>p</m>を命題とするとき、命題<m>p \wedge \overline{p}</m>を<m>p</m>についての<dfn en="contradiction">矛盾</dfn>という。
 					命題<m>p \wedge \overline{p}</m>は常に偽である。
 				</statement>
 			</definition>
