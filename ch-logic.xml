@@ -3,9 +3,12 @@
 	<title>論理</title>
 	<introduction>
 		<p>本章では、論理に基づく問題解決の枠組みや、集合、命題などの基礎的な概念を示した上で、一般的な証明法について述べる。</p>
-		<p><xref ref="sec-logic-problem"/>節では、問題解決の基本的な枠組みを示す。</p>
-		<p><xref ref="sec-logic-prop"/>節では、論理の基礎となる命題と推論について述べる。</p>
-		<p><xref ref="sec-logic-set"/>節では、現代数学の基礎となっている集合について述べる。</p>
+		<p><xref ref="sec-logic-problem"/>節では、問題解決の基本的な枠組みを示す。
+		<xref ref="sec-logic-prop"/>節では、論理の基礎となる命題と、命題を中心とする命題論理について述べる。
+		<xref ref="sec-logic-set"/>節では、現代数学の基礎となっている集合について述べる。
+		<xref ref="sec-logic-pred"/>節では、命題論理に「すべて」「ある」を加えた枠組みである述語論理について述べる。
+		<xref ref="sec-logic-infer"/>節では、命題の間をつなぐ推論の種類について述べる。
+		<xref ref="sec-logic-proof"/>節では、推論のうちの演繹による証明について述べる。</p>
 	</introduction>
 
 	<section xml:id="sec-logic-problem">
