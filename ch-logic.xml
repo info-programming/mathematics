@@ -564,8 +564,15 @@
 
 		<subsection xml:id="ssec-logic-proof-counter">
 			<title>反例を用いた証明</title>
-			<p>示したい事柄が「命題<m>p \Longrightarrow q</m>が偽である(<m>\overline{p \Longrightarrow q}</m>)」ことの場合は、<dfn>反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
+			<p>示したい事柄が「命題<m>p \Longrightarrow q</m>が偽である(<m>\overline{p \Longrightarrow q}</m>)」ことの場合は、<dfn en="counterexample">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
 			反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+			<definition>
+				<title>反例</title>
+				<statement>
+					命題<m>x \in A \Longrightarrow x \in B</m>に対して、「<m>A</m>の要素だが<m>B</m>の要素でない<m>x</m>(<m>x \in A \wedge x \notin B</m>)」を、命題<m>x \in A \Longrightarrow x \in B</m>の<dfn en="counterexample">反例</dfn>という。
+				</statement>
+			</definition>
+
 			<theorem>
 				<title>反例を用いた証明</title>
 				<statement>
