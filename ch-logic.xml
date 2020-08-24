@@ -551,7 +551,7 @@
 	<section xml:id="sec-logic-proof">
 		<title>証明</title>
 		<introduction>
-			<p>演繹による推論を続けて、命題の真偽を明らかにすることを<dfn en="proof">証明</dfn>という。
+			<p><strong>演繹による推論</strong>を続けて、命題の真偽を明らかにすることを<dfn en="proof">証明</dfn>という。
 			証明は「命題が真であること」を明らかにする場合が多いが、「命題が偽であること」を明らかにする場合もある。</p>
 		</introduction>
 
@@ -586,8 +586,41 @@
 
 		<subsection xml:id="ssec-logic-proof-contradiction">
 			<title>背理法</title>
-			<p>示したい事柄が「命題<m>p \Longrightarrow q</m>が偽である(<m>\overline{p \Longrightarrow q}</m>)」ことの場合は、<dfn>反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
-			反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+			<p>証明したい命題<m>p</m>を直接示すのが難しい場合には、命題<m>p</m>が成り立たない(偽である)と仮定して<dfn en="contradiction">矛盾</dfn>を導く<dfn>背理法</dfn>が用いられることがある。</p>
+			<definition>
+				<title>矛盾</title>
+				<statement>
+					<m>p</m>を命題とするとき、<m>p \wedge \overline{p}</m>を<dfn en="contradiction">矛盾</dfn>という。
+					命題<m>p \wedge \overline{p}</m>は常に偽である。
+				</statement>
+			</definition>
+
+			<theorem>
+				<title>背理法</title>
+				<statement>
+					命題<m>p</m>の真偽と命題<m>\overline{p} \Longrightarrow \text{F}</m>の真偽は一致する。
+				</statement>
+				<proof>
+					<md>
+						<mrow>[ \overline{p} \Longrightarrow \text{F} ] = [ \overline{\overline{p}} \vee \text{F} ] = [ p \vee \text{F} ] = p</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<p>実際の背理法の手順は、次のようになる。</p>
+			<algorithm>
+				<title>背理法</title>
+				<statement>
+					命題<m>p</m>が真であることを示す場合、次のようにする。
+					<ol>
+						<li>命題<m>p</m>が偽であると仮定し、<m>p</m>の否定<m>\overline{p}</m>が真であるとみなす。</li>
+						<li><m>\overline{p}</m>に対して、演繹による推論を重ねる。</li>
+						<li>偽になる命題を導く。多くの場合、ある命題<m>r</m>についての<strong>矛盾</strong><m>r \wedge \overline{r}</m>を導く。
+							具体的には、<m>r</m>が「<m>x</m>は有理数である」だとすると、「<m>x</m>は有理数である」と「<m>x</m>は有理数でない(無理数である)」の2つは同時に成り立たないので、この2つを示せば矛盾があるといえる。</li>
+						<li>(3)での推論の結果、矛盾が導かれ偽になったので、(1)で仮定した<m>\overline{p}</m>が偽であるということになり、<m>p</m>が真であることが示される。</li>
+					</ol>
+				</statement>
+			</algorithm>
 		</subsection>
 	</section>
 </chapter>
