@@ -567,8 +567,8 @@
 
 		<subsection xml:id="ssec-logic-proof-counter">
 			<title>反例を用いた証明</title>
-			<p>示したい事柄が「命題<m>p \Longrightarrow q</m>が偽である(<m>\overline{p \Longrightarrow q}</m>)」ことの場合は、<dfn en="counterexample">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
-			反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+			<p>命題<m>x \in A \Longrightarrow x \in B</m>が<strong>偽</strong>である(<m>\overline{x \in A \Longrightarrow x \in B}</m>)ことを示すには、<dfn en="counterexample">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
+			この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
 			<definition>
 				<title>反例</title>
 				<statement>
@@ -579,11 +579,11 @@
 			<theorem>
 				<title>反例を用いた証明</title>
 				<statement>
-					命題<m>p \Longrightarrow q</m>が偽であることを示すには、例を1つ挙げ、その例が「<m>p</m>を満たすが<m>q</m>を満たさない」ことを示せばよい。
+					命題<m>x \in A \Longrightarrow x \in B</m>が偽であることを示すには、例を1つ挙げ、その例が「<m>A</m>の要素だが<m>B</m>の要素でない」ことを示せばよい。
 				</statement>
 				<proof>
 					<md>
-						<mrow>\overline{p \Longrightarrow q} = \overline{\overline{p} \vee q} = \overline{\overline{p}} \wedge \overline{q} = p \wedge \overline{q}</mrow>
+						<mrow>\overline{x \in A \Longrightarrow x \in B} = \overline{\overline{x \in A} \vee x \in B} = \overline{\overline{x \in A}} \wedge \overline{x \in B} = x \in A \wedge x \not\in B</mrow>
 					</md>
 				</proof>
 			</theorem>
@@ -591,7 +591,7 @@
 
 		<subsection xml:id="ssec-logic-proof-contraposition">
 			<title>対偶を用いた証明</title>
-			<p>「命題<m>p \Longrightarrow q</m>が真である」ことを直接示しにくい場合には、元の命題の<strong>対偶</strong><m>\overline{q} \Longrightarrow \overline{p}</m>をとり、対偶を示して元の命題を示せることがある。</p>
+			<p>命題<m>p \Longrightarrow q</m>の真偽を直接示しにくい場合には、元の命題の<strong>対偶</strong><m>\overline{q} \Longrightarrow \overline{p}</m>をとり、対偶を示して元の命題を示せることがある。</p>
 		</subsection>
 
 		<subsection xml:id="ssec-logic-proof-contradiction">
