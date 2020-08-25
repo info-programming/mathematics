@@ -71,8 +71,8 @@
 			<definition>
 				<title>連言・選言・否定</title>
 				<statement>
-					<m>p, q</m>を命題とするとき、<m>p, q</m>の<em>両方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>かつ</dfn><m>q</m>」といい、<m>p \wedge q</m>と表すことがある。
-					また、<m>p, q</m>の<em>少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>または</dfn><m>q</m>」といい、<m>p \vee q</m>と表すことがある。
+					<m>p, q</m>を命題とするとき、<m>p, q</m>の<em>両方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>かつ</dfn><m>q</m>」といい、<m>p \land q</m>と表すことがある。
+					また、<m>p, q</m>の<em>少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>または</dfn><m>q</m>」といい、<m>p \lor q</m>と表すことがある。
 					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn>否定</dfn>」といい、<m>\overline{p}</m>と表す。
 				</statement>
 			</definition>
@@ -87,10 +87,10 @@
 				<statement>
 					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
 					<md>
-						<mrow>p \vee   q &amp;= q \vee   p &amp; (\text{交換法則})</mrow>
-						<mrow>p \wedge q &amp;= q \wedge p &amp; (\text{交換法則})</mrow>
-						<mrow>(p \vee   q) \vee   r &amp;= p \vee   (q \vee   r) &amp; (\text{結合法則})</mrow>
-						<mrow>(p \wedge q) \wedge r &amp;= p \wedge (q \wedge r) &amp; (\text{結合法則})</mrow>
+						<mrow>p \lor  q &amp;= q \lor  p &amp; (\text{交換法則})</mrow>
+						<mrow>p \land q &amp;= q \land p &amp; (\text{交換法則})</mrow>
+						<mrow>(p \lor  q) \lor  r &amp;= p \lor  (q \lor  r) &amp; (\text{結合法則})</mrow>
+						<mrow>(p \land q) \land r &amp;= p \land (q \land r) &amp; (\text{結合法則})</mrow>
 					</md>
 				</statement>
 			</theorem>
@@ -101,8 +101,8 @@
 				<statement>
 					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
 					<md>
-						<mrow>(p \vee   q) \wedge r = (p \wedge r) \vee   (q \wedge r)</mrow>
-						<mrow>(p \wedge q) \vee   r = (p \vee   r) \wedge (q \vee   r)</mrow>
+						<mrow>(p \lor  q) \land r = (p \land r) \lor  (q \land r)</mrow>
+						<mrow>(p \land q) \lor  r = (p \lor  r) \land (q \lor  r)</mrow>
 					</md>
 					2番目の式は数の分配法則とは異なるので、注意が必要である。
 				</statement>
@@ -114,8 +114,8 @@
 				<statement>
 					<m>p, q</m>が命題のとき、次の等式が成り立つ。
 					<md>
-						<mrow>\overline{p \wedge q} &amp; = \overline{p} \vee   \overline{q}</mrow>
-						<mrow>\overline{p \vee   q} &amp; = \overline{p} \wedge \overline{q}</mrow>
+						<mrow>\overline{p \land q} &amp; = \overline{p} \lor  \overline{q}</mrow>
+						<mrow>\overline{p \lor  q} &amp; = \overline{p} \land \overline{q}</mrow>
 					</md>
 				</statement>
 				<proof>真理値表を用いて示す。</proof>
@@ -128,16 +128,16 @@
 			<definition>
 				<title>推論</title>
 				<statement>
-					<m>p, q</m>を命題とするとき、「<em>もし<m>p</m>が成り立つならば、<m>q</m>も成り立つ</em>」という命題を「<m>p</m><dfn>ならば</dfn><m>q</m>」といい、<m>p \Longrightarrow q</m>と表す。
-					命題<m>p \Longrightarrow q</m>は、「<strong><m>p</m>が偽</strong>のとき」か「<m>p</m>も<m>q</m>も真のとき」に真となる。
+					<m>p, q</m>を命題とするとき、「<em>もし<m>p</m>が成り立つならば、<m>q</m>も成り立つ</em>」という命題を「<m>p</m><dfn>ならば</dfn><m>q</m>」といい、<m>p \implies q</m>と表す。
+					命題<m>p \implies q</m>は、「<strong><m>p</m>が偽</strong>のとき」か「<m>p</m>も<m>q</m>も真のとき」に真となる。
 					<md>
-						<mrow>[ p \Longrightarrow q ] = [ \overline{p} \vee (p \wedge q) ] = [ (\overline{p} \vee p) \wedge (\overline{p} \vee q)] (\text{分配法則}) = [ \overline{p} \vee q ] (\text{排中律})</mrow>
+						<mrow>[ p \implies q ] = [ \overline{p} \lor (p \land q) ] = [ (\overline{p} \lor p) \land (\overline{p} \lor q)] (\text{分配法則}) = [ \overline{p} \lor q ] (\text{排中律})</mrow>
 					</md>
-					命題<m>p \Longrightarrow q</m>について、<m>p</m>を<m>p \Longrightarrow q</m>の<dfn>仮定</dfn>、<m>q</m>を<m>p \Longrightarrow q</m>の<dfn>結論</dfn>という。
+					命題<m>p \implies q</m>について、<m>p</m>を<m>p \implies q</m>の<dfn>仮定</dfn>、<m>q</m>を<m>p \implies q</m>の<dfn>結論</dfn>という。
 					また、<m>q</m>を<m>p</m>の<dfn en="necessary condition">必要条件</dfn>、<m>p</m>を<m>q</m>の<dfn en="sufficient condition">十分条件</dfn>という。
 				</statement>
 			</definition>
-			<p>必要条件と十分条件は、「<m>p \Longrightarrow q</m>」の「<m>\Longrightarrow</m>」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
+			<p>必要条件と十分条件は、「<m>p \implies q</m>」の「<m>\implies</m>」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
 
 			<example>
 				<title>推論の例</title>
@@ -155,13 +155,16 @@
 			<definition>
 				<title>同値</title>
 				<statement>
-					<m>p, q</m>を命題とするとき、<m>p \Longrightarrow q</m>かつ<m>q \Longrightarrow p</m>であれば、<m>p</m>と<m>q</m>は<dfn>同値</dfn>であるといい、<m>p \Longleftrightarrow q</m>と表す。
+					<m>p, q</m>を命題とするとき、<m>p \implies q</m>かつ<m>q \implies p</m>であれば、<m>p</m>と<m>q</m>は<dfn>同値</dfn>であるといい、<m>p \iff q</m>と表す。
 					<md>
-						<mrow>[ p \Longleftrightarrow q ] = [ p \Longrightarrow q ] \wedge [ q \Longrightarrow p ]</mrow>
+						<mrow>[ p \iff q ] = [ p \implies q ] \land [ q \implies p ]</mrow>
 					</md>
 					このとき、<m>q</m>を<m>p</m>の<dfn>必要十分条件</dfn>であるといい、<m>p</m>も<m>q</m>の必要十分条件であるという。
 				</statement>
 			</definition>
+			<p>同値の記号「<m>\iff</m>」は数の比較に用いる等号「<m>=</m>」と同様の記号で、2つの命題が「同じ」ことを表せる便利な記号である。
+			ただし「<m>\iff</m>」を使う際は、「<m>\implies</m>」方向だけでなく「<m>\impliedby</m>」方向についても命題が成り立っていることを確認する必要がある。
+			「<m>\impliedby</m>」方向が成り立つと言い切れない場合には、「<m>\implies</m>」記号を使うべきである。</p>
 		</subsection>
 
 		<subsection xml:id="ssec-logic-contra">
@@ -171,23 +174,23 @@
 			<definition>
 				<title>逆・裏・対偶</title>
 				<statement>
-					<m>p, q</m>を命題とするとき、命題<m>p \Longrightarrow q</m>に対し、<m>q \Longrightarrow p</m>を元の命題の<dfn>逆</dfn>、<m>\overline{p} \Longrightarrow \overline{q}</m>を元の命題の<dfn>裏</dfn>、<m>\overline{q} \Longrightarrow \overline{p}</m>を元の命題の<dfn>対偶</dfn>という。
+					<m>p, q</m>を命題とするとき、命題<m>p \implies q</m>に対し、<m>q \implies p</m>を元の命題の<dfn>逆</dfn>、<m>\overline{p} \implies \overline{q}</m>を元の命題の<dfn>裏</dfn>、<m>\overline{q} \implies \overline{p}</m>を元の命題の<dfn>対偶</dfn>という。
 				</statement>
 			</definition>
 
-			<p>このうち、命題<m>p \Longrightarrow q</m>と逆<m>q \Longrightarrow p</m>について、前者は<m>\overline{p} \vee q</m>、後者は<m>\overline{q} \vee p</m>であるので、<strong>命題とその逆の真偽は一致しない</strong>。
-			また、命題<m>p \Longrightarrow q</m>と対偶<m>\overline{q} \Longrightarrow \overline{p}</m>については、次の定理が成り立つ。</p>
+			<p>このうち、命題<m>p \implies q</m>と逆<m>q \implies p</m>について、前者は<m>\overline{p} \lor q</m>、後者は<m>\overline{q} \lor p</m>であるので、<strong>命題とその逆の真偽は一致しない</strong>。
+			また、命題<m>p \implies q</m>と対偶<m>\overline{q} \implies \overline{p}</m>については、次の定理が成り立つ。</p>
 			<theorem>
 				<title>命題とその対偶</title>
 				<statement>
 					命題とその対偶の真偽は一致する。つまり、<m>p, q</m>を命題とするとき、
 					<md>
-						<mrow>[ \overline{q} \Longrightarrow \overline{p} ] = [ p \Longrightarrow q ]</mrow>
+						<mrow>[ \overline{q} \implies \overline{p} ] = [ p \implies q ]</mrow>
 					</md>
 				</statement>
 				<proof>
 					<md>
-						<mrow>[ \overline{q} \Longrightarrow \overline{p} ] = [\overline{\overline{q}} \vee \overline{p}] = [ q \vee \overline{p}] = [ \overline{p} \vee q] = [ p \Longrightarrow q ]</mrow>
+						<mrow>[ \overline{q} \implies \overline{p} ] = [\overline{\overline{q}} \lor \overline{p}] = [ q \lor \overline{p}] = [ \overline{p} \lor q] = [ p \implies q ]</mrow>
 					</md>
 				</proof>
 			</theorem>
@@ -333,15 +336,15 @@
 				<proof>
 					<md>
 						<mrow>x \in \overline{A \cup B} &amp;
-							\Longleftrightarrow x \notin A \cup B
-							\Longleftrightarrow x \notin A \text{かつ} x \notin B
-							\Longleftrightarrow x \in \overline{A} \text{かつ} x \in \overline{B}
-							\Longleftrightarrow x \in \overline{A} \cap \overline{B}</mrow>
+							\iff x \notin A \cup B
+							\iff x \notin A \text{かつ} x \notin B
+							\iff x \in \overline{A} \text{かつ} x \in \overline{B}
+							\iff x \in \overline{A} \cap \overline{B}</mrow>
 						<mrow>x \in \overline{A \cap B} &amp;
-							\Longleftrightarrow x \notin A \cap B
-							\Longleftrightarrow x \notin A \text{または} x \notin B
-							\Longleftrightarrow x \in \overline{A} \text{または} x \in \overline{B}
-							\Longleftrightarrow x \in \overline{A} \cup \overline{B}</mrow>
+							\iff x \notin A \cap B
+							\iff x \notin A \text{または} x \notin B
+							\iff x \in \overline{A} \text{または} x \in \overline{B}
+							\iff x \in \overline{A} \cup \overline{B}</mrow>
 						<mrow>\overline{A \cup B \cup C} &amp;= \overline{A \cup (B \cup C)} = \overline{A} \cap \overline{B \cup C} = \overline{A} \cap (\overline{B} \cap \overline{C}) = \overline{A} \cap \overline{B} \cap \overline{C}</mrow>
 						</md>
 				</proof>
@@ -417,8 +420,8 @@
 			「自然数は整数である」という命題は、自然数という集合の要素を書き並べると、「1は整数である」かつ「2は整数である」かつ「3は整数である」かつ…となり、「<m>x</m>は整数である」という形の文を「かつ」でつなげた命題と同値だといえる。
 			<m>P(x)</m>を「<m>x</m>は整数である」とすると、次のように表せる。</p>
 			<md>
-				<mrow>\text{自然数は整数} &amp;= 1\text{は整数} \wedge 2\text{は整数} \wedge 3\text{は整数} \wedge \cdots</mrow>
-				<mrow>&amp;= P(1) \wedge P(2) \wedge P(3) \wedge \cdots = \bigwedge_{x \in \mathbb{N}} P(x)</mrow>
+				<mrow>\text{自然数は整数} &amp;= 1\text{は整数} \land 2\text{は整数} \land 3\text{は整数} \land \cdots</mrow>
+				<mrow>&amp;= P(1) \land P(2) \land P(3) \land \cdots = \bigwedge_{x \in \mathbb{N}} P(x)</mrow>
 			</md>
 			<p>この命題は、自然数<m>x</m>について<m>P(x)</m>が常に成り立つときに真、そうでないときに偽となる。</p>
 			<definition>
@@ -436,7 +439,7 @@
 			<p>「すべて」が「かつ」に対応していると考えたとき、次のように文を「または」でつなげた命題を考えることができる。
 			「<m>x</m>は整数である」という形の文を「または」でつなげた命題は、次のように表せる。</p>
 			<md>
-				<mrow>P(1) \vee P(2) \vee P(3) \vee \cdots = \bigvee_{x \in \mathbb{N}} P(x)</mrow>
+				<mrow>P(1) \lor P(2) \lor P(3) \lor \cdots = \bigvee_{x \in \mathbb{N}} P(x)</mrow>
 			</md>
 			<p>この命題は、自然数のうちに<m>P(x)</m>が成り立つ<m>x</m>が存在するときに真、そうでないときに偽となる。</p>
 			<definition>
@@ -498,14 +501,14 @@
 			このうち、演繹とアブダクションに対応する思考法が、de Bonoの垂直思考と水平思考である。</p>
 			<p><ruby r="トゥールミン">Toulmin</ruby>は、<em>前提</em>、<em>規則</em>、<em>結論</em>という3つの命題が存在し、前提に規則を適用すると結論が得られるとした<xref ref="bib-toulmin"/>。
 			この「三角ロジック」と呼ばれる形式に従えば、演繹・帰納・アブダクションの3つの推論法は、図<xref ref="fig-logic-inference"/>のように対比できる。
-			図中の点と矢印は命題を表し、「<m>A \Longrightarrow B</m>」を前提、「<m>B \Longrightarrow C</m>」を規則、「<m>A \Longrightarrow C</m>」は結論とする。
+			図中の点と矢印は命題を表し、「<m>A \implies B</m>」を前提、「<m>B \implies C</m>」を規則、「<m>A \implies C</m>」は結論とする。
 			また、それぞれの推論法で与えられている命題を実線で、推論により導かれる命題を点線で示す。</p>
 			<figure xml:id="fig-logic-inference">
 				<image source="image/logic-inference"/>
 				<caption>推論の方法</caption>
 			</figure>
 			<p>図<xref ref="fig-logic-inference"/>の例では、<m>A</m>を「<m>x</m>はソクラテスである」、<m>B</m>を「<m>x</m>は人である」、<m>C</m>を「<m>x</m>は死ぬ」としている。
-			このとき、前提(<m>A \Longrightarrow B</m>)は「ソクラテスは人である(<m>x: \text{ソクラテス} \Longrightarrow x: \text{人}</m>)」、規則(<m>B \Longrightarrow C</m>)は「人は死ぬ(<m>x: \text{人} \Longrightarrow x: \text{死ぬ}</m>)」、結論(<m>A \Longrightarrow C</m>)は「ソクラテスは死ぬ(<m>x: \text{ソクラテス} \Longrightarrow x: \text{死ぬ}</m>)」となる。</p>
+			このとき、前提(<m>A \implies B</m>)は「ソクラテスは人である(<m>x: \text{ソクラテス} \implies x: \text{人}</m>)」、規則(<m>B \implies C</m>)は「人は死ぬ(<m>x: \text{人} \implies x: \text{死ぬ}</m>)」、結論(<m>A \implies C</m>)は「ソクラテスは死ぬ(<m>x: \text{ソクラテス} \implies x: \text{死ぬ}</m>)」となる。</p>
 			<definition>
 				<title>演繹・帰納・アブダクション</title>
 				<statement>
@@ -522,7 +525,7 @@
 			<title>演繹</title>
 			<p><dfn en="deduction"><ruby r="えんえき">演繹</ruby></dfn>は、前提と規則から結論を導く推論である。
 			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em>結論が真だと推論</em>する。
-			Aristotleによる三段論法<xref ref="bib-aristotle-ana"/><xref ref="bib-aristotle-ana-j"/>は演繹の代表的な推論法で、「<m>A \Longrightarrow B, B \Longrightarrow C</m>」のとき「<m>A \Longrightarrow C</m>」が成り立つという推論を行う。</p>
+			Aristotleによる三段論法<xref ref="bib-aristotle-ana"/><xref ref="bib-aristotle-ana-j"/>は演繹の代表的な推論法で、「<m>A \implies B, B \implies C</m>」のとき「<m>A \implies C</m>」が成り立つという推論を行う。</p>
 			<p>演繹による推論では、前提と規則の命題が真なら、<strong>推論した結論が真であることが保証</strong>され、<em>高い厳密性</em>をもつ。
 			厳密性を重視する数学や論理学では、演繹以外の推論の使用は認められない。
 			一方、演繹では<strong>前提に含意される以上の結論を導くことはできない</strong>ため、<em>拡張性はない</em>。</p>
@@ -567,23 +570,23 @@
 
 		<subsection xml:id="ssec-logic-proof-counter">
 			<title>反例を用いた証明</title>
-			<p>命題<m>x \in A \Longrightarrow x \in B</m>が<strong>偽</strong>である(<m>\overline{x \in A \Longrightarrow x \in B}</m>)ことを示すには、<dfn en="counterexample">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
+			<p>命題<m>x \in A \implies x \in B</m>が<strong>偽</strong>である(<m>\overline{x \in A \implies x \in B}</m>)ことを示すには、<dfn en="counterexample">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
 			この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
 			<definition>
 				<title>反例</title>
 				<statement>
-					命題<m>x \in A \Longrightarrow x \in B</m>に対して、「<m>A</m>の要素だが<m>B</m>の要素でない<m>x</m>(<m>x \in A \wedge x \notin B</m>)」を、命題<m>x \in A \Longrightarrow x \in B</m>の<dfn en="counterexample">反例</dfn>という。
+					命題<m>x \in A \implies x \in B</m>に対して、「<m>A</m>の要素だが<m>B</m>の要素でない<m>x</m>(<m>x \in A \land x \notin B</m>)」を、命題<m>x \in A \implies x \in B</m>の<dfn en="counterexample">反例</dfn>という。
 				</statement>
 			</definition>
 
 			<theorem>
 				<title>反例を用いた証明</title>
 				<statement>
-					命題<m>x \in A \Longrightarrow x \in B</m>が偽であることを示すには、例を1つ挙げ、その例が「<m>A</m>の要素だが<m>B</m>の要素でない」ことを示せばよい。
+					命題<m>x \in A \implies x \in B</m>が偽であることを示すには、例を1つ挙げ、その例が「<m>A</m>の要素だが<m>B</m>の要素でない」ことを示せばよい。
 				</statement>
 				<proof>
 					<md>
-						<mrow>\overline{x \in A \Longrightarrow x \in B} = \overline{\overline{x \in A} \vee x \in B} = \overline{\overline{x \in A}} \wedge \overline{x \in B} = x \in A \wedge x \not\in B</mrow>
+						<mrow>\overline{x \in A \implies x \in B} = \overline{\overline{x \in A} \lor x \in B} = \overline{\overline{x \in A}} \land \overline{x \in B} = x \in A \land x \not\in B</mrow>
 					</md>
 				</proof>
 			</theorem>
@@ -591,7 +594,7 @@
 
 		<subsection xml:id="ssec-logic-proof-contraposition">
 			<title>対偶を用いた証明</title>
-			<p>命題<m>p \Longrightarrow q</m>の真偽を直接示しにくい場合には、元の命題の<strong>対偶</strong><m>\overline{q} \Longrightarrow \overline{p}</m>をとり、対偶を示して元の命題を示せることがある。</p>
+			<p>命題<m>p \implies q</m>の真偽を直接示しにくい場合には、元の命題の<strong>対偶</strong><m>\overline{q} \implies \overline{p}</m>をとり、対偶を示して元の命題を示せることがある。</p>
 		</subsection>
 
 		<subsection xml:id="ssec-logic-proof-contradiction">
@@ -600,19 +603,19 @@
 			<definition>
 				<title>矛盾</title>
 				<statement>
-					<m>p</m>を命題とするとき、命題<m>p \wedge \overline{p}</m>を<m>p</m>についての<dfn en="contradiction">矛盾</dfn>という。
-					命題<m>p \wedge \overline{p}</m>は常に偽である。
+					<m>p</m>を命題とするとき、命題<m>p \land \overline{p}</m>を<m>p</m>についての<dfn en="contradiction">矛盾</dfn>という。
+					命題<m>p \land \overline{p}</m>は常に偽である。
 				</statement>
 			</definition>
 
 			<theorem>
 				<title>背理法</title>
 				<statement>
-					命題<m>p</m>の真偽と命題<m>\overline{p} \Longrightarrow \text{F}</m>の真偽は一致する。
+					命題<m>p</m>の真偽と命題<m>\overline{p} \implies \text{F}</m>の真偽は一致する。
 				</statement>
 				<proof>
 					<md>
-						<mrow>[ \overline{p} \Longrightarrow \text{F} ] = [ \overline{\overline{p}} \vee \text{F} ] = [ p \vee \text{F} ] = p</mrow>
+						<mrow>[ \overline{p} \implies \text{F} ] = [ \overline{\overline{p}} \lor \text{F} ] = [ p \lor \text{F} ] = p</mrow>
 					</md>
 				</proof>
 			</theorem>
@@ -625,7 +628,7 @@
 					<ol>
 						<li>命題<m>p</m>が偽であると仮定し、<m>p</m>の否定<m>\overline{p}</m>が真であるとみなす。</li>
 						<li><m>\overline{p}</m>に対して、演繹による推論を重ねる。</li>
-						<li>偽になる命題を導く。多くの場合、ある命題<m>r</m>についての<strong>矛盾</strong><m>r \wedge \overline{r}</m>を導く。
+						<li>偽になる命題を導く。多くの場合、ある命題<m>r</m>についての<strong>矛盾</strong><m>r \land \overline{r}</m>を導く。
 							具体的には、<m>r</m>が「<m>x</m>は有理数である」だとすると、「<m>x</m>は有理数である」と「<m>x</m>は有理数でない(無理数である)」の2つは同時に成り立たないので、この2つを示せば矛盾があるといえる。</li>
 						<li>(3)での推論の結果、矛盾が導かれ偽になったので、(1)で仮定した<m>\overline{p}</m>が偽であるということになり、<m>p</m>が真であることが示される。</li>
 					</ol>
@@ -665,7 +668,7 @@
 					すると、有理数は分数の形で表せる数なので、<m>\sqrt{2}</m>は整数<m>m, n</m>を用いて<m>\sqrt{2} = \frac{m}{n}</m>と表すことができる。
 					このとき、分数<m>\frac{m}{n}</m>が既約分数である、つまり<strong>互いに素であるような整数<m>m, n</m>をとることができる</strong>。
 					<m>\sqrt{2} = \frac{m}{n}</m>の両辺を2乗すると<m>2 = \frac{m^2}{n^2}</m>より<m>m^2 = 2 n^2</m>となり、<m>n</m>は整数<m>n^2</m>の2倍であるから<m>m^2</m>は偶数である。
-					ここで、対偶を用いると命題「<m>m^2: \text{偶数} \Longrightarrow m: \text{偶数}</m>」が成り立つことがいえる。
+					ここで、対偶を用いると命題「<m>m^2: \text{偶数} \implies m: \text{偶数}</m>」が成り立つことがいえる。
 					<m>m</m>は偶数であるので、整数<m>k</m>を用いて<m>m = 2k</m>と表せる。
 					<m>n^2 = \frac{m^2}{2} = \frac{(2k)^2}{2} = 2k^2</m>となるので、<m>n^2</m>も偶数である。
 					先の命題を用いると、<m>n</m>は偶数であることが分かり、<m>m, n</m>はいずれも2で割り切れることが分かるが、これは<strong><m>m, n</m>が互いに素であることと矛盾</strong>する。
