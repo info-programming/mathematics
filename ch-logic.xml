@@ -50,6 +50,7 @@
 				<statement>
 					<em>「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn en="proposition">命題</dfn>という。
 					命題<m>p</m>が「正しい」とき、<m>p</m>は<dfn en="true">真</dfn>であるという。また、<m>p</m>が真でないとき、<m>p</m>は<dfn en="false">偽</dfn>であるという。
+					命題<m>p</m>が真であることを<m>p</m>が<dfn>成り立つ</dfn>、命題<m>p</m>が偽であることを<m>p</m>が<dfn>成り立たない</dfn>ともいう。
 				</statement>
 			</definition>
 			<p>特に、真である命題を<dfn en="theorem">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
