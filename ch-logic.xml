@@ -487,11 +487,85 @@
 		</subsection>
 	</section>
 
-	<!--
 	<section xml:id="sec-logic-mode">
 		<title>様相論理</title>
+		<introduction>
+			<p>述語論理の特別な例として、事象のあり方や捉え方を扱う<dfn en="modal logic">様相論理</dfn>がある。</p>
+		</introduction>
+
+		<subsection xml:id="ssec-logic-modal">
+			<title>「必ず」「ありうる」</title>
+			<p>これまで扱った命題と同様に、「必ず〜となる」「〜となることがありうる」という文も、真偽が確定するので命題だといえる。
+			様相論理は、このような必然性や可能性についてのいろいろな命題を扱うための論理である。</p>
+			<definition>
+				<title>「必ず」「ありうる」</title>
+				<statement>
+					命題<m>P</m>に対して、「<m>P</m>が成り立つことが<dfn en="necessary">必然</dfn>である」「必ず<m>P</m>となる」という命題を<m>\Box P</m>と表す。
+					また、「<m>P</m>が成り立つことが<dfn en="possible">可能</dfn>である」「<m>P</m>となりうる」という命題を<m>\Diamond P</m>と表す。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-world">
+			<title>可能世界</title>
+			<p><m>\Box P</m>や<m>\Diamond P</m>は、次に定義する<dfn en="possible world">可能世界</dfn>の考え方を用いると、述語論理の記号で表せる。</p>
+			<p>将棋や囲碁のようなゲームでは、対局の途中のある盤面について、駒を進めたり置いたりすることで、次の盤面に進む。
+			多くの場合、駒の進め方や置き方は複数ありうるので、「次の盤面」も複数ありうる。
+			このときの「今の盤面」と「次の盤面」のように「現在の世界」と「次の時点の世界」を考え、「ありうる世界の集合」を定義したときの要素を可能世界と呼ぶ。</p>
+			<definition>
+				<title>可能世界を用いた「必ず」「ありうる」の表現</title>
+				<statement>
+					可能世界の集合を<m>W</m>、可能世界<m>w</m>で事象<m>P</m>が成り立つかどうかを命題関数<m>P(w)</m>で表すとき、次のように<m>\Box P, \Diamond P</m>を定義できる。
+					<md>
+						<mrow>\Box     P &amp;\iff \forall w \in W, P(w)</mrow>
+						<mrow>\Diamond P &amp;\iff \exists w \in W, P(w)</mrow>
+					</md>
+					つまり、<m>\Box P</m>は「<strong>すべての可能世界</strong>で<m>P</m>が成り立つ」こと、<m>\Diamond P</m>は「<strong>ある可能世界</strong>で<m>P</m>が成り立つ」こととして定義できる。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-modedual">
+			<title>「必ず」「ありうる」の否定</title>
+			<p>可能世界の考え方と述語論理の記号を用いると、「必ず」「ありうる」を含む命題の否定を定義できる。
+			この関係は、de Morganの法則に対応している。</p>
+			<theorem>
+				<title>「必ず」「ありうる」の否定(de Morganの法則)</title>
+				<statement>
+					可能世界の集合を<m>W</m>、可能世界<m>w</m>で事象<m>P</m>が成り立つかどうかを命題関数<m>P(w)</m>で表すとき、次の同値関係が成り立つ。
+					<md>
+						<mrow>\overline{\Box     P} &amp;\iff \Diamond \overline{P}</mrow>
+						<mrow>\overline{\Diamond P} &amp;\iff \Box     \overline{P}</mrow>
+					</md>
+					つまり、「必ず<m>P</m>となる」の否定は「<m>P</m>が成り立たないことがありうる」、「<m>P</m>となりうる」の否定は「必ず<m>P</m>とならない」である。
+				</statement>
+				<proof>
+					<md>
+						<mrow>\overline{\Box     P} \iff \overline{\forall w \in W, P(w)} \iff [\exists w \in W, \overline{P(w)}] \iff \Diamond \overline{P}</mrow>
+						<mrow>\overline{\Diamond P} \iff \overline{\exists w \in W, P(w)} \iff [\forall w \in W, \overline{P(w)}] \iff \Box     \overline{P}</mrow>
+					</md>
+				</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-mode">
+			<title>さまざまな様相論理</title>
+			<p>様相論理では、可能世界の集合<m>W</m>の定義を変えることで、「必ず」「ありうる」以外にも、さまざまな事象のあり方や捉え方を扱うことが可能である。
+			ここでは、そのような<dfn en="mode">様相</dfn>のいくつかを紹介する。義務を扱う論理は<dfn>義務論理</dfn>、時間を扱う論理は<dfn>時相論理</dfn>と呼ばれる。</p>
+			<table xml:id="table-logic-mode">
+				<caption>様相の例</caption>
+				<tbody>
+					<tr><th>対象</th><th><m>W</m>の要素</th><th><m>\Box P</m>の定義</th><th><m>\Diamond P</m>の定義</th></tr>
+					<tr><th>可能性</th><td><strong>可能な世界</strong></td><td>「<m>P</m>が成り立つことは<strong>必然</strong>である(<strong>必ず</strong>)」</td><td>「<m>P</m>が成り立つことが<strong>可能</strong>である(<strong>ありうる</strong>)」</td></tr>
+					<tr><th>義務</th><td><strong>「よい」世界</strong></td><td>「<m>P</m>をする<strong>義務</strong>がある(<dfn en="must">しなければならない</dfn>)」</td><td>「<m>P</m>をする<strong>許可</strong>がある(<dfn en="may">してもよい</dfn>)」</td></tr>
+					<tr><th>場所</th><td><strong>場所</strong></td><td>「どの<strong>場所</strong>でも(<dfn en="anywhere">どこでも</dfn>)<m>P</m>が成り立つ」</td><td>「ある<strong>場所</strong>で(<dfn en="somewhere">どこかで</dfn>)<m>P</m>が成り立つ」</td></tr>
+					<tr><th>時間</th><td><strong>時点</strong></td><td>「どの<strong>時点</strong>でも(<dfn en="anytime">いつでも</dfn>)<m>P</m>が成り立つ」</td><td>「ある<strong>時点</strong>で(<dfn en="sometime">ときには</dfn>)<m>P</m>が成り立つ」</td></tr>
+					<tr><th>未来</th><td><strong>現在より後の時点</strong></td><td>「どの<strong>未来</strong>でも<m>P</m>が成り立つ」</td><td>「ある<strong>未来</strong>で<m>P</m>が成り立つ」</td></tr>
+					<tr><th>過去</th><td><strong>現在より前の時点</strong></td><td>「どの<strong>過去</strong>でも<m>P</m>が成り立つ」</td><td>「ある<strong>過去</strong>で<m>P</m>が成り立つ」</td></tr>
+				</tbody>
+			</table>
+		</subsection>
 	</section>
-	-->
 
 	<section xml:id="sec-logic-infer">
 		<title>推論</title>
