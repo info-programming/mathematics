@@ -7,6 +7,7 @@
 		<xref ref="sec-logic-prop"/>節では、論理の基礎となる命題と、命題を中心とする命題論理について述べる。
 		<xref ref="sec-logic-set"/>節では、現代数学の基礎となっている集合について述べる。
 		<xref ref="sec-logic-pred"/>節では、命題論理に「すべて」「ある」を加えた枠組みである述語論理について述べる。
+		<xref ref="sec-logic-mode"/>節では、述語論理のうち「必ず」「ありうる」などの様相を扱う様相論理について述べる。
 		<xref ref="sec-logic-infer"/>節では、命題の間をつなぐ推論の種類について述べる。
 		<xref ref="sec-logic-proof"/>節では、推論のうちの演繹による証明について述べる。</p>
 	</introduction>
@@ -42,6 +43,9 @@
 
 	<section xml:id="sec-logic-prop">
 		<title>命題論理</title>
+		<introduction>
+			<p>数学では、式や文を命題という形で扱う<dfn en="propositional logic">命題論理</dfn>の論理が、最も基本的な枠組みである。</p>
+		</introduction>
 		<subsection xml:id="ssec-logic-prop">
 			<title>命題</title>
 			<p>数学が基盤とする論理学では、客観的な分析が可能な文を<dfn en="proposition">命題</dfn>として扱い、複数の命題を推論で接続することで論理を展開する。</p>
@@ -385,6 +389,9 @@
 
 	<section xml:id="sec-logic-pred">
 		<title>述語論理</title>
+		<introduction>
+			<p>命題論理を拡張し、「すべて」「ある」などを扱えるようにした枠組みを<dfn en="predicate logic">述語論理</dfn>という。</p>
+		</introduction>
 		<subsection xml:id="ssec-logic-propfunc">
 			<title>命題関数</title>
 			<p>命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。
