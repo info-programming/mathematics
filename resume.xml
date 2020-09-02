@@ -69,6 +69,8 @@
 
 		<xi:include href="ch-logic.xml"/>
 
+		<xi:include href="ch-func.xml"/>
+
 		<backmatter>
 			<xi:include href="references.xml.ptx"/>
 			<index><index-list/></index>

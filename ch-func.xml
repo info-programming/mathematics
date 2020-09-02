@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chapter xml:id="ch-func">
+	<title>関数</title>
+	<introduction>
+		<p>本章では、集合間の対応関係である関数の概念を示した上で、関数の具体例やその性質について述べる。</p>
+		<p><xref ref="sec-func-map"/>節では、集合の対応関係として関数を定義する。
+		<xref ref="sec-func-graph"/>節では、関数を可視化する方法としてのグラフについて述べる。
+		<xref ref="sec-func-poly"/>節では、多項式関数の性質について述べる。</p>
+	</introduction>
+
+	<section xml:id="sec-func-map">
+		<title>写像と関数</title>
+		<p>2つの集合の要素に対応関係が付いているとき、この対応関係を写像や関数と呼ぶ。</p>
+		<definition>
+			<title>写像と関数</title>
+			<statement>
+				<m>A, B</m>を集合とする。<m>f</m>が<m>A</m>の要素に<m>B</m>の要素を一つだけ対応させるとき、<m>f</m>を<m>A</m>から<m>B</m>への<dfn en="map">写像</dfn>または<dfn en="function">関数</dfn>といい、<m>f:A \to B</m>と表す。
+				このとき、<m>A</m>を<m>f</m>の<dfn en="domain">定義域</dfn>、<m>B</m>を<m>f</m>の<dfn en="range">値域</dfn>という。
+				また、写像<m>f</m>が<m>a (\in A)</m>に<m>b (\in B)</m>を対応させるとき、これを<m>f: a \mapsto b</m>または<m>f(a) = b</m>と表す。
+				このとき、<m>b</m>を<dfn en="input">入力</dfn><m>a</m>に対する<m>f</m>の<dfn en="output">出力</dfn>または<dfn en="value">値</dfn>という。
+			</statement>
+		</definition>
+		<p>「写像」と「関数」という用語は、分野によっては使い分けることもあるが、同じだと考えても特に問題ない。また、写像を「変換」や「対応」などと呼ぶこともある。
+		「写像」は英語でmapまたはmappingであるが、「現実世界の地形」を「紙の上の図形」に対応づけて表したものが「地図(map)」であるので、地図と同様のものと考えることができる。
+		また、関数は<dfn>函数</dfn>とも書き、入力に対して何らかの値を出力する「函(はこ)」だと考えることもできる。</p>
+		<p><m>f: A \to B</m>は、<m>A</m>のすべての要素に対して対応する<m>B</m>の要素が一つだけ存在する。
+		<m>a (\in A)</m>に対応する<m>B</m>の要素がなかったり、複数の要素が対応したりすることはできない。
+		ただし、<m>B</m>の要素のうち、<m>A</m>の要素に対応しないものはあってもよい。</p>
+		<example>
+			<title>関数の例1</title>
+			<statement>
+				果物の集合<m>\text{Fruits} = \{\text{みかん}, \text{りんご}, \text{ぶどう}, \cdots\}</m>を考え、果物<m>x (\in \text{Fluits})</m>の店頭価格を<m>\text{price}(x)</m>で表すとする。
+				例えば、<m>\text{price}(\text{みかん})=80, \text{price}(\text{りんご})=90, \text{price}(\text{ぶどう})=300</m>のようになる。
+				<m>\text{price}</m>は果物の集合に対して自然数を一つ対応させているので写像であり、<m>\text{price}: \text{Fruits} \to \mathbb{N}</m>と表せる。
+			</statement>
+		</example>
+
+		<example>
+			<title>関数の例2</title>
+			<statement>
+				<ul>
+					<li><m>f(x) = 2x (x \in \mathbb{R})</m>は関数で、定義域は<m>\mathbb{R}</m>、値域は<m>\mathbb{R}</m>である。</li>
+					<li><m>f(x) = x + 1 (0 \leq x \leq 1)</m>は関数で、定義域は<m>0 \leq x \leq 1</m>、値域は<m>1 \leq x \leq 2</m>である。<m>f</m>は<m>x = 0</m>で最小となり最小値は1、<m>x = 1</m>で最大となり最大値は2である。</li>
+					<li><m>f(x)=\pm x (x \in \mathbb{R})</m>は、<m>x = 0</m>の場合を除いて<m>x</m>に対応する値が<m>x</m>と<m>-x</m>の二つ存在するので、関数ではない。</li>
+				</ul>
+			</statement>
+		</example>
+	</section>
+
+	<section xml:id="sec-func-graph">
+		<title>グラフ</title>
+		<p>関数をグラフに図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
+		<definition>
+			<title>グラフ</title>
+			<statement>
+				関数<m>f: \mathbb{R} \to \mathbb{R}</m>について、集合<m>\{ (x, f(x)) | x \in \mathbb{R} \}</m>を<m>f</m>の<dfn en="graph">グラフ</dfn>という。
+				また、関数<m>f: \mathbb{R}^2 \to \mathbb{R}</m>について、集合<m>\{ (x, y, f(x, y)) | x, y \in \mathbb{R} \}</m>を<m>f</m>のグラフという。
+				これらの集合は、<m>\{ (x, y) | x \in \mathbb{R}, y = f(x) \}</m>や<m>\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}</m>とも表せる。
+			</statement>
+		</definition>
+	</section>
+
+	<section xml:id="sec-func-poly">
+		<title>多項式関数</title>
+		<p>関数のうち最も単純なものは、多項式で表される多項式関数である。</p>
+		<definition>
+			<title>多項式関数</title>
+			<statement>
+				次数<m>n (\in \mathbb{N})</m>の多項式で表される関数を<dfn en="polynomial function">多項式関数</dfn>または<dfn>n次関数</dfn>という。
+			</statement>
+		</definition>
+	</section>
+</chapter>
