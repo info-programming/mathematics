@@ -355,7 +355,7 @@
 				<statement>
 					<m>a = b</m>かつ<m>b = c</m>のとき、<m>a = b = c</m>と表すことがある。
 					<md>
-						<mrow>a = b = c \Longleftrightarrow (a = b) \wedge (b = c) \Longleftrightarrow \begin{cases} a = b \\ b = c \end{cases}</mrow>
+						<mrow>a = b = c \iff (a = b) \text{かつ} (b = c) \iff \begin{cases} a = b \\ b = c \end{cases}</mrow>
 					</md>
 					等式<m>a = b = c</m>の最も左側にある辺<m>a</m>を<dfn>第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn>第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn>第3辺</dfn>という。
 				</statement>
@@ -411,7 +411,7 @@
 				<statement>
 					<m>a &lt; b</m>かつ<m>b &lt; c</m>のとき、<m>a &lt; b &lt; c</m>と表すことがある。<m>&lt;</m>以外の不等号についても、同様に表すことができる。
 					<md>
-						<mrow>a &lt; b &lt; c \Longleftrightarrow (a &lt; b) \wedge (b &lt; c) \Longleftrightarrow \begin{cases} a &lt; b \\ b &lt; c \end{cases}</mrow>
+						<mrow>a &lt; b &lt; c \iff (a &lt; b) \text{かつ} (b &lt; c) \iff \begin{cases} a &lt; b \\ b &lt; c \end{cases}</mrow>
 					</md>
 					等式の場合と同様に、<m>a &lt; b &lt; c</m>で最も左側にある辺<m>a</m>を<dfn>第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn>第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn>第3辺</dfn>という。
 				</statement>
