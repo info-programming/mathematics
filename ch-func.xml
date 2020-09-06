@@ -35,27 +35,35 @@
 			</statement>
 		</example>
 
+		<p>関数を具体的に式の形で表せる場合は、入力を<m>x</m>などの変数で表して、入力<m>x</m>を与えたときの出力を式で書くことが多い。
+		このとき、定義域を<m>x \in \mathbb{R}</m>や<m>0 \leqq x \leqq 1</m>のように、入力<m>x</m>を用いて表すことがある。
+		なお、「実数の全体(<m>\mathbb{R}</m>)」のように「考えうるすべての値」が定義域である場合は、定義域の表記を省略することも多い。</p>
 		<example>
 			<title>関数の例2</title>
 			<statement>
 				<ul>
 					<li><m>f(x) = 2x (x \in \mathbb{R})</m>は関数で、定義域は<m>\mathbb{R}</m>、値域は<m>\mathbb{R}</m>である。</li>
-					<li><m>f(x) = x + 1 (0 \leq x \leq 1)</m>は関数で、定義域は<m>0 \leq x \leq 1</m>、値域は<m>1 \leq x \leq 2</m>である。<m>f</m>は<m>x = 0</m>で最小となり最小値は1、<m>x = 1</m>で最大となり最大値は2である。</li>
+					<li><m>f(x) = x + 1 (0 \leqq x \leqq 1)</m>は関数で、定義域は<m>0 \leq x \leq 1</m>、値域は<m>1 \leq x \leq 2</m>である。<m>f</m>は<m>x = 0</m>で最小となり最小値は1、<m>x = 1</m>で最大となり最大値は2である。</li>
 					<li><m>f(x)=\pm x (x \in \mathbb{R})</m>は、<m>x = 0</m>の場合を除いて<m>x</m>に対応する値が<m>x</m>と<m>-x</m>の二つ存在するので、関数ではない。</li>
 				</ul>
 			</statement>
 		</example>
+
+		<p>関数<m>f</m>に入力<m>x</m>を与えたときの出力を<m>y</m>とするとき、<m>y = f(x)</m>という方程式が成り立つ。この方程式<m>y = f(x)</m>を「関数<m>y = f(x)</m>」と呼ぶことがある。
+		また、関数に名前をつけず、入力が<m>x</m>であるという前提で<m>y = x^2 + 2x + 1</m>のように書いて、これを「関数<m>y = x^2 + 2x + 1</m>」と呼ぶこともある。
+		これらの方程式の場合、関数はあくまで方程式の右辺側の式を指すのであるのが本来であり、方程式を「関数」と呼ぶのは適切な呼び方ではない。
+		だが、このような表記は一般的によく使われるので、注意が必要である。</p>
 	</section>
 
 	<section xml:id="sec-func-graph">
 		<title>グラフ</title>
-		<p>関数をグラフに図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
+		<p>関数のグラフを座標空間に図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
 		<definition>
 			<title>グラフ</title>
 			<statement>
-				関数<m>f: \mathbb{R} \to \mathbb{R}</m>について、集合<m>\{ (x, f(x)) | x \in \mathbb{R} \}</m>を<m>f</m>の<dfn en="graph">グラフ</dfn>という。
-				また、関数<m>f: \mathbb{R}^2 \to \mathbb{R}</m>について、集合<m>\{ (x, y, f(x, y)) | x, y \in \mathbb{R} \}</m>を<m>f</m>のグラフという。
-				これらの集合は、<m>\{ (x, y) | x \in \mathbb{R}, y = f(x) \}</m>や<m>\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}</m>とも表せる。
+				関数<m>f: \mathbb{R} \to \mathbb{R}</m>について、集合<m>\{ (x, y) | x \in \mathbb{R}, y = f(x) \}</m>を<m>f</m>の<dfn en="graph">グラフ</dfn>という。
+				また、関数<m>f: \mathbb{R}^2 \to \mathbb{R}</m>について、集合<m>\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}</m>を<m>f</m>のグラフという。
+				このとき、<m>y = f(x)</m>や<m>z = f(x, y)</m>をそれぞれのグラフの方程式という。
 			</statement>
 		</definition>
 	</section>
@@ -66,7 +74,8 @@
 		<definition>
 			<title>多項式関数</title>
 			<statement>
-				次数<m>n (\in \mathbb{N})</m>の多項式で表される関数を<dfn en="polynomial function">多項式関数</dfn>または<dfn>n次関数</dfn>という。
+				多項式で表される関数を<dfn en="polynomial function">多項式関数</dfn>という。
+				特に、多項式の次数が<m>n (\in \mathbb{N})</m>であるとき、この関数を<dfn>n次関数</dfn>という。
 			</statement>
 		</definition>
 	</section>
