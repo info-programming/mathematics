@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chapter xml:id="ch-geo">
+	<title>幾何</title>
+	<introduction>
+		<p>本章では、集合間の対応関係である関数の概念を示した上で、関数の具体例やその性質について述べる。</p>
+		<p><xref ref="sec-geo-coord"/>節では、よく使われる座標系について述べる。</p>
+	</introduction>
+
+	<section xml:id="sec-geo-coord">
+		<title>座標</title>
+		<p>図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn en="coordinate">座標</dfn>である。
+		座標のとり方のことを<dfn en="coordinate system">座標系</dfn>といい、座標系が定められた空間を<dfn en="coordinate space">座標空間</dfn>という。特に、2つの軸により定められる座標空間を<dfn>座標平面</dfn>という。</p>
+
+		<subsection xml:id="ssec-geo-rect">
+			<title>直交座標系</title>
+			<definition>
+				<title>直交座標系</title>
+				<statement>
+					互いに直交する<dfn en="axis">軸</dfn>からなる座標系を<dfn en="rectangular coordinate system">直交座標系</dfn>という。
+					軸として、座標平面では<m>x</m>軸と<m>y</m>軸、座標空間では<m>x</m>軸と<m>y</m>軸と<m>z</m>軸を使うことが多い。
+					<m>x</m>軸と<m>y</m>軸からなる座標平面を<m>xy</m>平面、<m>y</m>軸と<m>z</m>軸からなる座標平面を<m>yz</m>平面、<m>z</m>軸と<m>x</m>軸からなる座標平面を<m>zx</m>平面という。
+					また、<m>x</m>軸と<m>y</m>軸と<m>z</m>軸からなる座標空間を<m>xyz</m>空間という。
+					直交座標系ではすべての軸は1点で交わり、この点を<dfn en="origin">原点</dfn>といい、originの頭文字をとって点<m>O</m>と表す。
+				</statement>
+			</definition>
+
+			<p>1次元、2次元、3次元の直交座標系は図<xref ref="fig-geo-rect"/>のように表される。なお、1次元の座標空間は数直線となる。</p>
+			<figure xml:id="fig-geo-rect">
+				<image source="image/geo-1d-coord" width="75%"/>
+				<image source="image/geo-2d-coord" width="75%"/>
+				<!-- TODO: 3D -->
+				<caption>直交座標系</caption>
+			</figure>
+
+			<p>直交座標系における点の座標は、次のように定義される。</p>
+			<definition>
+				<title>直交座標系における座標</title>
+				<statement>
+					直交座標系では、軸の数と同じだけの実数の組により、座標系の上にある点の「位置」を表す。この「位置」をその点の<dfn>座標</dfn>という。
+					<m>x</m>軸と<m>y</m>軸からなる座標平面では、それぞれの軸に対応する位置を<m>x</m>と<m>y</m>で表すとき、点の座標はこれらの組<m>(x, y)</m>で表される。
+					同様に、<m>x</m>軸と<m>y</m>軸と<m>z</m>軸からなる座標平面では、それぞれの軸に対応する位置を<m>x</m>と<m>y</m>と<m>z</m>で表すとき、点の座標はこれらの組<m>(x, y, z)</m>で表される。
+					点<m>P</m>の座標が<m>(x, y)</m>や<m>(x, y, z)</m>であることを、<m>P(x, y)</m>や<m>P(x, y, z)</m>と表すことがある。
+					点の位置を定めるため、原点<m>O</m>の座標はすべての軸について0として、座標平面では<m>O(0, 0)</m>、座標空間では<m>O(0, 0, 0)</m>とする。
+				</statement>
+			</definition>
+		</subsection>
+
+		<subsection xml:id="ssec-geo-pole">
+			<title>極座標系</title>
+			<p>直交座標系以外の座標系には、曲線を含む図形を表すのに便利な極座標系がある。</p>
+			<definition>
+				<title>極座標系</title>
+				<statement>
+					ある点<m>O</m>と、<m>O</m>を端点とする半直線からなる座標系を<dfn en="polar coordinate system">極座標系</dfn>という。
+					極座標系での点<m>O</m>を<dfn en="pole">極</dfn>、<m>O</m>を端点とする半直線を<dfn en="polar axis">始線</dfn>という。
+					極座標系では、点<m>P</m>の座標を、極<m>O</m>からの距離<m>r (\geqq 0)</m>と、<m>OP</m>と始線のなす角<m>\theta</m>を用いて<m>(r, \theta)</m>と表す。
+				</statement>
+			</definition>
+
+			<p>極座標系は図<xref ref="fig-geo-pole"/>のように表される。</p>
+			<figure xml:id="fig-geo-pole">
+				<image source="image/geo-pole" width="75%"/>
+				<caption>極座標系</caption>
+			</figure>
+
+			<p>極座標系と直交座標系は、次の式で変換できる。</p>
+			<theorem>
+				<title>極座標系と直交座標系の変換</title>
+				<statement>
+					直交座標系で座標<m>(x, y)</m>の点は、極座標系では座標<m>(\sqrt{x^2 + y^2}, \theta) (\cos\theta = \frac{x}{r}, \sin\theta = \frac{y}{r})</m>となる。
+					また、極座標系で座標<m>(r, \theta)</m>の点は、直交座標系では座標<m>(r\cos\theta, r\sin\theta)</m>となる。
+				</statement>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-geo-3d">
+			<title>空間の極座標</title>
+			<p>極座標系を座標空間に拡張した座標系には、円柱座標系と空間極座標系の2つがある。
+			円柱座標系は極座標系と直交座標系を組み合わせた座標系で、円柱のように平面上は極座標系が扱いやすいものの、高さについては直交座標系を用いる方が便利な場合に用いる。
+			空間極座標系は高さ方向も角度で表した座標系で、球のように高さ方向についても角度で表す方が便利な場合に用いる。</p>
+			<definition>
+				<title>円柱座標系</title>
+				<statement>
+					平面を極座標系で表し、それに高さを表す<m>z</m>軸を加えた座標系を<dfn>円柱座標系</dfn>という。
+					円柱座標系では、点の座標は<m>(r, \theta, z)</m>で表される。
+				</statement>
+			</definition>
+			<!-- TODO: 円柱座標系の図(3D) -->
+
+			<definition>
+				<title>空間極座標系</title>
+				<statement>
+					平面を極座標系で表し、それに高さ方向の角度を表す<m>\phi</m>軸を加えた座標系を<dfn>空間極座標系</dfn>という。
+					空間極座標系では、点の座標は<m>(r, \theta, \phi)</m>で表される。
+				</statement>
+			</definition>
+			<!-- TODO: 空間極座標系の図(3D) -->
+
+			<p>円柱座標系は、平面上の座標を直交座標系に変換すれば、直交座標系の座標空間における座標に変換できる。
+			空間極座標系と直交座標系は、次の式で変換できる。</p>
+			<theorem>
+				<title>空間極座標系と直交座標系の変換</title>
+				<statement>
+					直交座標系で座標<m>(x, y, z)</m>の点は、空間極座標系では座標<m>(\sqrt{x^2 + y^2 + z^2}, \theta, \phi) (\cos\theta = \frac{z}{r}, \cos\phi = \frac{x}{r}, \sin\phi = \frac{y}{r})</m>となる。
+					また、空間極座標系で<m>(r, \theta, \phi)</m>の点は、直交座標系では座標<m>(r\cos\phi\sin\theta, r\sin\phi\sin\theta, r\cos\theta)</m>となる。
+				</statement>
+			</theorem>			
+		</subsection>
+	</section>
+</chapter>

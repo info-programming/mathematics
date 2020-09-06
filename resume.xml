@@ -71,6 +71,8 @@
 
 		<xi:include href="ch-func.xml"/>
 
+		<xi:include href="ch-geo.xml"/>
+
 		<backmatter>
 			<xi:include href="references.xml.ptx"/>
 			<index><index-list/></index>
