@@ -133,8 +133,15 @@
 				<caption>2次関数のグラフ(放物線)</caption>
 			</figure>
 
+			<p>2次関数の標準形・一般形・因数分解形の特徴や用途を図<xref ref="fig-func-quad-form"/>に示す。
+			通常は頂点や最大値・最小値が分かる標準形に変形すると便利なことが多いが、標準形・一般形・因数分解形にはそれぞれ便利な場面があるので、用途に応じて使い分ける必要がある。</p>
+			<figure xml:id="fig-func-quad-form">
+				<image source="image/func-quad-form"/>
+				<caption>2次関数の標準形・一般形・因数分解形の比較</caption>
+			</figure>
+	
 			<p>2次関数の形状に関する情報を得るためには、2次関数を標準形で表す必要がある。
-			そのために、一般形<m>f(x) = ax^2 + bx + c</m>で表された2次関数を標準形<m>f(x) = a(x-p)^2 + q</m>に変換する、平方完成という操作を行う。</p>
+			そのために、一般形<m>f(x) = ax^2 + bx + c</m>で表された2次関数を標準形<m>f(x) = a(x-p)^2 + q</m>に変換する、<dfn en="completing the square">平方完成</dfn>という操作を行う。</p>
 			<theorem>
 				<title>一般形2次関数の頂点と軸</title>
 				<statement>
