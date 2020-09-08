@@ -385,6 +385,43 @@
 			</definition>
 			<p>有理数を<m>\mathbb{Q}</m>で表すのは「商」の意を表すquotientに由来する。有理数は英語を直訳すると「比で表される数」であり、この言い方の方が定義をより明瞭に表している。</p>
 		</subsection>
+
+		<subsection xml:id="ssec-logic-tuple">
+			<title>組と直積</title>
+			<p>数など複数のものを1つにまとめて扱う方法には、集合以外に<dfn en="tuple">組</dfn>を用いる方法もある。</p>
+			<definition>
+				<title>組</title>
+				<statement>
+					<m>x, y, z</m>があるとき、<m>(x, y)</m>を<m>x</m>と<m>y</m>の<dfn en="tuple">組</dfn>、<m>(x, y, z)</m>を<m>x</m>と<m>y</m>と<m>z</m>の組という。
+				</statement>
+			</definition>
+
+			<definition>
+				<title>組の相等関係</title>
+				<statement>
+					組<m>(a_1, a_2, \cdots, a_n)</m>と<m>(b_1, b_2, \cdots, b_n)</m>は、<m>a_1 = b_1, a_2 = b_2, \cdots, a_n = b_n</m>がすべて成り立つとき<dfn>等しい</dfn>といい、<m>(a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n)</m>と表す。
+				</statement>
+			</definition>
+
+			<p>組は集合と同じく複数のものをまとめて扱う方法であるが、次の2点で異なっている。</p>
+			<ul>
+				<li><strong>組には順序がある</strong>ので<m>(1, 2) \ne (2, 1)</m>であるが、<strong>集合の要素には順序がない</strong>ので、<m>\{1, 2\} = \{2, 1\}</m>となる。</li>
+				<li><strong>組では重複があってもそれぞれを1つのものとして扱う</strong>ので<m>(1, 2, 2) \ne (1, 2)</m>であるが、<strong>集合の要素は重複するものは同じものとして扱う</strong>ので、<m>\{1, 2, 2\} = \{1, 2\}</m>となる。</li>
+			</ul>
+
+			<p>組を含む集合は、実用上便利である。</p>
+			<definition>
+				<title>直積</title>
+				<statement>
+					<m>A, B</m>を集合とするとき、<m>a (\in A)</m>と<m>b (\in B)</m>の組<m>(a, b)</m>を要素とする集合を<m>A</m>と<m>B</m>の<dfn en="direct product">直積</dfn>といい、<m>A \times B</m>と表す。
+					<md>
+						<mrow>A \times B &amp;= \{(a, b) | a \in A, b \in B \}</mrow>
+					</md>
+					特に、同じ集合同士の直積<m>A \times A</m>を<m>A^2</m>と表す。同様にして、<m>A^3 = A \times A \times A</m>などと定義する。
+				</statement>
+			</definition>
+			<p>直積を使うと、<m>xy</m>平面上の点<m>(x, y)</m>は<m>\mathbb{R}^2</m>の要素として定義することができる。</p>
+		</subsection>
 	</section>
 
 	<section xml:id="sec-logic-pred">
