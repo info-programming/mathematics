@@ -91,5 +91,90 @@
 				特に、多項式の次数が<m>n (\in \mathbb{N})</m>であるとき、この関数を<dfn>n次関数</dfn>という。
 			</statement>
 		</definition>
+
+		<section xml:id="ssec-func-linear">
+			<title>1次関数</title>
+			<definition>
+				<title>1次関数</title>
+				<statement>
+					1次式で表される関数を<dfn en="linear function">1次関数</dfn>といい、一般に<m>f(x) = ax + b (a, b \in \mathbb{R}, a \ne 0)</m>と表される。
+					<m>a</m>をこの1次関数の<dfn en="slope">傾き</dfn>、<m>b</m>をこの1次関数の<dfn en="intercept">切片</dfn>という。
+				</statement>
+			</definition>
+
+			<p>左辺が1次関数である<m>y = ax + b</m>のグラフは図<xref ref="fig-func-linear-graph"/>のように<dfn en="line">直線</dfn>となり、傾き<m>a</m>の値によって<m>x</m>軸となす角度が変化する。</p>
+			<figure xml:id="fig-func-linear-graph">
+				<image source="image/func-linear-graph"/>
+				<caption>1次関数のグラフ(直線)</caption>
+			</figure>
+		</section>
+
+		<section xml:id="ssec-func-quad">
+			<title>2次関数</title>
+			<definition>
+				<title>2次関数</title>
+				<statement>
+					2次式で表される関数を<dfn en="quadratic function">2次関数</dfn>という。
+					すべての二次関数は、次のようにいくつかの形で表せる(<m>a, b, c, p, q, \beta, \gamma \in \mathbb{R}, a \ne 0</m>)。
+					<md>
+						<mrow>f(x) &amp;= a(x-p)^2 + q         &amp; (a \ne 0) &amp; (\text{標準形})</mrow>
+						<mrow>f(x) &amp;= ax^2 + bx + c        &amp; (a \ne 0) &amp; (\text{一般形})</mrow>
+						<mrow>f(x) &amp;= a(x-\beta)(x-\gamma) &amp; (a \ne 0) &amp; (\text{因数分解形})</mrow>
+					</md>		
+				</statement>
+			</definition>
+
+			<p>左辺が標準形の2次関数である<m>y = a(x - p)^2 + q</m>のグラフは、図<xref ref="fig-func-quad-graph"/>のようになる。
+			この曲線は、物体を上方に投げたときに物体が描く軌道を表せることから<dfn en="parabola">放物線</dfn>という。
+			点<m>(p, q)</m>をこの2次関数の<dfn>頂点</dfn>、直線<m>x = p</m>をこの2次関数の<dfn en="axis">軸</dfn>といい、放物線は軸について線対称となる。
+			また、<m>a &gt; 0</m>のときは下側に突き出た形なので<dfn en="convex">下に凸</dfn>な放物線、<m>a &lt; 0</m>のときは上側に突き出た形なので<dfn en="concave">上に凸</dfn>な放物線という。</p>
+			<figure xml:id="fig-func-quad-graph">
+				<image source="image/func-quad-graph"/>
+				<caption>2次関数のグラフ(放物線)</caption>
+			</figure>
+
+			<p>2次関数の形状に関する情報を得るためには、2次関数を標準形で表す必要がある。
+			そのために、一般形<m>f(x) = ax^2 + bx + c</m>で表された2次関数を標準形<m>f(x) = a(x-p)^2 + q</m>に変換する、平方完成という操作を行う。</p>
+			<theorem>
+				<title>一般形2次関数の頂点と軸</title>
+				<statement>
+					一般形の2次関数<m>f(x) = ax^2 + bx + c</m>の頂点は点<m>(-\frac{b}{2a}, - \frac{b^2 - 4ac}{4a})</m>、軸は<m>x = -\frac{b}{2a}</m>である。
+				</statement>
+				<proof>
+					<md>
+						<mrow>f(x) = ax^2 + bx + c = a(x^2 + \frac{b}{a}x) + c = a(x^2 + \frac{b}{a}x + (\frac{b}{2a})^2) + c - a(\frac{b}{2a})^2 = a(x + \frac{b}{2a})^2 - \frac{b^2 - 4ac}{4a}</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<p>具体的な平方完成の手順は、次のようになる。</p>
+			<algorithm>
+				<title>平方完成</title>
+				<statement>
+					一般形の2次関数<m>f(x) = ax^2 + bx + c</m>を標準形へと変換するには、次のようにすればよい。
+					<ol>
+						<li>2次の項と1次の項を<m>a</m>で括り出す。</li>
+						<li>括り出した中で、<m>x</m>の係数を2で割り、2乗した数を加える。</li>
+						<li>加えた数と釣り合いをとるために、加えた数に<m>a</m>を掛けた数を全体から引く。</li>
+						<li>因数分解の公式を用いて<m>(x - p)^2</m>の形の項を作る。</li>
+					</ol>
+				</statement>
+			</algorithm>
+			<p>平方完成の例を次に示す。計算が正しいか不安であれば、右から左へ展開して検算するとよい。</p>
+			<example>
+				<title>平方完成の例</title>
+				<statement>
+					2次関数<m>f(x) = 4x^2 + 6x + 3</m>を標準形へ変換する。
+					<md>
+						<mrow>f(x) = 4x^2+6x+3 = 4(x^2 + \frac{3}{2}x) + 3 = 4(x^2 + \frac{3}{2}x + (\frac{3}{4})^2) + 3 - 4(\frac{3}{4})^2 = 4(x + \frac{3}{4})^2 + \frac{3}{4}</mrow>
+					</md>
+					より、<m>f(x)</m>の頂点は点<m>(-\frac{3}{4}, \frac{3}{4})</m>、軸は直線<m>x = -\frac{3}{4}</m>となり、グラフは図<xref ref="fig-func-quad-graph-ex"/>のようになる。
+					<figure xml:id="fig-func-quad-graph-ex">
+						<image source="image/func-quad-graph-ex"/>
+						<caption><m>y = 4x^2 + 6x + 3</m>のグラフ</caption>
+					</figure>
+				</statement>
+			</example>
+		</section>
 	</section>
 </chapter>
