@@ -91,6 +91,7 @@
 				特に、多項式の次数が<m>n (\in \mathbb{N})</m>であるとき、この関数を<dfn>n次関数</dfn>という。
 			</statement>
 		</definition>
+		<p>0次関数は<m>f(x) = 3</m>のように、入力<m>x</m>に依らず同じ値を出力する。そのため、0次関数を<dfn en="constant function">定数関数</dfn>ともいう。</p>
 
 		<section xml:id="ssec-func-linear">
 			<title>1次関数</title>
