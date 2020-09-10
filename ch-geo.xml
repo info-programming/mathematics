@@ -8,8 +8,10 @@
 
 	<section xml:id="sec-geo-coord">
 		<title>座標</title>
-		<p>図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn en="coordinate">座標</dfn>である。
-		座標のとり方のことを<dfn en="coordinate system">座標系</dfn>といい、座標系が定められた空間を<dfn en="coordinate space">座標空間</dfn>という。特に、2つの軸により定められる座標空間を<dfn>座標平面</dfn>という。</p>
+		<introduction>
+			<p>図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn en="coordinate">座標</dfn>である。
+			座標のとり方のことを<dfn en="coordinate system">座標系</dfn>といい、座標系が定められた空間を<dfn en="coordinate space">座標空間</dfn>という。特に、2つの軸により定められる座標空間を<dfn>座標平面</dfn>という。</p>
+		</introduction>
 
 		<subsection xml:id="ssec-geo-rect">
 			<title>直交座標系</title>
