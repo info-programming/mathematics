@@ -59,28 +59,86 @@
 
 	<section xml:id="sec-func-graph">
 		<title>グラフ</title>
-		<p>関数のグラフを座標空間に図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
-		<definition>
+		<subsection xml:id="ssec-func-graph">
 			<title>グラフ</title>
-			<statement>
-				関数<m>f: \mathbb{R} \to \mathbb{R}</m>について、集合<m>\{ (x, y) | x \in \mathbb{R}, y = f(x) \}</m>を<m>f</m>の<dfn en="graph">グラフ</dfn>という。
-				また、関数<m>f: \mathbb{R}^2 \to \mathbb{R}</m>について、集合<m>\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}</m>を<m>f</m>のグラフという。
-				このとき、<m>y = f(x)</m>や<m>z = f(x, y)</m>をそれぞれのグラフの方程式という。
-			</statement>
-		</definition>
+			<p>関数のグラフを座標空間に図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
+			<definition>
+				<title>グラフ</title>
+				<statement>
+					関数<m>f: \mathbb{R} \to \mathbb{R}</m>について、集合<m>\{ (x, y) | x \in \mathbb{R}, y = f(x) \}</m>を<m>f</m>の<dfn en="graph">グラフ</dfn>という。
+					また、関数<m>f: \mathbb{R}^2 \to \mathbb{R}</m>について、集合<m>\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}</m>を<m>f</m>のグラフという。
+					このとき、<m>y = f(x)</m>や<m>z = f(x, y)</m>をそれぞれのグラフの方程式という。
+				</statement>
+			</definition>
 
-		<algorithm>
-			<title>グラフの描き方</title>
-			<statement>
-				<ol>
-					<li>軸と原点を描く。<m>xy</m>平面の場合は<m>x</m>軸と<m>y</m>軸を書き、それぞれの軸の端に「<m>x</m>」「<m>y</m>」と記す。<m>x</m>軸と<m>y</m>軸の交点に原点を表す記号<m>O</m>を記す。</li>
-					<li>軸との交点を探し、もし交点があれば交点の座標を書き込む。<m>xy</m>平面の場合は<m>y = 0</m>を代入して<m>x</m>軸との交点を求め、<m>x = 0</m>を代入して<m>y</m>軸との交点を求める。</li>
-					<li><m>x = \pm 1, \pm 2, \pm \frac{1}{2}</m>などいくつかの値を代入して、グラフの概形を推測する。</li>
-					<li>以上の点を通る線を描く。線上で条件を満たす端点は白丸「○」で、条件を満たさない端点は黒丸「●」で表す。
-						曲線を描く場合は、「曲がり方が急になる・緩やかになる」「ある値へ近づく」など、どのような曲がり方をしているかを意識し、できるだけ曲線の特徴を反映させて描く。</li>
-				</ol>
-			</statement>
-		</algorithm>
+			<algorithm>
+				<title>グラフの描き方</title>
+				<statement>
+					<ol>
+						<li>軸と原点を描く。<m>xy</m>平面の場合は<m>x</m>軸と<m>y</m>軸を書き、それぞれの軸の端に「<m>x</m>」「<m>y</m>」と記す。<m>x</m>軸と<m>y</m>軸の交点に原点を表す記号<m>O</m>を記す。</li>
+						<li>軸との交点を探し、もし交点があれば交点の座標を書き込む。<m>xy</m>平面の場合は<m>y = 0</m>を代入して<m>x</m>軸との交点を求め、<m>x = 0</m>を代入して<m>y</m>軸との交点を求める。</li>
+						<li><m>x = \pm 1, \pm 2, \pm \frac{1}{2}</m>などいくつかの値を代入して、グラフの概形を推測する。</li>
+						<li>以上の点を通る線を描く。線上で条件を満たす端点は白丸「○」で、条件を満たさない端点は黒丸「●」で表す。
+							曲線を描く場合は、「曲がり方が急になる・緩やかになる」「ある値へ近づく」など、どのような曲がり方をしているかを意識し、できるだけ曲線の特徴を反映させて描く。</li>
+					</ol>
+				</statement>
+			</algorithm>
+		</subsection>
+
+		<subsection xml:id="ssec-func-trans">
+			<title>移動</title>
+			<p>関数のグラフを座標空間内で移動させると、グラフに対してさまざまな変形を行うことができる。</p>
+			<definition>
+				<title>平行移動</title>
+				<statement>
+					あるグラフを平面上で一定の距離と方向に動かすことを、そのグラフの<dfn>平行移動</dfn>という。
+					ある方程式のグラフを<m>X</m>軸方向に<m>p</m>だけ平行移動したグラフの方程式は、元の方程式の変数<m>X</m>を<m>X - p</m>に置き換えたものになる。
+					たとえば、<m>y = f(x)</m>を<m>x</m>軸方向に<m>p</m>、<m>y</m>軸方向に<m>q</m>だけ平行移動したグラフは<m>y - q = f(x - p)</m>と表される。
+					<figure xml:id="fig-func-trans-translate">
+						<image source="image/func-trans-translate"/>
+						<caption>平行移動の例</caption>
+					</figure>
+				</statement>
+			</definition>
+			<p><m>xy</m>平面上の点<m>(a, b)</m>を<m>x</m>軸方向に<m>p</m>、<m>y</m>軸方向に<m>q</m>だけ平行移動すると点<m>(a + p, b + q)</m>となる。
+			点<m>(a, b)</m>の方程式は<m>(x, y) = (a, b)</m>、つまり「<m>x = a</m>かつ<m>y = b</m>」と表せるので、移動後の点の方程式は「<m>x = a + p</m>かつ<m>y = b + q</m>」となる。
+			これを変形すると「<m>x - p = a</m>かつ<m>y - q = b</m>となり、元の方程式の<m>x</m>を<m>x - p</m>に、<m>y</m>を<m>y - q</m>に、それぞれ置き換えたものであることが分かる。
+			図形のグラフは方程式を満たす点の集合であるので、一般の図形についても、<m>x</m>を<m>x - p</m>に、<m>y</m>を<m>y - q</m>に、それぞれ置き換えることで、平行移動後のグラフの方程式が求められる。</p>
+
+			<definition>
+				<title>対称移動</title>
+				<statement>
+					ある点や直線などを決め、グラフをそれに関して対称に移動することを、その点や直線などに関する<dfn>対称移動</dfn>という。
+					ある方程式のグラフを直線<m>X = 0</m>について対称移動したグラフの方程式は、元の方程式の変数<m>X</m>を<m>-X</m>に置き換えたものになる。
+					<ul>
+						<li><m>y = f(x)</m>を<m>x</m>軸(<m>y = 0</m>)について対称移動したグラフは<m>-y = f(x)</m>と表される。</li>
+						<li><m>y = f(x)</m>を<m>y</m>軸(<m>x = 0</m>)について対称移動したグラフは<m>y = f(-x)</m>と表される。</li>
+						<li><m>y = f(x)</m>を原点について対称移動したグラフは<m>-y = f(-x)</m>と表される。原点についての対称移動は、<m>x</m>軸についての対称移動と<m>y</m>軸についての対称移動を合わせたものである。</li>
+					</ul>
+					<figure xml:id="fig-func-trans-reflection">
+						<image source="image/func-trans-reflection"/>
+						<caption>対称移動の例</caption>
+					</figure>
+				</statement>
+			</definition>
+
+			<p>また、<m>x</m>や<m>y</m>を定数で割ることにより、グラフを拡大したり縮小したりすることができる。</p>
+			<theorem>
+				<title>拡大</title>
+				<statement>
+					<m>k</m>を0でない実数とする。
+					ある方程式のグラフを<m>X</m>軸について<m>k</m>倍に<dfn>拡大</dfn>したグラフは、元の方程式の変数<m>X</m>を<m>\frac{X}{k}</m>に置き換えたものになる。
+					<ul>
+						<li><m>y = f(x)</m>を<m>x</m>軸方向に<m>k</m>倍に拡大したグラフは<m>y = f(\frac{x}{k})</m>と表される。</li>
+						<li><m>y = f(x)</m>を<m>y</m>軸方向に<m>k</m>倍に拡大したグラフは<m>\frac{y}{k} = f(x)</m>と表される。</li>
+					</ul>
+					<figure xml:id="fig-func-trans-zoom">
+						<image source="image/func-trans-zoom"/>
+						<caption>拡大の例</caption>
+					</figure>
+				</statement>
+			</theorem>
+		</subsection>
 	</section>
 
 	<section xml:id="sec-func-ex">
