@@ -11,19 +11,19 @@
 
 	<section xml:id="sec-expression-symbol">
 		<title>記号と式</title>
-		<p>数学で扱う記号には、<m>0, 1, -2, 0.1, \sqrt{2}, \frac{2}{3}</m>などの<ruby r="すう"><dfn en="number">数</dfn></ruby>や、<m>x, y, z, a, b, \alpha, \beta, \pi</m>などの<dfn>文字</dfn>、<m>+, -, \times, \div, =, &gt;</m>などの<ruby r="えんざんし"><dfn en="operator">演算子</dfn></ruby>などがある。</p>
-		<p>文字には、その文字に対応する数があり、この数を<ruby r="あたい"><dfn en="value">値</dfn></ruby>という。
+		<p>数学で扱う記号には、<m>0, 1, -2, 0.1, \sqrt{2}, \frac{2}{3}</m>などの<dfn en="number" r="すう" ruby="1">数</dfn>や、<m>x, y, z, a, b, \alpha, \beta, \pi</m>などの<dfn r="もじ">文字</dfn>、<m>+, -, \times, \div, =, &gt;</m>などの<dfn en="operator" r="えんざんし" ruby="1">演算子</dfn>などがある。</p>
+		<p>文字には、その文字に対応する数があり、この数を<dfn en="value" r="あたい" ruby="1">値</dfn>という。
 		文字は値が定まっているかによって、変数と定数に分けられる。
-		方程式で用いる<m>x, y</m>などのように、その文字に<em>対応する値が未知である文字</em>を、<dfn en="variable">変数</dfn>という。
-		一方、円周率<m>\pi = 3.1415 \cdots</m>のように、その文字に<em>対応する値が定まっている文字</em>を、<ruby r="ていすう"><dfn en="constant">定数</dfn></ruby>という。通常の数も値が定まっているので、定数の一種である。</p>
+		方程式で用いる<m>x, y</m>などのように、その文字に<em>対応する値が未知である文字</em>を、<dfn en="variable" r="へんすう">変数</dfn>という。
+		一方、円周率<m>\pi = 3.1415 \cdots</m>のように、その文字に<em>対応する値が定まっている文字</em>を、<dfn en="constant" r="ていすう" ruby="1">定数</dfn>という。通常の数も値が定まっているので、定数の一種である。</p>
 
 		<p>数学の基本的となる演算には、加法・減法・乗法・除法がある。
 		このうち乗法については、記号<m>\times</m>を省略し、<m>2 \times x \times y = 2xy</m>と表記することが多い。
-		乗法を省略して書くことから分かるように、数学では乗法で繋がれたまとまりを基本的なまとまりとして扱うことが多く、これを<dfn en="term">項</dfn>と呼ぶ。</p>
+		乗法を省略して書くことから分かるように、数学では乗法で繋がれたまとまりを基本的なまとまりとして扱うことが多く、これを<dfn en="term" r="こう">項</dfn>と呼ぶ。</p>
 		<definition>
 			<title>項</title>
 			<statement>
-				1つ以上の<em>数と文字が乗法で繋がれたもの</em>を、<dfn en="term">項</dfn>という。
+				1つ以上の<em>数と文字が乗法で繋がれたもの</em>を、<dfn en="term" r="こう">項</dfn>という。
 			</statement>
 		</definition>
 		<p>例えば、数や文字のみの<m>0, 0.1, a, \pi</m>は項である。
@@ -32,7 +32,7 @@
 		<definition>
 			<title>式</title>
 			<statement>
-				数や文字、演算子などからなる文字の列を、「何らかの事柄を数学的な形で表現(express)したもの」という意味で、<dfn en="expression">式</dfn>という。
+				数や文字、演算子などからなる文字の列を、「何らかの事柄を数学的な形で表現(express)したもの」という意味で、<dfn en="expression" r="しき">式</dfn>という。
 			</statement>
 		</definition>
 	</section>
@@ -42,8 +42,8 @@
 		<subsection xml:id="ssec-expression-exp">
 			<title>指数と冪乗</title>
 			<p>同じ文字や数を何回も掛け合わせる場合には、<m>a \times a = a^2</m>のように右上に掛け合わせる回数を書き表す。
-			このとき、右上の数字を<m>a^2</m>の<dfn en="index">指数</dfn>という。
-			このように<m>a^n</m>の形で表記される数を、<m>a</m>の<ruby r="べきじょう"><dfn>冪乗</dfn></ruby>もしくは<ruby r="るいじょう"><dfn>累乗</dfn></ruby>という。</p>
+			このとき、右上の数字を<m>a^2</m>の<dfn en="index" r="しすう">指数</dfn>という。
+			このように<m>a^n</m>の形で表記される数を、<m>a</m>の<dfn r="べきじょう" ruby="1">冪乗</dfn>もしくは<dfn r="るいじょう" ruby="1">累乗</dfn>という。</p>
 			<definition>
 				<title>冪乗・累乗</title>
 				<statement>
@@ -92,11 +92,11 @@
 			<title>指数の有理数への拡張</title>
 			<p>次に、指数を有理数に拡張する。
 			<m>a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}</m>と考えられるので、2乗して<m>a</m>になる数を考えればよいことが分かる。
-			ここで、2乗して<m>a</m>になる数を<m>a</m>の<dfn en="square root">平方根</dfn>と呼ぶ。また、同様にして<m>a</m>の<dfn>冪乗根</dfn>を定義する。</p>
+			ここで、2乗して<m>a</m>になる数を<m>a</m>の<dfn en="square root" r="へいほうこん">平方根</dfn>と呼ぶ。また、同様にして<m>a</m>の<dfn r="べきじょうこん">冪乗根</dfn>を定義する。</p>
 			<definition>
 				<title>平方根</title>
 				<statement>
-					任意の0以上の実数<m>a</m>について、<m>b^2 = a</m>となる数<m>b</m>を<m>a</m>の<dfn en="square root">平方根</dfn>と呼ぶ。
+					任意の0以上の実数<m>a</m>について、<m>b^2 = a</m>となる数<m>b</m>を<m>a</m>の<dfn en="square root" r="へいほうこん">平方根</dfn>と呼ぶ。
 					特に、<m>a</m>の平方根のうち正のものを<m>\sqrt{a}</m>と表す。
 				</statement>
 			</definition>
@@ -104,7 +104,7 @@
 			<definition>
 				<title>冪乗根</title>
 				<statement>
-					任意の0以上の実数<m>a</m>と自然数<m>n</m>について、<m>b^n = a</m>となる数<m>b</m>を<m>a</m>のn乗根、または<m>a</m>の<dfn>冪乗根</dfn>と呼ぶ。
+					任意の0以上の実数<m>a</m>と自然数<m>n</m>について、<m>b^n = a</m>となる数<m>b</m>を<m>a</m>のn乗根、または<m>a</m>の<dfn r="べきじょうこん">冪乗根</dfn>と呼ぶ。
 					特に、<m>a</m>の<m>n</m>乗根のうち正のものを<m>\sqrt[n]{a}</m>と表す。
 				</statement>
 			</definition>
@@ -155,18 +155,18 @@
 		<definition>
 			<title>多項式</title>
 			<statement>
-				<em>1つ以上の項からなる式</em>を<dfn en="polynomial">多項式</dfn>という。
+				<em>1つ以上の項からなる式</em>を<dfn en="polynomial" r="たこうしき">多項式</dfn>という。
 			</statement>
 		</definition>
 		<p>例えば式のうち、<m>2 + \sqrt{2}</m>や<m>a + b</m>、<m>2x + 3y</m>などは多項式の例である。
 		また、左辺と右辺に式がある<m>a + b = 3</m>などの方程式や、<m>2a &lt; 3</m>などの不等式もまた、式の例である。</p>
-		<p>なお、1つしか項がない多項式を<dfn>単項式</dfn>と呼ぶことや、多項式の別の呼び方として<dfn>整式</dfn>と呼ぶこともある。ただ一般的には、これらすべてをまとめて「多項式」と呼ぶことが多い。</p>
+		<p>なお、1つしか項がない多項式を<dfn r="たんこうしき">単項式</dfn>と呼ぶことや、多項式の別の呼び方として<dfn r="せいしき">整式</dfn>と呼ぶこともある。ただ一般的には、これらすべてをまとめて「多項式」と呼ぶことが多い。</p>
 
 		<p>多項式の性質を分析するときには、各項の次数や係数に着目することが多い。</p>
 		<definition>
 			<title>係数と次数</title>
 			<statement>
-				項が<m>ax^n</m>と表されるとき、<m>a</m>をこの項の<m>x</m>についての<dfn>係数</dfn>といい、指数<m>n</m>をこの項の<m>x</m>についての<dfn>次数</dfn>という。
+				項が<m>ax^n</m>と表されるとき、<m>a</m>をこの項の<m>x</m>についての<dfn r="けいすう">係数</dfn>といい、指数<m>n</m>をこの項の<m>x</m>についての<dfn r="じすう">次数</dfn>という。
 				このとき、この項<m>ax^n</m>は<m>x</m>について<m>n</m><ruby r="じ">次</ruby>の項であるという。
 				数1や<m>\pi</m>などの<em>定数の次数は0</em>とし、0次の項として扱う。
 				ただし、数<em>0については次数は定義しない</em>。
@@ -179,14 +179,14 @@
 		<definition>
 			<title>多項式の次数</title>
 			<statement>
-				多項式に含まれる文字<m>x</m>に着目して各項の次数を調べたとき、最大のものをその多項式の<dfn>次数</dfn>という。
+				多項式に含まれる文字<m>x</m>に着目して各項の次数を調べたとき、最大のものをその多項式の<dfn r="じすう">次数</dfn>という。
 				また、この多項式は<m>x</m>について<m>n</m>次式であるという。
 			</statement>
 		</definition>
 		<p>例えば、多項式<m>1 + 2x^2 + x</m>は<m>x</m>について2次式であるという。</p>
 
 		<p>多項式では、次数の大きい項ほど多項式の値に与える影響が大きくなるので、次数の大きい項から順に並べることが多い。
-		多項式を<em>次数の高い項から順に並べる</em>ことを、その多項式を「<ruby r="こうべき"><dfn>降冪</dfn></ruby>の順に整理する」という。
+		多項式を<em>次数の高い項から順に並べる</em>ことを、その多項式を「<dfn r="こうべき">降冪</dfn>の順に整理する」という。
 		逆に、次数の低い項から順に並べることは、「<ruby r="しょうべき">昇冪</ruby>の順に整理する」という。
 		例えば、多項式<m>1 + 2x^2 + x</m>を降冪の順に整理すると<m>2x^2 + x + 1</m>になり、昇冪の順に整理すると<m>1 + x + 2x^2</m>になる。</p>
 		<p>降冪の順に整理しても式の見た目がよくならない場合などは、降冪の順から逸脱しても見た目の美しさを優先することもある。
@@ -241,7 +241,7 @@
 			<theorem>
 				<title>展開・因数分解の公式2</title>
 				<statement>
-					<m>a, b, c</m>を実数とするとき、次の等式が成り立つ。これらの等式で左辺から右辺に変形する操作を<dfn>展開</dfn>、右辺から左辺に変形する操作を<dfn>因数分解</dfn>という。
+					<m>a, b, c</m>を実数とするとき、次の等式が成り立つ。これらの等式で左辺から右辺に変形する操作を<dfn r="てんかい">展開</dfn>、右辺から左辺に変形する操作を<dfn r="いんすうぶんかい">因数分解</dfn>という。
 					<md>
 						<mrow>(a + b)^2 &amp;= a^2 + 2ab + b^2</mrow>
 						<mrow>(a - b)^2 &amp;= a^2 - 2ab + b^2</mrow>
@@ -272,7 +272,7 @@
 			<m>x</m>は同時に2つの値をとることはできないので、<m>x = a</m>または<m>x = b</m>となり、方程式を満たす<m>x</m>の値を求められる。
 			ここでは、「<m>AB = 0</m>であれば<m>A = 0</m>か<m>B = 0</m>の<strong>少なくとも一方が</strong>0である」ことを用いている。</p>
 
-			<p>より高度な因数分解として、<dfn><ruby r="たすき">襷</ruby>掛け</dfn>と呼ばれる、次の式に基づく因数分解がある。</p>
+			<p>より高度な因数分解として、<dfn r="たすきがけ" ruby="1">襷掛け</dfn>と呼ばれる、次の式に基づく因数分解がある。</p>
 			<theorem>
 				<title>展開・因数分解の公式3</title>
 				<statement>
@@ -336,7 +336,7 @@
 
 	<section xml:id="sec-expression-rel">
 		<title>関係式</title>
-		<introduction>いくつかの式の<dfn en="relation">関係</dfn>をあらわした<dfn>関係式</dfn>には、方程式や不等式、合同式などがある。</introduction>
+		<introduction>いくつかの式の<dfn en="relation" r="かんけい">関係</dfn>をあらわした<dfn r="かんけいしき">関係式</dfn>には、方程式や不等式、合同式などがある。</introduction>
 
 		<subsection xml:id="ssec-expression-equation">
 			<title>等式と方程式</title>
@@ -344,9 +344,9 @@
 			<definition>
 				<title>等式</title>
 				<statement>
-					等号<m>=</m>を含み、数の相等関係を表す関係式<m>a = b</m>を<dfn en="equation">等式</dfn>という。
-					等式<m>a = b</m>で、等号の左側にある辺<m>a</m>を<dfn>左辺</dfn>、右側にある辺<m>b</m>を<dfn>右辺</dfn>という。
-					等式<m>a = b</m>が成り立つとき、<m>a</m>と<m>b</m>は<dfn en="equal to">等しい</dfn>という。
+					等号<m>=</m>を含み、数の相等関係を表す関係式<m>a = b</m>を<dfn en="equation" r="とうしき">等式</dfn>という。
+					等式<m>a = b</m>で、等号の左側にある辺<m>a</m>を<dfn r="さへん">左辺</dfn>、右側にある辺<m>b</m>を<dfn r="うへん">右辺</dfn>という。
+					等式<m>a = b</m>が成り立つとき、<m>a</m>と<m>b</m>は<dfn en="equal to" r="ひとしい">等しい</dfn>という。
 				</statement>
 			</definition>
 
@@ -357,15 +357,15 @@
 					<md>
 						<mrow>a = b = c \iff (a = b) \text{かつ} (b = c) \iff \begin{cases} a = b \\ b = c \end{cases}</mrow>
 					</md>
-					等式<m>a = b = c</m>の最も左側にある辺<m>a</m>を<dfn>第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn>第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn>第3辺</dfn>という。
+					等式<m>a = b = c</m>の最も左側にある辺<m>a</m>を<dfn r="だい1へん">第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn r="だい2へん">第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn r="だい3へん">第3辺</dfn>という。
 				</statement>
 			</definition>
 
 			<definition>
 				<title>方程式</title>
 				<statement>
-					未知の数<m>x</m>を含み、特定の<m>x</m>の値について成り立つ等式を、<m>x</m>についての<dfn>方程式</dfn>という。
-					方程式が成り立つ<m>x</m>の値を求めることを、方程式を<dfn en="solve">解く</dfn>といい、求めた<m>x</m>の値を方程式の<dfn en="solution">解</dfn>という。
+					未知の数<m>x</m>を含み、特定の<m>x</m>の値について成り立つ等式を、<m>x</m>についての<dfn r="ほうていしき">方程式</dfn>という。
+					方程式が成り立つ<m>x</m>の値を求めることを、方程式を<dfn en="solve" r="とく">解く</dfn>といい、求めた<m>x</m>の値を方程式の<dfn en="solution" r="かい">解</dfn>という。
 				</statement>
 			</definition>
 		</subsection>
@@ -375,7 +375,7 @@
 			<definition>
 				<title>不等式</title>
 				<statement>
-					不等号<m>&lt;, &gt;, \leqq, \geqq</m>のいずれかを含み、数の大小関係を表す関係式を<dfn en="inequation">不等式</dfn>という。
+					不等号<m>&lt;, &gt;, \leqq, \geqq</m>のいずれかを含み、数の大小関係を表す関係式を<dfn en="inequation" r="ふとうしき">不等式</dfn>という。
 					不等号はそれぞれ、次の意味をもつ。
 					<md>
 						<mrow>a &amp;&lt;  b &amp; (a\text{は}b\text{より小さい(less than)})</mrow>
@@ -383,7 +383,7 @@
 						<mrow>a &amp;\leqq b &amp; (a\text{は}b\text{以下である(小さいかまたは等しい, less than or equal to)})</mrow>
 						<mrow>a &amp;\geqq b &amp; (a\text{は}b\text{以上である(大きいかまたは等しい, greater than or equal to)})</mrow>
 					</md>
-					等式の場合と同様に、これらの式で不等号の左側にある辺<m>a</m>を<dfn>左辺</dfn>、右側にある辺<m>b</m>を<dfn>右辺</dfn>という。
+					等式の場合と同様に、これらの式で不等号の左側にある辺<m>a</m>を<dfn r="さへん">左辺</dfn>、右側にある辺<m>b</m>を<dfn r="うへん">右辺</dfn>という。
 				</statement>
 			</definition>
 			<p>不等号<m>\leqq, \geqq</m>はそれぞれ、等号の線を一本省略して<m>\leq, \geq</m>と書くことも多い。</p>
@@ -413,14 +413,14 @@
 					<md>
 						<mrow>a &lt; b &lt; c \iff (a &lt; b) \text{かつ} (b &lt; c) \iff \begin{cases} a &lt; b \\ b &lt; c \end{cases}</mrow>
 					</md>
-					等式の場合と同様に、<m>a &lt; b &lt; c</m>で最も左側にある辺<m>a</m>を<dfn>第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn>第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn>第3辺</dfn>という。
+					等式の場合と同様に、<m>a &lt; b &lt; c</m>で最も左側にある辺<m>a</m>を<dfn r="だい1へん">第1辺</dfn>、左から2番目にある辺<m>b</m>を<dfn r="だい2へん">第2辺</dfn>、左から3番目にある辺<m>c</m>を<dfn r="だい3へん">第3辺</dfn>という。
 				</statement>
 			</definition>
 			<p>この方法と同じ考え方で<m>a &lt; b &gt; c</m>のような書き方をすることも考えられる。しかし、大小関係が同じ向きに並んでいないと不等式の意味を理解しづらいので、このような書き方はあまり行わない。</p>
 
 			<p><m>-3x + 1 &lt; 5</m>のように、未知の数を含む不等式を考えることもできる。
 				このような不等式では、条件を満たす<m>x</m>は特定の値ではなく、不等式で表される範囲になることが多い。
-				条件を満たす<m>x</m>の範囲を求めることを、不等式を<dfn en="solve">解く</dfn>といい、求めた範囲を不等式の<dfn en="solution">解</dfn>という。</p>
+				条件を満たす<m>x</m>の範囲を求めることを、不等式を<dfn en="solve" r="とく">解く</dfn>といい、求めた範囲を不等式の<dfn en="solution" r="かい">解</dfn>という。</p>
 			<example>
 				<title>不等式の解を求める例</title>
 				不等式<m>-3x + 1 &lt; 5</m>を解くことを考える。

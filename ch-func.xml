@@ -16,15 +16,15 @@
 		<definition>
 			<title>写像と関数</title>
 			<statement>
-				<m>A, B</m>を集合とする。<m>f</m>が<m>A</m>の要素に<m>B</m>の要素を一つだけ対応させるとき、<m>f</m>を<m>A</m>から<m>B</m>への<dfn en="map">写像</dfn>または<dfn en="function">関数</dfn>といい、<m>f:A \to B</m>と表す。
-				このとき、<m>A</m>を<m>f</m>の<dfn en="domain">定義域</dfn>、<m>B</m>を<m>f</m>の<dfn en="range">値域</dfn>という。
+				<m>A, B</m>を集合とする。<m>f</m>が<m>A</m>の要素に<m>B</m>の要素を一つだけ対応させるとき、<m>f</m>を<m>A</m>から<m>B</m>への<dfn en="map" r="しゃぞう">写像</dfn>または<dfn en="function" r="かんすう">関数</dfn>といい、<m>f:A \to B</m>と表す。
+				このとき、<m>A</m>を<m>f</m>の<dfn en="domain" r="ていぎいき">定義域</dfn>、<m>B</m>を<m>f</m>の<dfn en="range" r="ちいき">値域</dfn>という。
 				また、写像<m>f</m>が<m>a (\in A)</m>に<m>b (\in B)</m>を対応させるとき、これを<m>f: a \mapsto b</m>または<m>f(a) = b</m>と表す。
-				このとき、<m>b</m>を<dfn en="input">入力</dfn><m>a</m>に対する<m>f</m>の<dfn en="output">出力</dfn>または<dfn en="value">値</dfn>という。
+				このとき、<m>b</m>を<dfn en="input" r="にゅうりょく">入力</dfn><m>a</m>に対する<m>f</m>の<dfn en="output" r="しゅつりょく">出力</dfn>または<dfn en="value" r="あたい">値</dfn>という。
 			</statement>
 		</definition>
 		<p>「写像」と「関数」という用語は、分野によっては使い分けることもあるが、同じだと考えても特に問題ない。また、写像を「変換」や「対応」などと呼ぶこともある。
 		「写像」は英語でmapまたはmappingであるが、「現実世界の地形」を「紙の上の図形」に対応づけて表したものが「地図(map)」であるので、地図と同様のものと考えることができる。
-		また、関数は<dfn>函数</dfn>とも書き、入力に対して何らかの値を出力する「函(はこ)」だと考えることもできる。</p>
+		また、関数は<dfn r="かんすう">函数</dfn>とも書き、入力に対して何らかの値を出力する「<ruby r="はこ">函</ruby>」だと考えることもできる。</p>
 		<p><m>f: A \to B</m>は、<m>A</m>のすべての要素に対して対応する<m>B</m>の要素が一つだけ存在する。
 		<m>a (\in A)</m>に対応する<m>B</m>の要素がなかったり、複数の要素が対応したりすることはできない。
 		ただし、<m>B</m>の要素のうち、<m>A</m>の要素に対応しないものはあってもよい。</p>
@@ -91,7 +91,7 @@
 			<definition>
 				<title>平行移動</title>
 				<statement>
-					あるグラフを平面上で一定の距離と方向に動かすことを、そのグラフの<dfn>平行移動</dfn>という。
+					あるグラフを平面上で一定の距離と方向に動かすことを、そのグラフの<dfn r="へいこういどう">平行移動</dfn>という。
 					ある方程式のグラフを<m>X</m>軸方向に<m>p</m>だけ平行移動したグラフの方程式は、元の方程式の変数<m>X</m>を<m>X - p</m>に置き換えたものになる。
 					たとえば、<m>y = f(x)</m>を<m>x</m>軸方向に<m>p</m>、<m>y</m>軸方向に<m>q</m>だけ平行移動したグラフは<m>y - q = f(x - p)</m>と表される。
 					<figure xml:id="fig-func-trans-translate">
@@ -108,7 +108,7 @@
 			<definition>
 				<title>対称移動</title>
 				<statement>
-					ある点や直線などを決め、グラフをそれに関して対称に移動することを、その点や直線などに関する<dfn>対称移動</dfn>という。
+					ある点や直線などを決め、グラフをそれに関して対称に移動することを、その点や直線などに関する<dfn r="たいしょういどう">対称移動</dfn>という。
 					ある方程式のグラフを直線<m>X = 0</m>について対称移動したグラフの方程式は、元の方程式の変数<m>X</m>を<m>-X</m>に置き換えたものになる。
 					<ul>
 						<li><m>y = f(x)</m>を<m>x</m>軸(<m>y = 0</m>)について対称移動したグラフは<m>-y = f(x)</m>と表される。</li>
@@ -127,7 +127,7 @@
 				<title>拡大</title>
 				<statement>
 					<m>k</m>を0でない実数とする。
-					ある方程式のグラフを<m>X</m>軸について<m>k</m>倍に<dfn>拡大</dfn>したグラフは、元の方程式の変数<m>X</m>を<m>\frac{X}{k}</m>に置き換えたものになる。
+					ある方程式のグラフを<m>X</m>軸について<m>k</m>倍に<dfn r="かくだい">拡大</dfn>したグラフは、元の方程式の変数<m>X</m>を<m>\frac{X}{k}</m>に置き換えたものになる。
 					<ul>
 						<li><m>y = f(x)</m>を<m>x</m>軸方向に<m>k</m>倍に拡大したグラフは<m>y = f(\frac{x}{k})</m>と表される。</li>
 						<li><m>y = f(x)</m>を<m>y</m>軸方向に<m>k</m>倍に拡大したグラフは<m>\frac{y}{k} = f(x)</m>と表される。</li>
@@ -149,11 +149,11 @@
 			<definition>
 				<title>多項式関数</title>
 				<statement>
-					多項式で表される関数を<dfn en="polynomial function">多項式関数</dfn>という。
-					特に、多項式の次数が<m>n (\in \mathbb{N})</m>であるとき、この関数を<dfn>n次関数</dfn>という。
+					多項式で表される関数を<dfn en="polynomial function" r="たこうしきかんすう">多項式関数</dfn>という。
+					特に、多項式の次数が<m>n (\in \mathbb{N})</m>であるとき、この関数を<dfn r="nじかんすう">n次関数</dfn>という。
 				</statement>
 			</definition>
-			<p>0次関数は<m>f(x) = 3</m>のように、入力<m>x</m>に依らず同じ値を出力する。そのため、0次関数を<dfn en="constant function">定数関数</dfn>ともいう。</p>
+			<p>0次関数は<m>f(x) = 3</m>のように、入力<m>x</m>に依らず同じ値を出力する。そのため、0次関数を<dfn en="constant function" r="ていすうかんすう">定数関数</dfn>ともいう。</p>
 			<p><m>n</m>次関数<m>y = f(x)</m>のグラフの例を図<xref ref="fig-func-poly-graph"/>に示す。
 			2次関数より次数が大きくなると、<m>n - 1</m>個の頂点がグラフ上に現れることが多い。ただし、<m>f(x) = x^3</m>のグラフのように、頂点がない場合もある。</p>
 			<figure xml:id="fig-func-poly-graph">
@@ -167,12 +167,12 @@
 			<definition>
 				<title>1次関数</title>
 				<statement>
-					多項式関数のうち、1次式で表される関数を<dfn en="linear function">1次関数</dfn>といい、一般に<m>f(x) = ax + b (a, b \in \mathbb{R}, a \ne 0)</m>と表される。
-					<m>a</m>をこの1次関数の<dfn en="slope">傾き</dfn>、<m>b</m>をこの1次関数の<dfn en="intercept">切片</dfn>という。
+					多項式関数のうち、1次式で表される関数を<dfn en="linear function" r="1じかんすう">1次関数</dfn>といい、一般に<m>f(x) = ax + b (a, b \in \mathbb{R}, a \ne 0)</m>と表される。
+					<m>a</m>をこの1次関数の<dfn en="slope" r="かたむき">傾き</dfn>、<m>b</m>をこの1次関数の<dfn en="intercept" r="せっぺん">切片</dfn>という。
 				</statement>
 			</definition>
 
-			<p>左辺が1次関数である<m>y = ax + b</m>のグラフは図<xref ref="fig-func-linear-graph"/>のように<dfn en="line">直線</dfn>となり、傾き<m>a</m>の値によって<m>x</m>軸となす角度が変化する。</p>
+			<p>左辺が1次関数である<m>y = ax + b</m>のグラフは図<xref ref="fig-func-linear-graph"/>のように<dfn en="line" r="ちょくせん">直線</dfn>となり、傾き<m>a</m>の値によって<m>x</m>軸となす角度が変化する。</p>
 			<figure xml:id="fig-func-linear-graph">
 				<image source="image/func-linear-graph"/>
 				<caption>1次関数のグラフ(直線)</caption>
@@ -185,7 +185,7 @@
 		<definition>
 			<title>2次関数</title>
 			<statement>
-				多項式関数のうち、2次式で表される関数を<dfn en="quadratic function">2次関数</dfn>という。
+				多項式関数のうち、2次式で表される関数を<dfn en="quadratic function" r="2じかんすう">2次関数</dfn>という。
 				すべての二次関数は、次のようにいくつかの形で表せる(<m>a, b, c, p, q, \beta, \gamma \in \mathbb{R}, a \ne 0</m>)。
 				<md>
 					<mrow>f(x) &amp;= a(x-p)^2 + q         &amp; (a \ne 0) &amp; (\text{標準形})</mrow>
@@ -196,9 +196,9 @@
 		</definition>
 
 		<p>左辺が標準形の2次関数である<m>y = a(x - p)^2 + q</m>のグラフは、図<xref ref="fig-func-quad-graph"/>のようになる。
-		この曲線は、物体を上方に投げたときに物体が描く軌道を表せることから<dfn en="parabola">放物線</dfn>という。
-		点<m>(p, q)</m>をこの2次関数の<dfn>頂点</dfn>、直線<m>x = p</m>をこの2次関数の<dfn en="axis">軸</dfn>といい、<em>放物線は軸について線対称</em>となる。
-		また、<m>a &gt; 0</m>のときは下側に突き出た形なので<dfn en="convex">下に凸</dfn>な放物線、<m>a &lt; 0</m>のときは上側に突き出た形なので<dfn en="concave">上に凸</dfn>な放物線という。</p>
+		この曲線は、物体を上方に投げたときに物体が描く軌道を表せることから<dfn en="parabola" r="ほうぶつせん">放物線</dfn>という。
+		点<m>(p, q)</m>をこの2次関数の<dfn r="ちょうてん">頂点</dfn>、直線<m>x = p</m>をこの2次関数の<dfn en="axis" r="じく">軸</dfn>といい、<em>放物線は軸について線対称</em>となる。
+		また、<m>a &gt; 0</m>のときは下側に突き出た形なので<dfn en="convex" r="したにとつ">下に凸</dfn>な放物線、<m>a &lt; 0</m>のときは上側に突き出た形なので<dfn en="concave" r="うえにとつ">上に凸</dfn>な放物線という。</p>
 		<figure xml:id="fig-func-quad-graph">
 			<image source="image/func-quad-graph"/>
 			<caption>2次関数のグラフ(放物線)</caption>
@@ -212,7 +212,7 @@
 		</figure>
 
 		<p>2次関数の形状に関する情報を得るためには、2次関数を標準形で表す必要がある。
-		そのために、一般形<m>f(x) = ax^2 + bx + c</m>で表された2次関数を標準形<m>f(x) = a(x-p)^2 + q</m>に変換する、<dfn en="completing the square">平方完成</dfn>という操作を行う。</p>
+		そのために、一般形<m>f(x) = ax^2 + bx + c</m>で表された2次関数を標準形<m>f(x) = a(x-p)^2 + q</m>に変換する、<dfn en="completing the square" r="へいほうかんせい">平方完成</dfn>という操作を行う。</p>
 		<theorem>
 			<title>一般形2次関数の頂点と軸</title>
 			<statement>
@@ -301,7 +301,7 @@
 			</statement>
 		</example>
 
-		<p><m>ax^2 + bx + c &gt; 0</m>のような<dfn>2次不等式</dfn>は、2次方程式と2次関数の知識を組み合わせて解くと簡単です。</p>
+		<p><m>ax^2 + bx + c &gt; 0</m>のような<dfn r="2じふとうしき">2次不等式</dfn>は、2次方程式と2次関数の知識を組み合わせて解くと簡単です。</p>
 		<algorithm>
 			<title>2次不等式の解法</title>
 			<statement>

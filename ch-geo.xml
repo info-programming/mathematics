@@ -9,8 +9,9 @@
 	<section xml:id="sec-geo-coord">
 		<title>座標</title>
 		<introduction>
-			<p>図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn en="coordinate">座標</dfn>である。
-			座標のとり方のことを<dfn en="coordinate system">座標系</dfn>といい、座標系が定められた空間を<dfn en="coordinate space">座標空間</dfn>という。特に、2つの軸により定められる座標空間を<dfn>座標平面</dfn>という。</p>
+			<p>図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn en="coordinate" r="ざひょう">座標</dfn>である。
+			座標のとり方のことを<dfn en="coordinate system" r="ざひょうけい">座標系</dfn>といい、座標系が定められた空間を<dfn en="coordinate space" r="ざひょうくうかん">座標空間</dfn>という。
+			特に、2つの軸により定められる座標空間を<dfn r="ざひょうへいめん">座標平面</dfn>という。</p>
 		</introduction>
 
 		<subsection xml:id="ssec-geo-rect">
@@ -18,11 +19,11 @@
 			<definition>
 				<title>直交座標系</title>
 				<statement>
-					互いに直交する<dfn en="axis">軸</dfn>からなる座標系を<dfn en="rectangular coordinate system">直交座標系</dfn>という。
+					互いに直交する<dfn en="axis" r="じく">軸</dfn>からなる座標系を<dfn en="rectangular coordinate system" r="ちょっこうざひょうけい">直交座標系</dfn>という。
 					軸として、座標平面では<m>x</m>軸と<m>y</m>軸、座標空間では<m>x</m>軸と<m>y</m>軸と<m>z</m>軸を使うことが多い。
 					<m>x</m>軸と<m>y</m>軸からなる座標平面を<m>xy</m>平面、<m>y</m>軸と<m>z</m>軸からなる座標平面を<m>yz</m>平面、<m>z</m>軸と<m>x</m>軸からなる座標平面を<m>zx</m>平面という。
 					また、<m>x</m>軸と<m>y</m>軸と<m>z</m>軸からなる座標空間を<m>xyz</m>空間という。
-					直交座標系ではすべての軸は1点で交わり、この点を<dfn en="origin">原点</dfn>といい、originの頭文字をとって点<m>O</m>と表す。
+					直交座標系ではすべての軸は1点で交わり、この点を<dfn en="origin" r="げんてん">原点</dfn>といい、originの頭文字をとって点<m>O</m>と表す。
 				</statement>
 			</definition>
 
@@ -38,7 +39,7 @@
 			<definition>
 				<title>直交座標系における座標</title>
 				<statement>
-					直交座標系では、軸の数と同じだけの実数の組により、座標系の上にある点の「位置」を表す。この「位置」をその点の<dfn>座標</dfn>という。
+					直交座標系では、軸の数と同じだけの実数の組により、座標系の上にある点の「位置」を表す。この「位置」をその点の<dfn r="ざひょう">座標</dfn>という。
 					<m>x</m>軸と<m>y</m>軸からなる座標平面では、それぞれの軸に対応する位置を<m>x</m>と<m>y</m>で表すとき、点の座標はこれらの組<m>(x, y)</m>で表される。
 					同様に、<m>x</m>軸と<m>y</m>軸と<m>z</m>軸からなる座標平面では、それぞれの軸に対応する位置を<m>x</m>と<m>y</m>と<m>z</m>で表すとき、点の座標はこれらの組<m>(x, y, z)</m>で表される。
 					点<m>P</m>の座標が<m>(x, y)</m>や<m>(x, y, z)</m>であることを、<m>P(x, y)</m>や<m>P(x, y, z)</m>と表すことがある。
@@ -53,8 +54,8 @@
 			<definition>
 				<title>極座標系</title>
 				<statement>
-					ある点<m>O</m>と、<m>O</m>を端点とする半直線からなる座標系を<dfn en="polar coordinate system">極座標系</dfn>という。
-					極座標系での点<m>O</m>を<dfn en="pole">極</dfn>、<m>O</m>を端点とする半直線を<dfn en="polar axis">始線</dfn>という。
+					ある点<m>O</m>と、<m>O</m>を端点とする半直線からなる座標系を<dfn en="polar coordinate system" r="きょくざひょうけい">極座標系</dfn>という。
+					極座標系での点<m>O</m>を<dfn en="pole" r="きょく">極</dfn>、<m>O</m>を端点とする半直線を<dfn en="polar axis" r="しせん">始線</dfn>という。
 					極座標系では、点<m>P</m>の座標を、極<m>O</m>からの距離<m>r (\geqq 0)</m>と、<m>OP</m>と始線のなす角<m>\theta</m>を用いて<m>(r, \theta)</m>と表す。
 				</statement>
 			</definition>
@@ -83,7 +84,7 @@
 			<definition>
 				<title>円柱座標系</title>
 				<statement>
-					平面を極座標系で表し、それに高さを表す<m>z</m>軸を加えた座標系を<dfn>円柱座標系</dfn>という。
+					平面を極座標系で表し、それに高さを表す<m>z</m>軸を加えた座標系を<dfn r="えんちゅうざひょうけい">円柱座標系</dfn>という。
 					円柱座標系では、点の座標は<m>(r, \theta, z)</m>で表される。
 				</statement>
 			</definition>
@@ -92,7 +93,7 @@
 			<definition>
 				<title>空間極座標系</title>
 				<statement>
-					平面を極座標系で表し、それに高さ方向の角度を表す<m>\phi</m>軸を加えた座標系を<dfn>空間極座標系</dfn>という。
+					平面を極座標系で表し、それに高さ方向の角度を表す<m>\phi</m>軸を加えた座標系を<dfn r="くうかんきょくざひょうけい">空間極座標系</dfn>という。
 					空間極座標系では、点の座標は<m>(r, \theta, \phi)</m>で表される。
 				</statement>
 			</definition>

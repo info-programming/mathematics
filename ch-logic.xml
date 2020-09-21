@@ -14,18 +14,18 @@
 
 	<section xml:id="sec-logic-problem">
 		<title>問題解決</title>
-		<p>数学では、未知の事柄がある状況を<dfn en="problem">問題</dfn>として捉え、問題を<dfn en="solve">解決</dfn>して未知の事柄を明らかにすることを目的とする。
-		より厳密には、未知の事柄がある状態を「<dfn en="As-Is">現在の状態</dfn>」、未知の事柄が明らかになった状態を「<dfn en="To-Be">目標の状態</dfn>」として、<strong>現在の状態と理想の状態の間に差があること</strong>を、<dfn en="problem">問題</dfn>だと定義する<xref ref="bib-simon2"/><xref ref="bib-newell"/>。
+		<p>数学では、未知の事柄がある状況を<dfn en="problem" r="もんだい">問題</dfn>として捉え、問題を<dfn en="solve" r="かいけつ">解決</dfn>して未知の事柄を明らかにすることを目的とする。
+		より厳密には、未知の事柄がある状態を「<dfn en="As-Is" r="げんざいのじょうたい">現在の状態</dfn>」、未知の事柄が明らかになった状態を「<dfn en="To-Be" r="もくひょうのじょうたい">目標の状態</dfn>」として、<strong>現在の状態と理想の状態の間に差があること</strong>を、<dfn en="problem" r="もんだい">問題</dfn>だと定義する<xref ref="bib-simon2"/><xref ref="bib-newell"/>。
 		図<xref ref="fig-problem"/>に、問題とその解の関係を示す。</p>
-		<p>また、ある問題について<strong>現在の状態から目標の状態へ至る道筋</strong>を、その問題の<dfn en="solution">解</dfn>という。
+		<p>また、ある問題について<strong>現在の状態から目標の状態へ至る道筋</strong>を、その問題の<dfn en="solution" r="かい">解</dfn>という。
 		解は必ず1つであるとは限らず、解が複数あることや、解が1つもないこともある。
 		解が複数ある場合、早く目標に到達できる解もあれば、目標に達するまで時間がかかる解や、高速だが正確性に欠ける解、機械を使えば計算できるが人手で扱うのは難しい解など、さまざまなものがある。
 		そのため、その場その場の状況に応じて、適した解を選ぶ必要がある。</p>
 		<definition>
 			<title>問題</title>
 			<statement>
-				<dfn strong="0" en="To-Be">目標とする状態</dfn>と<dfn strong="0" en="As-Is">現在の状態</dfn>の間に<em>差</em>があるとき、この差を<dfn en="problem">問題</dfn>という<xref ref="bib-simon2"/>。
-				<em>現在の状態から目標とする状態に至る方法を見つける</em>ことを<dfn en="problem solving">問題解決</dfn>といい、この方法をその問題の<dfn en="solution">解</dfn>という<xref ref="bib-newell"/>。
+				<dfn strong="0" en="To-Be" r="もくひょうのじょうたい">目標の状態</dfn>と<dfn strong="0" en="As-Is" r="げんざいのじょうたい">現在の状態</dfn>の間に<em>差</em>があるとき、この差を<dfn en="problem" r="もんだい">問題</dfn>という<xref ref="bib-simon2"/>。
+				<em>現在の状態から目標とする状態に至る方法を見つける</em>ことを<dfn en="problem solving" r="もんだいかいけつ">問題解決</dfn>といい、この方法をその問題の<dfn en="solution" r="かい">解</dfn>という<xref ref="bib-newell"/>。
 			</statement>
 		</definition>
 
@@ -44,20 +44,20 @@
 	<section xml:id="sec-logic-prop">
 		<title>命題論理</title>
 		<introduction>
-			<p>数学では、式や文を命題という形で扱う<dfn en="propositional logic">命題論理</dfn>の論理が、最も基本的な枠組みである。</p>
+			<p>数学では、式や文を命題という形で扱う<dfn en="propositional logic" r="めいだいろんり">命題論理</dfn>の論理が、最も基本的な枠組みである。</p>
 		</introduction>
 		<subsection xml:id="ssec-logic-prop">
 			<title>命題</title>
-			<p>数学が基盤とする論理学では、客観的な分析が可能な文を<dfn en="proposition">命題</dfn>として扱い、複数の命題を推論で接続することで論理を展開する。</p>
+			<p>数学が基盤とする論理学では、客観的な分析が可能な文を<dfn en="proposition" r="めいだい">命題</dfn>として扱い、複数の命題を推論で接続することで論理を展開する。</p>
 			<definition>
 				<title>命題</title>
 				<statement>
-					<em>「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn en="proposition">命題</dfn>という。
-					命題<m>p</m>が「正しい」とき、<m>p</m>は<dfn en="true">真</dfn>であるという。また、<m>p</m>が真でないとき、<m>p</m>は<dfn en="false">偽</dfn>であるという。
-					命題<m>p</m>が真であることを<m>p</m>が<dfn>成り立つ</dfn>、命題<m>p</m>が偽であることを<m>p</m>が<dfn>成り立たない</dfn>ともいう。
+					<em>「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn en="proposition" r="めいだい">命題</dfn>という。
+					命題<m>p</m>が「正しい」とき、<m>p</m>は<dfn en="true" r="しん">真</dfn>であるという。また、<m>p</m>が真でないとき、<m>p</m>は<dfn en="false" r="ぎ">偽</dfn>であるという。
+					命題<m>p</m>が真であることを<m>p</m>が<dfn r="なりたつ">成り立つ</dfn>、命題<m>p</m>が偽であることを<m>p</m>が<dfn r="なりたたない">成り立たない</dfn>ともいう。
 				</statement>
 			</definition>
-			<p>特に、真である命題を<dfn en="theorem">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
+			<p>特に、真である命題を<dfn en="theorem" r="ていり">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
 			<p>命題を文字で表す場合、propositionの頭文字の<m>p</m>を用い、複数の命題を文字で表すときは<m>q</m>や<m>r</m>も用いることが多い。流儀によっては、命題を大文字の<m>P</m>や<m>Q</m>で表すことも多い。</p>
 			<example>
 				<title>命題の例</title>
@@ -72,13 +72,13 @@
 
 		<subsection xml:id="ssec-logic-andornot">
 			<title>「かつ」「または」「でない」</title>
-			<p>命題についての基本的な操作には、1つの命題に対する<dfn>否定</dfn>や、2つ以上の命題に対する「<dfn>かつ</dfn>(連言)」「<dfn>または</dfn>(選言)」がある。</p>
+			<p>命題についての基本的な操作には、1つの命題に対する<dfn r="ひてい">否定</dfn>や、2つ以上の命題に対する「<dfn>かつ</dfn>(連言)」「<dfn>または</dfn>(選言)」がある。</p>
 			<definition>
 				<title>連言・選言・否定</title>
 				<statement>
 					<m>p, q</m>を命題とするとき、<m>p, q</m>の<em>両方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>かつ</dfn><m>q</m>」といい、<m>p \land q</m>と表すことがある。
 					また、<m>p, q</m>の<em>少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>または</dfn><m>q</m>」といい、<m>p \lor q</m>と表すことがある。
-					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn>否定</dfn>」といい、<m>\overline{p}</m>と表す。
+					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn r="ひてい">否定</dfn>」といい、<m>\overline{p}</m>と表す。
 				</statement>
 			</definition>
 			<p>数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em>少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p>
@@ -129,7 +129,7 @@
 
 		<subsection xml:id="ssec-logic-inference">
 			<title>推論「ならば」</title>
-			<p>命題を用いてより高度な命題を表すには、次の<dfn en="inference">推論</dfn>を表す規則が必要となる。</p>
+			<p>命題を用いてより高度な命題を表すには、次の<dfn en="inference" r="すいろん">推論</dfn>を表す規則が必要となる。</p>
 			<definition>
 				<title>推論</title>
 				<statement>
@@ -138,8 +138,8 @@
 					<md>
 						<mrow>[ p \implies q ] = [ \overline{p} \lor (p \land q) ] = [ (\overline{p} \lor p) \land (\overline{p} \lor q)] (\text{分配法則}) = [ \overline{p} \lor q ] (\text{排中律})</mrow>
 					</md>
-					命題<m>p \implies q</m>について、<m>p</m>を<m>p \implies q</m>の<dfn>仮定</dfn>、<m>q</m>を<m>p \implies q</m>の<dfn>結論</dfn>という。
-					また、<m>q</m>を<m>p</m>の<dfn en="necessary condition">必要条件</dfn>、<m>p</m>を<m>q</m>の<dfn en="sufficient condition">十分条件</dfn>という。
+					命題<m>p \implies q</m>について、<m>p</m>を<m>p \implies q</m>の<dfn r="かてい">仮定</dfn>、<m>q</m>を<m>p \implies q</m>の<dfn r="けつろん">結論</dfn>という。
+					また、<m>q</m>を<m>p</m>の<dfn en="necessary condition" r="ひつようじょうけん">必要条件</dfn>、<m>p</m>を<m>q</m>の<dfn en="sufficient condition" r="じゅうぶんじょうけん">十分条件</dfn>という。
 				</statement>
 			</definition>
 			<p>必要条件と十分条件は、「<m>p \implies q</m>」の「<m>\implies</m>」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
@@ -160,11 +160,11 @@
 			<definition>
 				<title>同値</title>
 				<statement>
-					<m>p, q</m>を命題とするとき、<m>p \implies q</m>かつ<m>q \implies p</m>であれば、<m>p</m>と<m>q</m>は<dfn>同値</dfn>であるといい、<m>p \iff q</m>と表す。
+					<m>p, q</m>を命題とするとき、<m>p \implies q</m>かつ<m>q \implies p</m>であれば、<m>p</m>と<m>q</m>は<dfn r="どうち">同値</dfn>であるといい、<m>p \iff q</m>と表す。
 					<md>
 						<mrow>[ p \iff q ] = [ p \implies q ] \land [ q \implies p ]</mrow>
 					</md>
-					このとき、<m>q</m>を<m>p</m>の<dfn>必要十分条件</dfn>であるといい、<m>p</m>も<m>q</m>の必要十分条件であるという。
+					このとき、<m>q</m>を<m>p</m>の<dfn r="ひつようじゅうぶんじょうけん">必要十分条件</dfn>であるといい、<m>p</m>も<m>q</m>の必要十分条件であるという。
 				</statement>
 			</definition>
 			<p>同値の記号「<m>\iff</m>」は数の比較に用いる等号「<m>=</m>」と同様の記号で、2つの命題が「同じ」ことを表せる便利な記号である。
@@ -179,7 +179,7 @@
 			<definition>
 				<title>逆・裏・対偶</title>
 				<statement>
-					<m>p, q</m>を命題とするとき、命題<m>p \implies q</m>に対し、<m>q \implies p</m>を元の命題の<dfn>逆</dfn>、<m>\overline{p} \implies \overline{q}</m>を元の命題の<dfn>裏</dfn>、<m>\overline{q} \implies \overline{p}</m>を元の命題の<dfn>対偶</dfn>という。
+					<m>p, q</m>を命題とするとき、命題<m>p \implies q</m>に対し、<m>q \implies p</m>を元の命題の<dfn r="ぎゃく">逆</dfn>、<m>\overline{p} \implies \overline{q}</m>を元の命題の<dfn r="うら">裏</dfn>、<m>\overline{q} \implies \overline{p}</m>を元の命題の<dfn r="たいぐう">対偶</dfn>という。
 				</statement>
 			</definition>
 
@@ -211,7 +211,7 @@
 			<definition>
 				<title>集合</title>
 				<statement>
-					「あるものがそれに<em>属するかどうかが明確に定まっている</em>ものの<em>集まり</em>」のことを<dfn en="set">集合</dfn>という。
+					「あるものがそれに<em>属するかどうかが明確に定まっている</em>ものの<em>集まり</em>」のことを<dfn en="set" r="しゅうごう">集合</dfn>という。
 				</statement>
 			</definition>
 
@@ -219,14 +219,14 @@
 			<definition>
 				<title>要素</title>
 				<statement>
-					集合に含まれる「もの」をその集合の<dfn en="element">要素</dfn>という。
+					集合に含まれる「もの」をその集合の<dfn en="element" r="ようそ">要素</dfn>という。
 					集合の表し方には、次の2つがある。
 					<ul>
-						<li><dfn en="intensive">内包</dfn>的な表現: 条件<m>P(x)</m>を満たす<m>x</m>の集合を<m>\{x|P(x)\}</m>のように、集合に含まれる要素が満たす条件を記して表す。</li>
-						<li><dfn en="extensive">外延</dfn>的な表現: <m>\{0,1,2\}</m>のように、0,1,2からなる集合の要素を直接書き並べて表す。</li>
+						<li><dfn en="intensive" r="ないほう">内包</dfn>的な表現: 条件<m>P(x)</m>を満たす<m>x</m>の集合を<m>\{x|P(x)\}</m>のように、集合に含まれる要素が満たす条件を記して表す。</li>
+						<li><dfn en="extensive" r="がいえん">外延</dfn>的な表現: <m>\{0,1,2\}</m>のように、0,1,2からなる集合の要素を直接書き並べて表す。</li>
 					</ul>
 					集合<m>A</m>に要素<m>x</m>が含まれることを、<m>x \in A</m>と表す。
-					また、「空の集合」<m>\{\}</m>を<dfn en="empty set">空集合</dfn>といい、<m>\emptyset</m>で表す。
+					また、「空の集合」<m>\{\}</m>を<dfn en="empty set" r="くうしゅうごう">空集合</dfn>といい、<m>\emptyset</m>で表す。
 					空集合の記号<m>\emptyset</m>は丸またはゼロに斜線を引いた記号で、ギリシャ文字の<ruby r="ファイ">Φ</ruby>とは異なる。
 				</statement>
 			</definition>
@@ -238,7 +238,7 @@
 			<definition>
 				<title>部分集合</title>
 				<statement>
-					集合<m>A, B</m>について、<m>x \in A</m>のときに<m>x \in B</m>となるなら、<m>A</m>は<m>B</m>の<dfn en="subset">部分集合</dfn>であるといい、<m>A \subset B</m>や<m>B \supset A</m>と表す。
+					集合<m>A, B</m>について、<m>x \in A</m>のときに<m>x \in B</m>となるなら、<m>A</m>は<m>B</m>の<dfn en="subset" r="ぶぶんしゅうごう">部分集合</dfn>であるといい、<m>A \subset B</m>や<m>B \supset A</m>と表す。
 					特に、<m>A \subset B</m>かつ<m>A \supset B</m>であることを、<m>A = B</m>と表す。
 				</statement>
 			</definition>
@@ -267,12 +267,12 @@
 
 		<subsection xml:id="ssec-logic-complement">
 			<title>補集合・和集合・共通部分</title>
-			<p>何らかの形で「全体」の集合(<dfn>全体集合</dfn>)が決まっているときには、全体のうちである条件を満たさないものの集合を考えることができる。</p>
+			<p>何らかの形で「全体」の集合(<dfn r="ぜんたいしゅうごう">全体集合</dfn>)が決まっているときには、全体のうちである条件を満たさないものの集合を考えることができる。</p>
 			<definition>
 				<title>補集合</title>
 				<statement>
 					全体集合を<m>B</m>とし、<m>A</m>を<m>B</m>の部分集合とする。
-					<m>B</m>の元のうち<m>A</m>の元ではないものを<m>A</m>の<dfn en="complement">補集合</dfn>といい、次のように定義される。
+					<m>B</m>の元のうち<m>A</m>の元ではないものを<m>A</m>の<dfn en="complement" r="ほしゅうごう">補集合</dfn>といい、次のように定義される。
 					<md>
 						<mrow>\overline{A} = \{x \in B | x \notin A \}</mrow>
 					</md>
@@ -287,7 +287,7 @@
 			<definition>
 				<title>和集合・共通部分</title>
 				<statement>
-					<m>A, B</m>が集合のとき、次の集合をそれぞれ、<m>A</m>と<m>B</m>の<dfn en="union">和集合</dfn>、<m>A</m>と<m>B</m>の<dfn en="intersection">共通部分</dfn>という。
+					<m>A, B</m>が集合のとき、次の集合をそれぞれ、<m>A</m>と<m>B</m>の<dfn en="union" r="わしゅうごう">和集合</dfn>、<m>A</m>と<m>B</m>の<dfn en="intersection" r="きょうつうぶぶん">共通部分</dfn>という。
 					<md>
 						<mrow>A \cup B &amp; = \{x| x \in A \text{かつ}   x \in    B\}</mrow>
 						<mrow>A \cap B &amp; = \{x| x \in A \text{または} x \in    B\}</mrow>
@@ -362,7 +362,7 @@
 			<definition>
 				<title>自然数と整数</title>
 				<statement>
-					<dfn en="natural number">自然数</dfn>全体の集合を<m>\mathbb{N}</m>、<dfn en="integer">整数</dfn>全体の集合を<m>\mathbb{Z}</m>で表す。
+					<dfn en="natural number" r="しぜんすう">自然数</dfn>全体の集合を<m>\mathbb{N}</m>、<dfn en="integer" r="せいすう">整数</dfn>全体の集合を<m>\mathbb{Z}</m>で表す。
 					<md>
 						<mrow>\mathbb{N} &amp;= \{n | n = 1, 2, \cdots \}</mrow>
 						<mrow>\mathbb{Z} &amp;= \{0\} \cup \{\pm n | n \in \mathbb{N} \}</mrow>
@@ -375,12 +375,12 @@
 			<definition>
 				<title>有理数と実数</title>
 				<statement>
-					<em>分数(比)の形で表すことができる数</em>、つまり有限小数や循環小数を<dfn en="rational number">有理数</dfn>といい、有理数全体の集合を<m>\mathbb{Q}</m>で表す。
+					<em>分数(比)の形で表すことができる数</em>、つまり有限小数や循環小数を<dfn en="rational number" r="ゆうりすう">有理数</dfn>といい、有理数全体の集合を<m>\mathbb{Q}</m>で表す。
 					<md>
 						<mrow>\mathbb{Q} &amp;= \{\frac{n}{m} | n \in \mathbb{N}, m \in \mathbb{Z} \}</mrow>
 					</md>
-					<m>\pi = 3.14\cdots</m>や<m>\sqrt{2} = 1.414\cdots</m>などの無限小数は分数で表すことができず、これを<dfn>無理数</dfn>という。
-					有理数と無理数を合わせて<dfn en="real number">実数</dfn>といい、実数全体の集合を<m>\mathbb{R}</m>で表す。
+					<m>\pi = 3.14\cdots</m>や<m>\sqrt{2} = 1.414\cdots</m>などの無限小数は分数で表すことができず、これを<dfn r="むりすう">無理数</dfn>という。
+					有理数と無理数を合わせて<dfn en="real number" r="じっすう">実数</dfn>といい、実数全体の集合を<m>\mathbb{R}</m>で表す。
 				</statement>
 			</definition>
 			<p>有理数を<m>\mathbb{Q}</m>で表すのは「商」の意を表すquotientに由来する。有理数は英語を直訳すると「比で表される数」であり、この言い方の方が定義をより明瞭に表している。</p>
@@ -388,18 +388,18 @@
 
 		<subsection xml:id="ssec-logic-tuple">
 			<title>組と直積</title>
-			<p>数など複数のものを1つにまとめて扱う方法には、集合以外に<dfn en="tuple">組</dfn>を用いる方法もある。</p>
+			<p>数など複数のものを1つにまとめて扱う方法には、集合以外に<dfn en="tuple" r="くみ">組</dfn>を用いる方法もある。</p>
 			<definition>
 				<title>組</title>
 				<statement>
-					<m>x, y, z</m>があるとき、<m>(x, y)</m>を<m>x</m>と<m>y</m>の<dfn en="tuple">組</dfn>、<m>(x, y, z)</m>を<m>x</m>と<m>y</m>と<m>z</m>の組という。
+					<m>x, y, z</m>があるとき、<m>(x, y)</m>を<m>x</m>と<m>y</m>の<dfn en="tuple" r="くみ">組</dfn>、<m>(x, y, z)</m>を<m>x</m>と<m>y</m>と<m>z</m>の組という。
 				</statement>
 			</definition>
 
 			<definition>
 				<title>組の相等関係</title>
 				<statement>
-					組<m>(a_1, a_2, \cdots, a_n)</m>と<m>(b_1, b_2, \cdots, b_n)</m>は、<m>a_1 = b_1, a_2 = b_2, \cdots, a_n = b_n</m>がすべて成り立つとき<dfn>等しい</dfn>といい、<m>(a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n)</m>と表す。
+					組<m>(a_1, a_2, \cdots, a_n)</m>と<m>(b_1, b_2, \cdots, b_n)</m>は、<m>a_1 = b_1, a_2 = b_2, \cdots, a_n = b_n</m>がすべて成り立つとき<dfn r="ひとしい">等しい</dfn>といい、<m>(a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n)</m>と表す。
 				</statement>
 			</definition>
 
@@ -413,7 +413,7 @@
 			<definition>
 				<title>直積</title>
 				<statement>
-					<m>A, B</m>を集合とするとき、<m>a (\in A)</m>と<m>b (\in B)</m>の組<m>(a, b)</m>を要素とする集合を<m>A</m>と<m>B</m>の<dfn en="direct product">直積</dfn>といい、<m>A \times B</m>と表す。
+					<m>A, B</m>を集合とするとき、<m>a (\in A)</m>と<m>b (\in B)</m>の組<m>(a, b)</m>を要素とする集合を<m>A</m>と<m>B</m>の<dfn en="direct product" r="ちょくせき">直積</dfn>といい、<m>A \times B</m>と表す。
 					<md>
 						<mrow>A \times B &amp;= \{(a, b) | a \in A, b \in B \}</mrow>
 					</md>
@@ -427,17 +427,17 @@
 	<section xml:id="sec-logic-pred">
 		<title>述語論理</title>
 		<introduction>
-			<p>命題論理を拡張し、「すべて」「ある」などを扱えるようにした枠組みを<dfn en="predicate logic">述語論理</dfn>という。</p>
+			<p>命題論理を拡張し、「すべて」「ある」などを扱えるようにした枠組みを<dfn en="predicate logic" r="じゅつごろんり">述語論理</dfn>という。</p>
 		</introduction>
 		<subsection xml:id="ssec-logic-propfunc">
 			<title>命題関数</title>
 			<p>命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。
 			命題には、「2は自然数である」「3は自然数である」「4は自然数である」のように、大半が同じで一部分のみが異なる命題がある。
-			これらの命題をまとめて表すために、<dfn en="propositional function">命題関数</dfn>を定義する。</p>
+			これらの命題をまとめて表すために、<dfn en="propositional function" r="めいだいかんすう">命題関数</dfn>を定義する。</p>
 			<definition>
 				<title>命題関数</title>
 				<statement>
-					変数<m>x</m>に値を代入すれば命題になり真偽が定まるものを<dfn en="propositional function">命題関数</dfn>といい、<m>P</m>という名前をつけた命題関数を<m>P(x)</m>のように表す。
+					変数<m>x</m>に値を代入すれば命題になり真偽が定まるものを<dfn en="propositional function" r="めいだいかんすう">命題関数</dfn>といい、<m>P</m>という名前をつけた命題関数を<m>P(x)</m>のように表す。
 					2つの変数<m>x, y</m>に値を代入すれば真偽が定まる命題関数についても同様に、<m>P(x, y)</m>のように表す。
 				</statement>
 			</definition>
@@ -473,11 +473,11 @@
 				<title>「すべて」</title>
 				<statement>
 					集合<m>X</m>の<dfn en="all">すべて</dfn>の要素<m>x</m>について<m>P(x)</m>が真であるという命題を<m>\forall x \in X, P(x)</m>と表す。
-					この記号<m>\forall</m>は<dfn>全称量化子</dfn>といい、「for <em>a</em>ll」または「<em>a</em>ny」の頭文字である「A」を逆さにした記号である。
+					この記号<m>\forall</m>は<dfn r="ぜんしょうりょうかし">全称量化子</dfn>といい、「for <em>a</em>ll」または「<em>a</em>ny」の頭文字である「A」を逆さにした記号である。
 					<md>
 						<mrow>\forall x \in X, P(x) \iff \bigwedge_{x \in X} P(x)</mrow>
 					</md>
-					<m>\forall x \in X</m>は、「集合<m>X</m>の<dfn en="any">任意</dfn>の要素<m>x</m>について」「集合<m>X</m>の<dfn>どの</dfn>要素<m>x</m>についても」などともいう。
+					<m>\forall x \in X</m>は、「集合<m>X</m>の<dfn en="any" r="にんい">任意</dfn>の要素<m>x</m>について」「集合<m>X</m>の<dfn>どの</dfn>要素<m>x</m>についても」などともいう。
 				</statement>
 			</definition>
 
@@ -491,11 +491,11 @@
 				<title>「ある」</title>
 				<statement>
 					集合<m>X</m>の<dfn en="some">ある</dfn>要素<m>x</m>について<m>P(x)</m>が真であるという命題を<m>\exists x \in X, P(x)</m>と表す。
-					この記号<m>\exists</m>は<dfn>存在量化子</dfn>といい、「<em>e</em>xist」の頭文字である「E」を逆さにした記号である。
+					この記号<m>\exists</m>は<dfn r="そんざいりょうかし">存在量化子</dfn>といい、「<em>e</em>xist」の頭文字である「E」を逆さにした記号である。
 					<md>
 						<mrow>\exists x \in X, P(x) \iff \bigvee_{x \in X} P(x)</mrow>
 					</md>
-					<m>\exists x \in X</m>は、「集合<m>X</m>の<dfn>少なくとも1つ</dfn>の要素<m>x</m>について」「集合<m>X</m>の<dfn>いずれか</dfn>の要素<m>x</m>について」「〜が成り立つ集合<m>X</m>の要素<m>x</m>が<dfn en="exist">存在</dfn>する」ともいう。
+					<m>\exists x \in X</m>は、「集合<m>X</m>の<dfn r="すくなくとも1つ">少なくとも1つ</dfn>の要素<m>x</m>について」「集合<m>X</m>の<dfn>いずれか</dfn>の要素<m>x</m>について」「〜が成り立つ集合<m>X</m>の要素<m>x</m>が<dfn en="exist" r="そんざい">存在</dfn>する」ともいう。
 				</statement>
 			</definition>
 		</subsection>
@@ -503,7 +503,7 @@
 		<subsection xml:id="ssec-logic-duality">
 			<title>「すべて」「ある」の否定</title>
 			<p>「すべて」と「ある」を含む命題は、一方が他方の否定になるという関係がある。これは、英語における「any」と「some」の関係と同様である。</p>
-			<p>命題「<em>すべて</em>の<m>x</m>について<m>P(x)</m>が<em>成り立つ</em>(<m>\forall x \in X, P(x)</m>)」の否定は「<em>ある</em><m>x</m>について<m>P(x)</m>が<em>成り立たない</em>(<m>\exists x \in X, \overline{P(x)}</m>)」(<dfn>部分否定</dfn>)であり、「すべての<m>x</m>について<m>P(x)</m>が成り立たない(<m>\forall x \in X, \overline{P(x)}</m>)」(<dfn>全否定</dfn>)ではないことに注意が必要である。
+			<p>命題「<em>すべて</em>の<m>x</m>について<m>P(x)</m>が<em>成り立つ</em>(<m>\forall x \in X, P(x)</m>)」の否定は「<em>ある</em><m>x</m>について<m>P(x)</m>が<em>成り立たない</em>(<m>\exists x \in X, \overline{P(x)}</m>)」(<dfn r="ぶぶんひてい">部分否定</dfn>)であり、「すべての<m>x</m>について<m>P(x)</m>が成り立たない(<m>\forall x \in X, \overline{P(x)}</m>)」(<dfn r="ぜんひてい">全否定</dfn>)ではないことに注意が必要である。
 			また、命題「<em>ある</em><m>x</m>について<m>P(x)</m>が<em>成り立つ</em>(<m>\exists x \in X, P(x)</m>)」の否定は「<em>すべて</em>の<m>x</m>について<m>P(x)</m>が<em>成り立たない</em>(<m>\forall x \in X, \overline{P(x)}</m>)」であり、「ある<m>x</m>について<m>P(x)</m>が成り立たない(<m>\exists x \in X, \overline{P(x)}</m>)」ではない。</p>
 			<theorem>
 				<title>「すべて」「ある」の否定(de Morganの法則)</title>
@@ -534,7 +534,7 @@
 	<section xml:id="sec-logic-mode">
 		<title>様相論理</title>
 		<introduction>
-			<p>述語論理の特別な例として、事象のあり方や捉え方を扱う<dfn en="modal logic">様相論理</dfn>がある。</p>
+			<p>述語論理の特別な例として、事象のあり方や捉え方を扱う<dfn en="modal logic" r="ようそうろんり">様相論理</dfn>がある。</p>
 		</introduction>
 
 		<subsection xml:id="ssec-logic-modal">
@@ -544,15 +544,15 @@
 			<definition>
 				<title>「必ず」「ありうる」</title>
 				<statement>
-					命題<m>P</m>に対して、「<m>P</m>が成り立つことが<dfn en="necessary">必然</dfn>である」「必ず<m>P</m>となる」という命題を<m>\Box P</m>と表す。
-					また、「<m>P</m>が成り立つことが<dfn en="possible">可能</dfn>である」「<m>P</m>となりうる」という命題を<m>\Diamond P</m>と表す。
+					命題<m>P</m>に対して、「<m>P</m>が成り立つことが<dfn en="necessary" r="ひつぜん">必然</dfn>である」「必ず<m>P</m>となる」という命題を<m>\Box P</m>と表す。
+					また、「<m>P</m>が成り立つことが<dfn en="possible" r="かのう">可能</dfn>である」「<m>P</m>となりうる」という命題を<m>\Diamond P</m>と表す。
 				</statement>
 			</definition>
 		</subsection>
 
 		<subsection xml:id="ssec-logic-world">
 			<title>可能世界</title>
-			<p><m>\Box P</m>や<m>\Diamond P</m>は、次に定義する<dfn en="possible world">可能世界</dfn>の考え方を用いると、述語論理の記号で表せる。</p>
+			<p><m>\Box P</m>や<m>\Diamond P</m>は、次に定義する<dfn en="possible world" r="かのうせかい">可能世界</dfn>の考え方を用いると、述語論理の記号で表せる。</p>
 			<p>将棋や囲碁のようなゲームでは、対局の途中のある盤面について、駒を進めたり置いたりすることで、次の盤面に進む。
 			多くの場合、駒の進め方や置き方は複数ありうるので、「次の盤面」も複数ありうる。
 			このときの「今の盤面」と「次の盤面」のように「現在の世界」と「次の時点の世界」を考え、「ありうる世界の集合」を定義したときの要素を可能世界と呼ぶ。</p>
@@ -595,7 +595,7 @@
 		<subsection xml:id="ssec-logic-mode">
 			<title>さまざまな様相論理</title>
 			<p>様相論理では、可能世界の集合<m>W</m>の定義を変えることで、「必ず」「ありうる」以外にも、さまざまな事象のあり方や捉え方を扱うことが可能である。
-			ここでは、そのような<dfn en="mode">様相</dfn>のいくつかを紹介する。義務を扱う論理は<dfn>義務論理</dfn>、時間を扱う論理は<dfn>時相論理</dfn>と呼ばれる。</p>
+			ここでは、そのような<dfn en="mode" r="ようそう">様相</dfn>のいくつかを紹介する。義務を扱う論理は<dfn r="ぎむろんり">義務論理</dfn>、時間を扱う論理は<dfn r="じそうろんり">時相論理</dfn>と呼ばれる。</p>
 			<table xml:id="table-logic-mode">
 				<caption>様相の例</caption>
 				<tbody>
@@ -614,7 +614,7 @@
 	<section xml:id="sec-logic-infer">
 		<title>推論</title>
 		<introduction>
-			<p>いくつかの命題から一つの命題を導くことを<dfn en="inference">推論</dfn>という。
+			<p>いくつかの命題から一つの命題を導くことを<dfn en="inference" r="すいろん">推論</dfn>という。
 			推論には次に示す複数の方法があり、推論で導かれた命題がどの程度正しいかという<em>厳密性</em>の高さと、推論で導かれた命題がどの程度元の命題にないことを述べているかという<em>拡張性</em>の高さが、それぞれ異なる。
 			代表的な推論法には、厳密性の高い順に演繹・帰納・アブダクションがある。
 			このうち、演繹とアブダクションに対応する思考法が、de Bonoの垂直思考と水平思考である。</p>
@@ -632,8 +632,8 @@
 				<title>演繹・帰納・アブダクション</title>
 				<statement>
 					<ul>
-						<li><strong>前提と規則</strong>から<strong>結論</strong>を導く推論を<dfn en="deduction"><ruby r="えんえき">演繹</ruby></dfn>という。</li>
-						<li><strong>前提と結論</strong>から<strong>規則</strong>を導く推論を<dfn en="induction"><ruby r="きのう">帰納</ruby></dfn>という。</li>
+						<li><strong>前提と規則</strong>から<strong>結論</strong>を導く推論を<dfn en="deduction" r="えんえき" ruby="1">演繹</dfn>という。</li>
+						<li><strong>前提と結論</strong>から<strong>規則</strong>を導く推論を<dfn en="induction" r="きのう" ruby="1">帰納</dfn>という。</li>
 						<li><strong>規則と結論</strong>から<strong>前提</strong>を導く推論を<dfn en="abduction">アブダクション</dfn>という。</li>
 					</ul>
 				</statement>
@@ -642,7 +642,7 @@
 
 		<subsection xml:id="ssec-logic-infer-deduction">
 			<title>演繹</title>
-			<p><dfn en="deduction"><ruby r="えんえき">演繹</ruby></dfn>は、前提と規則から結論を導く推論である。
+			<p><dfn en="deduction" r="えんえき" ruby="1">演繹</dfn>は、前提と規則から結論を導く推論である。
 			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em>結論が真だと推論</em>する。
 			Aristotleによる三段論法<xref ref="bib-aristotle-ana"/><xref ref="bib-aristotle-ana-j"/>は演繹の代表的な推論法で、「<m>A \implies B, B \implies C</m>」のとき「<m>A \implies C</m>」が成り立つという推論を行う。</p>
 			<p>演繹による推論では、前提と規則の命題が真なら、<strong>推論した結論が真であることが保証</strong>され、<em>高い厳密性</em>をもつ。
@@ -652,7 +652,7 @@
 
 		<subsection xml:id="ssec-logic-infer-induction">
 			<title>帰納</title>
-			<p><dfn en="induction"><ruby r="きのう">帰納</ruby></dfn>は、前提と結論から規則を導く推論である。
+			<p><dfn en="induction" r="きのう" ruby="1">帰納</dfn>は、前提と結論から規則を導く推論である。
 			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」「プラトンは人である」「ゼノンは人である」という前提と、「ソクラテスは死ぬ」「プラトンは死ぬ」「ゼノンは死ぬ」という結論が与えられたときに、「人は死ぬ」という<em>規則が真だと推論</em>する<xref ref="bib-aristotle-ana2"/><xref ref="bib-aristotle-ana-j2"/><xref ref="bib-bacon"/>。
 			<em>経験則</em>や<dfn en="heuristics">ヒューリスティクス</dfn>は、帰納による推論の例である。</p>
 			<p>帰納による推論では、前提と結論が真でも、<strong>推論した規則が真であることは保証されない</strong>ため、<em>厳密性は十分でない</em>。
@@ -676,7 +676,7 @@
 	<section xml:id="sec-logic-proof">
 		<title>証明</title>
 		<introduction>
-			<p><strong>演繹による推論</strong>を続けて、命題の真偽を明らかにすることを<dfn en="proof">証明</dfn>という。
+			<p><strong>演繹による推論</strong>を続けて、命題の真偽を明らかにすることを<dfn en="proof" r="しょうめい">証明</dfn>という。
 			証明は「命題が真であること」を明らかにする場合が多いが、「命題が偽であること」を明らかにする場合もある。</p>
 		</introduction>
 
@@ -689,12 +689,12 @@
 
 		<subsection xml:id="ssec-logic-proof-counter">
 			<title>反例を用いた証明</title>
-			<p>命題<m>x \in A \implies x \in B</m>が<strong>偽</strong>である(<m>\overline{x \in A \implies x \in B}</m>)ことを示すには、<dfn en="counterexample">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
+			<p>命題<m>x \in A \implies x \in B</m>が<strong>偽</strong>である(<m>\overline{x \in A \implies x \in B}</m>)ことを示すには、<dfn en="counterexample" r="はんれい">反例</dfn>と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。
 			この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
 			<definition>
 				<title>反例</title>
 				<statement>
-					命題<m>x \in A \implies x \in B</m>に対して、「<m>A</m>の要素だが<m>B</m>の要素でない<m>x</m>(<m>x \in A \land x \notin B</m>)」を、命題<m>x \in A \implies x \in B</m>の<dfn en="counterexample">反例</dfn>という。
+					命題<m>x \in A \implies x \in B</m>に対して、「<m>A</m>の要素だが<m>B</m>の要素でない<m>x</m>(<m>x \in A \land x \notin B</m>)」を、命題<m>x \in A \implies x \in B</m>の<dfn en="counterexample" r="はんれい">反例</dfn>という。
 				</statement>
 			</definition>
 
@@ -718,11 +718,11 @@
 
 		<subsection xml:id="ssec-logic-proof-contradiction">
 			<title>背理法</title>
-			<p>証明したい命題<m>p</m>を直接示すのが難しい場合には、命題<m>p</m>が成り立たない(偽である)と仮定して<dfn en="contradiction">矛盾</dfn>を導く<dfn>背理法</dfn>が用いられることがある。</p>
+			<p>証明したい命題<m>p</m>を直接示すのが難しい場合には、命題<m>p</m>が成り立たない(偽である)と仮定して<dfn en="contradiction" r="むじゅん">矛盾</dfn>を導く<dfn r="はいりほう">背理法</dfn>が用いられることがある。</p>
 			<definition>
 				<title>矛盾</title>
 				<statement>
-					<m>p</m>を命題とするとき、命題<m>p \land \overline{p}</m>を<m>p</m>についての<dfn en="contradiction">矛盾</dfn>という。
+					<m>p</m>を命題とするとき、命題<m>p \land \overline{p}</m>を<m>p</m>についての<dfn en="contradiction" r="むじゅん">矛盾</dfn>という。
 					命題<m>p \land \overline{p}</m>は常に偽である。
 				</statement>
 			</definition>
