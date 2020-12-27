@@ -183,52 +183,124 @@
 		</subsection>
 	</section>
 
-	<section xml:id="sec-triangle-rel">
-		<title>三角関数の相互関係</title>
-		<p>それぞれの三角関数の間には、次の関係式が成り立つ。この関係式は、1つの三角関数の値から他の三角関数の値を求めるときに使うことができる。</p>
-		<theorem>
+	<section xml:id="sec-triangle-coord">
+		<title>三角関数と座標</title>
+		<subsection xml:id="ssec-triangle-rel">
 			<title>三角関数の相互関係</title>
-			<statement>
-				<m>\sin^2\theta + \cos^2\theta = 1, \tan^2\theta + 1 = \frac{1}{\cos^2\theta}, \tan\theta = \frac{\sin\theta}{\cos\theta}</m>
-			</statement>
-			<proof>
-				<ul>
-					<li>原点を中心とする単位円上の点<m>(\cos\theta, \sin\theta)</m>について三平方の定理を用いると、<m>\sin^2\theta + \cos^2\theta = 1</m></li>
-					<li><m>\tan\theta = \frac{y}{x} = \frac{r\sin\theta}{r\cos\theta} = \frac{\sin\theta}{\cos\theta}</m></li>
-					<li><m>\sin^2\theta + \cos^2\theta = 1</m>の両辺を<m>\cos^2\theta</m>で割ると、<m>\frac{\sin^2\theta}{\cos^2\theta} + 1 = \frac{1}{\cos^2\theta}</m>より、<m>\tan^2\theta + 1 = \frac{1}{\cos^2\theta}</m></li>
-				</ul>
-			</proof>
-		</theorem>
+			<p>それぞれの三角関数の間には、次の関係式が成り立つ。この関係式は、1つの三角関数の値から他の三角関数の値を求めるときに使うことができる。</p>
+			<theorem>
+				<title>三角関数の相互関係</title>
+				<statement>
+					<m>\sin^2\theta + \cos^2\theta = 1, \tan^2\theta + 1 = \frac{1}{\cos^2\theta}, \tan\theta = \frac{\sin\theta}{\cos\theta}</m>
+				</statement>
+				<proof>
+					<ul>
+						<li>原点を中心とする単位円上の点<m>(\cos\theta, \sin\theta)</m>について三平方の定理を用いると、<m>\sin^2\theta + \cos^2\theta = 1</m></li>
+						<li><m>\tan\theta = \frac{y}{x} = \frac{r\sin\theta}{r\cos\theta} = \frac{\sin\theta}{\cos\theta}</m></li>
+						<li><m>\sin^2\theta + \cos^2\theta = 1</m>の両辺を<m>\cos^2\theta</m>で割ると、<m>\frac{\sin^2\theta}{\cos^2\theta} + 1 = \frac{1}{\cos^2\theta}</m>より、<m>\tan^2\theta + 1 = \frac{1}{\cos^2\theta}</m></li>
+					</ul>
+				</proof>
+			</theorem>
 
-		<p>座標平面上での角の関係性を考えると、次の関係式が成り立つことが分かる。</p>
-		<theorem>
-			<title>三角関数の相互関係(2)</title>
-			<statement>
-				<md>
-					<mrow>
-						\sin(90^\circ - \theta) = \cos\theta,
-						\cos(90^\circ - \theta) = \sin\theta,
-						\tan(90^\circ - \theta) = \frac{1}{\tan\theta}
-					</mrow>
-					<mrow>
-						\sin(180^\circ - \theta) =   \sin\theta,
-						\cos(180^\circ - \theta) = - \cos\theta,
-						\tan(180^\circ - \theta) = - \tan\theta
-					</mrow>
-				</md>
-			</statement>
-		</theorem>
+			<p>座標平面上での角の関係性を考えると、次の関係式が成り立つことが分かる。</p>
+			<theorem>
+				<title>三角関数の相互関係(2)</title>
+				<statement>
+					<md>
+						<mrow>
+							\sin(90^\circ - \theta) = \cos\theta,
+							\cos(90^\circ - \theta) = \sin\theta,
+							\tan(90^\circ - \theta) = \frac{1}{\tan\theta}
+						</mrow>
+						<mrow>
+							\sin(180^\circ - \theta) =   \sin\theta,
+							\cos(180^\circ - \theta) = - \cos\theta,
+							\tan(180^\circ - \theta) = - \tan\theta
+						</mrow>
+					</md>
+				</statement>
+			</theorem>
 
-		<p>また、三角関数は周期関数のため、次の周期性が成り立つ。</p>
-		<theorem>
-			<title>三角関数の周期性</title>
-			<statement>
-				<m>
-					\sin(\theta + 2n\pi) = \cos\theta,
-					\cos(\theta + 2n\pi) = \sin\theta (n \in \mathbb{Z})
-				</m>
-			</statement>
-		</theorem>
+			<p>また、三角関数は周期関数のため、次の周期性が成り立つ。</p>
+			<theorem>
+				<title>三角関数の周期性</title>
+				<statement>
+					<m>
+						\sin(\theta + 2n\pi) = \cos\theta,
+						\cos(\theta + 2n\pi) = \sin\theta (n \in \mathbb{Z})
+					</m>
+				</statement>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-triangle-law">
+			<title>三角関数と計量</title>
+			<p>図形に対して三角関数を用いると辺や角、面積などの大きさを求めることができる。</p>
+			<theorem>
+				<title>正弦定理</title>
+				<statement>
+					<m>\triangle ABC</m>の外接円の半径を<m>R</m>とおく。
+					<md>
+						<mrow>\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R</mrow>
+					</md>
+				</statement>
+				<proof>
+					頂点<m>B</m>と外接円の中心を結ぶ直線が外接円の円周と交わる点を<m>D</m>とする。
+					<ol>
+						<li><m>0 &lt; A \leq \frac{\pi}{2}</m>のとき、円周角の定理により<m>\angle BDC = A</m>であり、また<m>\angle BCD = \frac{\pi}{2}</m>であるので、<m>a = 2R\sin A</m>となる。</li>
+						<li><m>\frac{\pi}{2} &lt; A &lt; \pi</m>のとき、四角形<m>ABCD</m>は円に内接するので<m>\angle BDC = \pi - A</m>であり、また<m>\angle BCD = \frac{\pi}{2}</m>であるので、<m>a = 2R\sin (\pi - A) = 2R\sin A</m>となる。</li>
+					</ol>
+					<m>[1],[2]</m>より<m>a = 2R\sin A</m>である。<m>B,C</m>についても同様に示せる。
+					<image source="image/triangle-sin"/>
+				</proof>
+			</theorem>
+
+			<p>また、次の余弦定理は、直角三角形での三平方の定理を一般の三角形に拡張した定理である。</p>
+			<theorem>
+				<title>余弦定理</title>
+				<statement>
+					<m>\triangle ABC</m>において、<m>a = b^2 + c^2 - 2bc\cos A</m>。
+				</statement>
+				<proof>
+					頂点<m>C</m>から<m>AB</m>に下ろした垂線の足を<m>D</m>とおく。
+					<md>
+						<mrow>a^2 &amp;= {CD}^2 + {DB}^2 = {CD}^2 + (DA+AB)^2 = (b\sin(\pi - A))^2 + (b\cos(\pi - A) + c) = b^2 + c^2 + 2bc\cos(\pi - A)</mrow>
+						<mrow>    &amp;= b^2 + c^2 - 2bc\cos A</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<p>正弦定理や余弦定理を用いると、三角形の未知の辺や角の大きさを求めることができる。</p>
+			<example>
+				<title>正弦定理</title>
+				<statement>
+					<m>\triangle ABC</m>において、<m>a=\sqrt{2}, b=\sqrt{3}, B=\frac{\pi}{3}</m>のとき、<m>A</m>を求める。
+					<m>\frac{\sqrt{2}}{\sin A} = \frac{\sqrt{3}}{\sin\frac{\pi}{3}}</m>より<m>\sin A = \frac{1}{\sqrt{2}}</m>となるので、<m>A = \frac{\pi}{4}, \frac{3\pi}{4}</m>。
+					<m>0 &lt; A &lt; \pi - \frac{\pi}{3} = \frac{2}{3}\pi</m>より、<m>A = \frac{\pi}{4}</m>。
+				</statement>
+			</example>
+			<example>
+				<title>余弦定理</title>
+				<statement>
+					<m>\triangle ABC</m>において、<m>a=4,b=5,B=\frac{\pi}{3}</m>のとき、<m>c</m>を求める。
+					<m>b^2 = a^2 + c^2 - 2ac\cos B = 16 + c^2 - 4c = 25</m>より、<m>c^2 - 4c - 9 = 0</m>なので、<m>c = 2\pm\sqrt{13}</m>。
+					<m>c > 0</m>であるので、<m>c = 2 + \sqrt{13}</m>。
+				</statement>
+			</example>
+
+			<p>また、<m>\sin</m>を用いて三角形の面積を表すと、次のようになる。</p>
+			<theorem>
+				<title>三角形の面積</title>
+				<statement>
+					<md>
+						<mrow>\triangle ABC = \frac{1}{2}bc\sin A</mrow>
+					</md>
+				</statement>
+				<proof>
+					頂点<m>B</m>から<m>CA</m>へ下ろした垂線の足を<m>D</m>とすると、<m>BD = c\sin A</m>であるので、<m>\triangle ABC = \frac{1}{2}AC \cdot BD = \frac{1}{2}bc\sin A</m>。
+				</proof>
+			</theorem>
+		</subsection>
 	</section>
 
 	<section xml:id="sec-triangle-add">
