@@ -31,7 +31,7 @@
 			<example>
 				<title>一般角</title>
 				<statement>
-					<m>540^\circ = (180 + 1 \times 360)^\circ = 180^\circ, -180^\circ = (180 + (-1) \times 360)^\circ = 180^\circ</m>より、<m>540^\circ, -180^\circ</m>は<m>180^\circ</m>と同じとみなすことができる。
+					<m>540^\circ = (180 + 360 \times 1)^\circ = 180^\circ, -180^\circ = (180 + 360 \times (-1))^\circ = 180^\circ</m>より、<m>540^\circ, -180^\circ</m>は<m>180^\circ</m>と同じとみなすことができる。
 				</statement>
 			</example>
 		</subsection>
