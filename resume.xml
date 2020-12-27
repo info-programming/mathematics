@@ -71,6 +71,8 @@
 
 		<xi:include href="ch-func.xml"/>
 
+		<xi:include href="ch-triangle.xml"/>
+
 		<xi:include href="ch-geo.xml"/>
 
 		<backmatter>

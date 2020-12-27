@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chapter xml:id="ch-triangle">
+	<title>三角関数</title>
+	<introduction>
+		<p>本章では、最も基本的な周期関数である三角関数の概念を示した上で、三角関数の性質について述べる。</p>
+		<p><xref ref="sec-triangle-angle"/>節では、これまでの角度を拡張し、より一般的な角の表し方を示す。
+		<xref ref="sec-triangle-def"/>節では、直角三角形の辺の比として鋭角の三角関数を定義する。
+		<xref ref="sec-triangle-rel"/>節では、三角関数の間に成り立つ関係式について述べる。
+		</p>
+	</introduction>
+
+	<section xml:id="sec-triangle-angle">
+		<title>角度</title>
+
+		<subsection xml:id="ssec-triangle-angle">
+			<title>度数法</title>
+			<p>角度を<m>x^\circ</m>のような形で表す方法を、<dfn r="どすうほう">度数法</dfn>という。
+			角度は<m>0^\circ</m>が最も小さく、<m>360^\circ</m>になると<m>0^\circ</m>と同じになる。
+			こう考えると、例えば<m>361^\circ</m>は<m>1^\circ</m>と同じであるとみなせる。
+			この考え方を一般化したのが、次の一般角である。</p>
+			<definition>
+				<title>一般角</title>
+				<statement>
+					<m>\theta \in [0, 360)</m>のとき、度数法での<dfn r="いっぱんかく">一般角</dfn>を次のように定める。
+					<md>
+						<mrow>(\theta + 360n)^\circ = \theta^\circ (n \in \mathbb{Z})</mrow>
+					</md>
+				</statement>
+			</definition>
+
+			<example>
+				<title>一般角</title>
+				<statement>
+					<m>540^\circ = (180 + 1 \times 360)^\circ = 180^\circ, -180^\circ = (180 + (-1) \times 360)^\circ = 180^\circ</m>より、<m>540^\circ, -180^\circ</m>は<m>180^\circ</m>と同じとみなすことができる。
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-triangle-radian">
+			<title>弧度法</title>
+			<p>度数法による角度の表示は、そのままでは通常の数と比較することができず、数学で扱うには不便である。
+			そこで、扇形の弧の「長さ」を用いて、角の大きさを表すことを考える。</p>
+			<p>半径<m>r</m>の円の弧の長さは、<m>2 \pi r</m>と表せる。
+			円は中心角<m>360^\circ</m>の扇形とみなすことができるので、<m>360^\circ</m>と<m>2 \pi</m>を対応づける、<dfn r="こどほう">弧度法</dfn>という角度の表し方を定義する。</p>
+			<definition>
+				<title>弧度法</title>
+				<statement>
+					半径<m>r</m>の扇形の弧の長さが<m>r</m>になるとき、<dfn en="radian">ラジアン</dfn>という単位を用いて、この扇形の中心角を<em>1 (radian)</em>と定める。
+					半径<m>r</m>の円(中心角<m>360^\circ</m>)の円周は<m>2\pi r</m>で表されるので、<m>360^\circ = 2\pi (radian)</m>である。
+					なお、単位radianは省略することが多い。
+					<image source="image/triangle-radian"/>
+				</statement>
+			</definition>
+
+			<p>度数法と弧度法は、次の関係式で変換できる。</p>
+			<theorem>
+				<title>度数法と弧度法の変換</title>
+				<statement>
+					<m>a^\circ = \frac{a}{180}\pi (radian), \theta (radian) = (\frac{180}{\pi} \theta)^\circ</m>
+				</statement>
+			</theorem>
+
+			<p>弧度法によれば、扇形の弧の長さと面積は次の式で表せ、度数法より簡潔に表せる。</p>
+			<theorem>
+				<title>扇形の弧の長さと面積</title>
+				<statement>
+					中心角<m>\theta (radian)</m>、半径<m>r</m>の扇形の弧の長さを<m>l</m>とすると、<m>l = \theta r</m>となる。
+					また、この扇形の面積は<m>\frac{1}{2}\theta r^2 = \frac{1}{2}lr</m>となる。
+					この面積の公式は、三角形の面積の公式(<m>\text{面積} = \frac{1}{2} \times (\text{高さ}) \times (\text{底辺})</m>)と類似している。
+				</statement>
+			</theorem>
+
+			<p>主要な角について度数法と弧度法の対応関係を表すと、表<xref ref="table-triangle-radian"/>のようになる。</p>
+			<table xml:id="table-triangle-radian">
+				<caption>度数法と弧度法の対応</caption>
+				<tbody>
+					<tr><td><m>a^\circ</m></td><td><m>0^\circ</m></td><td><m>30^\circ</m></td><td><m>45^\circ</m></td><td><m>60^\circ</m></td><td><m>90^\circ</m></td><td><m>120^\circ</m></td><td><m>135^\circ</m></td><td><m>150^\circ</m></td><td><m>180^\circ</m></td><td><m>210^\circ</m></td><td><m>225^\circ</m></td><td><m>240^\circ</m></td><td><m>270^\circ</m></td><td><m>300^\circ</m></td><td><m>315^\circ</m></td><td><m>330^\circ</m></td><td><m>360^\circ</m></td></tr>
+					<tr><td><m>\theta(rad)</m></td><td><m>0</m></td><td><m>\frac{\pi}{6}</m></td><td><m>\frac{\pi}{4}</m></td><td><m>\frac{\pi}{3}</m></td><td><m>\frac{\pi}{2}</m></td><td><m>\frac{2\pi}{3}</m></td><td><m>\frac{3\pi}{4}</m></td><td><m>\frac{5\pi}{6}</m></td><td><m>\pi</m></td><td><m>\frac{7\pi}{6}</m></td><td><m>\frac{5\pi}{4}</m></td><td><m>\frac{4\pi}{3}</m></td><td><m>\frac{3\pi}{2}</m></td><td><m>\frac{5\pi}{3}</m></td><td><m>\frac{7\pi}{4}</m></td><td><m>\frac{11\pi}{6}</m></td><td><m>2\pi</m></td></tr>
+				</tbody>
+			</table>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-triangle-def">
+		<title>三角関数</title>
+		<subsection xml:id="ssec-triangle-acute">
+			<title>三角比</title>
+			<p><m>\angle ABC = 90 ^ \circ</m>となる直角三角形<m>\triangle ABC</m>を考える。
+			このとき、直角でない残りの2つの角のうち一つの角度と、直角三角形の斜辺の長さが分かれば、<m>\triangle ABC</m>はただ一つに定まる。</p>
+			<theorem>
+				<title>直角三角形の辺の比の一意性</title>
+				<statement>
+					<m>\angle B = 90^\circ</m>となる直角三角形<m>\triangle ABC</m>では、<m>\frac{BC}{CA}, \frac{AB}{CA}, \frac{BC}{AB}</m>の値は三角形によらず、<m>\angle A</m>の大きさのみによって定まる。
+				</statement>
+				<proof>
+					<m>\angle A</m>を共有する2つの直角三角形<m>\triangle ABC, \triangle AB'C'</m>があり、<m>\angle B = \angle B' = 90^\circ</m>とする。
+					このとき、三角形の2つの角が等しいので、<m>\triangle ABC \sim \triangle AB'C'</m>である。
+					相似な三角形では辺の比が等しいので、<m>BC : B'C' = CA : C'A</m>より<m>BC \times C'A = B'C' \times CA</m>となり、<m>\frac{BC}{CA} = \frac{B'C'}{C'A}</m>が成り立つ。
+					同様にして、<m>\frac{AB}{CA} = \frac{AB'}{C'A}, \frac{BC}{AB} = \frac{B'C'}{AB'}</m>も成り立つ。
+					<image source="image/triangle-ratio"/>
+				</proof>
+			</theorem>
+
+			<p>この定理により、直角三角形の辺の比はどの三角形でも、<m>\angle A</m>の大きさのみによって定まることが分かる。
+			従って、直角三角形の辺の比を、<m>\angle A</m>によって定まる関数として定義できる。</p>
+			<definition>
+				<title>三角比</title>
+				<statement>
+					<m>\angle ABC = 90 ^ \circ</m>の<m>\triangle ABC</m>において、<m>\theta = \angle A, x = AB, y = BC, r = CA</m>とおく。
+					このとき、各辺の比を<dfn r="さんかくひ">三角比</dfn>といい、次のように定義する。
+					<ul>
+						<li><m>\sin(\theta) = \frac{y}{r} = \frac{BC}{CA} = \frac{\text{対辺}}{\text{斜辺}}</m>を、<m>\angle A</m>の<dfn en="sine" r="せいげん">正弦</dfn>または<dfn>サイン</dfn>という。</li>
+						<li><m>\cos(\theta) = \frac{x}{r} = \frac{AB}{CA} = \frac{\text{底辺}}{\text{斜辺}}</m>を、<m>\angle A</m>の<dfn en="cosine" r="よげん">余弦</dfn>または<dfn>コサイン</dfn>という。</li>
+						<li><m>\tan(\theta) = \frac{y}{x} = \frac{BC}{AB} = \frac{\text{対辺}}{\text{底辺}}</m>を、<m>\angle A</m>の<dfn en="tangent" r="せいせつ">正接</dfn>または<dfn>タンジェント</dfn>という。</li>
+					</ul>
+					<image source="image/triangle-triangle"/>
+					<m>\sin(\theta)</m>は<m>\sin \theta</m>のように、括弧を省略して表すことが多い。同様に、<m>\sin 2\theta = \sin(2\theta), \sin 3\theta = \sin(3\theta), \sin \frac{1}{2}\theta = \sin(\frac{1}{2}\theta)</m>のように表す。
+					また、<m>\sin^2\theta = (\sin\theta)^2</m>のように、冪乗の指数を<m>\sin</m>の後に書き、括弧を省略することも多い。
+					ただし、<m>\sin(-\theta)</m>や<m>\sin(\theta + \phi)</m>は括弧を省略せず表す。この略記法は三角関数に特有のもので、他の関数ではこの略記は行わない。
+				</statement>
+			</definition>
+			<!-- TODO: 三角形の上でのsine,cosine,tangentの覚え方 -->
+
+			<p>三角関数の値は実数だが、正確に表すのが困難な無理数になり、求められないことが多い。そのため、三角関数の値を調べるときには、<em>三角比の表</em>を参照することが多い。
+			ただし、直角三角形のうちには辺の比が<m>1 : 2 : \sqrt{3}</m>や<m>1 : 1 : \sqrt{2}</m>となる有名なものがある。そのため、幾つかの角度については、三角関数は簡単に表せる数となる。</p>
+			<example>
+				<title>鋭角の三角関数の値</title>
+				<statement>
+					<md>
+						<mrow>\sin 30 ^ \circ &amp;= \frac{1}{2},        &amp; \cos 30 ^ \circ &amp;= \frac{\sqrt{3}}{2}, &amp; \tan 30 ^ \circ &amp;= \frac{1}{\sqrt{3}}</mrow>
+						<mrow>\sin 45 ^ \circ &amp;= \frac{1}{\sqrt{2}}, &amp; \cos 45 ^ \circ &amp;= \frac{1}{\sqrt{2}}, &amp; \tan 45 ^ \circ &amp;= 1</mrow>
+						<mrow>\sin 60 ^ \circ &amp;= \frac{\sqrt{3}}{2}, &amp; \cos 60 ^ \circ &amp;= \frac{1}{2},        &amp; \tan 60 ^ \circ &amp;= \sqrt{3}</mrow>
+					</md>
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-triangle-obtuse">
+			<title>三角関数</title>
+			<p>鋭角以外の角でも三角関数を拡張するために、<m>xy</m>平面上に図のような円をとり、座標平面上で三角関数の値を定義する。</p>
+			<definition>
+				<title>三角関数</title>
+				<statement>
+					原点<m>O</m>を中心とする半径<m>r</m>の円上に点<m>P(x,y)</m>をとり、線分<m>OP</m>と<m>x</m>軸がなす角度を<m>\theta</m>とする。
+					このとき、次のように<dfn r="さんかくかんすう">三角関数</dfn>を定義する。
+					<md>
+						<mrow>\sin \theta = \frac{y}{r}, \cos \theta = \frac{x}{r}, \tan \theta = \frac{y}{x}</mrow>
+					</md>
+					ただし、<m>\theta = (n + \frac{1}{2})\pi (n \in \mathbb{Z})</m>のとき、<m>\tan \theta</m>は定義されない。
+
+					このとき、点<m>P</m>の座標は<m>(r\cos \theta, r\sin \theta)</m>と表される。
+					<image source="image/triangle-triangle2"/>
+				</statement>
+			</definition>
+
+			<theorem>
+				<title>三角関数と座標平面</title>
+				<statement>
+					<m>x = r\cos\theta, y = r\sin\theta, y = (\tan\theta) x</m>と変形できる。特に、<m>r = 1</m>の円(単位円)では、三角関数は<m>xy</m>平面上で次の意味をもつ。
+					<ul>
+						<li>原点を中心とする単位円上で<m>x</m>軸と角度<m>\theta</m>をなす点は<m>(\cos\theta, \sin\theta)</m>で表せるので、<em><m>\cos</m>は<m>x</m>座標</em>、<em><m>\sin</m>は<m>y</m>座標</em>を表す。</li>
+						<li>原点を通り<m>x</m>軸と角度<m>\theta</m>をなす直線は<m>y = (\tan\theta) x</m>と表せるので、<em><m>\tan</m>は直線の傾き</em>を表す。</li>
+					</ul>
+				</statement>
+			</theorem>
+
+			<p>各象限での三角関数の符号は表<xref ref="table-triangle-sign"/>のようになり、これらをグラフにすると図\ref{fig:triangle}のような周期関数になる。</p>
+			<p>グラフから明らかなように、<m>\sin\theta, \cos\theta</m>の周期は<m>2\pi</m>、<m>\tan\theta</m>の周期は<m>\pi</m>である。
+			<m>y = \sin\theta, y = \tan\theta</m>は原点について対称な奇関数、<m>y = \cos\theta</m>は<m>y</m>軸について対称な偶関数である。
+			また、<m>y = \tan\theta</m>のグラフは直線<m>\theta = (n+\frac{1}{2})\pi (n \in \mathbb{Z})</m>を漸近線としてもつ。</p>
+			<table xml:id="table-triangle-sign">
+				<caption>三角関数の符号</caption>
+				<tbody>
+					<tr><td>象限</td><td></td><td>第一象限</td><td></td><td>第二象限</td><td></td><td>第三象限</td><td></td><td>第四象限</td><td></td></tr>
+					<tr><td><m>\theta (rad)</m></td><td><m>0</m></td><td><m>0 &lt; \theta &lt; \frac{\pi}{2}</m></td><td><m>\frac{\pi}{2}</m></td><td><m>\frac{\pi}{2} &lt; \theta &lt; \pi</m></td><td><m>\pi</m></td><td><m>\pi &lt; \theta &lt; \frac{3}{2}\pi</m></td><td><m>\frac{3}{2}\pi</m></td><td><m>\frac{3}{2}\pi &lt; \theta &lt; 2\pi</m></td><td><m>2\pi</m></td></tr>
+					<tr><td><m>\theta^\circ</m></td><td><m>0^\circ</m></td><td><m>0^\circ &lt; \theta &lt; 90^\circ</m></td><td><m>90^\circ</m></td><td><m>90^\circ &lt; \theta &lt; 180^\circ</m></td><td><m>180^\circ</m></td><td><m>180^\circ &lt; \theta &lt; 270^\circ</m></td><td><m>270^\circ</m></td><td><m>270^\circ &lt; \theta &lt; 360^\circ</m></td><td><m>360^\circ</m></td></tr>
+					<tr><td><m>\sin\theta</m></td><td><m>0</m></td><td><m>+</m></td><td><m>1</m></td><td><m>+</m></td><td><m> 0</m></td><td><m>-</m></td><td><m>-1</m></td><td><m>-</m></td><td><m>0</m></td></tr>
+					<tr><td><m>\cos\theta</m></td><td><m>1</m></td><td><m>+</m></td><td><m>0</m></td><td><m>-</m></td><td><m>-1</m></td><td><m>-</m></td><td><m> 0</m></td><td><m>+</m></td><td><m>1</m></td></tr>
+					<tr><td><m>\tan\theta</m></td><td><m>0</m></td><td><m>+</m></td><td><m>\times</m></td><td><m>-</m></td><td><m>0</m></td><td><m>+</m></td><td><m>\times</m></td><td><m>-</m></td><td><m>0</m></td></tr>
+				</tbody>
+			</table>
+			<image source="image/triangle-graph"/>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-triangle-rel">
+		<title>三角関数の相互関係</title>
+		<p>それぞれの三角関数の間には、次の関係式が成り立つ。この関係式は、1つの三角関数の値から他の三角関数の値を求めるときに使うことができる。</p>
+		<theorem>
+			<title>三角関数の相互関係</title>
+			<statement>
+				<m>\sin^2\theta + \cos^2\theta = 1, \tan^2\theta + 1 = \frac{1}{\cos^2\theta}, \tan\theta = \frac{\sin\theta}{\cos\theta}</m>
+			</statement>
+			<proof>
+				<ul>
+					<li>原点を中心とする単位円上の点<m>(\cos\theta, \sin\theta)</m>について三平方の定理を用いると、<m>\sin^2\theta + \cos^2\theta = 1</m></li>
+					<li><m>\tan\theta = \frac{y}{x} = \frac{r\sin\theta}{r\cos\theta} = \frac{\sin\theta}{\cos\theta}</m></li>
+					<li><m>\sin^2\theta + \cos^2\theta = 1</m>の両辺を<m>\cos^2\theta</m>で割ると、<m>\frac{\sin^2\theta}{\cos^2\theta} + 1 = \frac{1}{\cos^2\theta}</m>より、<m>\tan^2\theta + 1 = \frac{1}{\cos^2\theta}</m></li>
+				</ul>
+			</proof>
+		</theorem>
+
+		<p>座標平面上での角の関係性を考えると、次の関係式が成り立つことが分かる。</p>
+		<theorem>
+			<title>三角関数の相互関係(2)</title>
+			<statement>
+				<md>
+					<mrow>
+						\sin(90^\circ - \theta) = \cos\theta,
+						\cos(90^\circ - \theta) = \sin\theta,
+						\tan(90^\circ - \theta) = \frac{1}{\tan\theta}
+					</mrow>
+					<mrow>
+						\sin(180^\circ - \theta) =   \sin\theta,
+						\cos(180^\circ - \theta) = - \cos\theta,
+						\tan(180^\circ - \theta) = - \tan\theta
+					</mrow>
+				</md>
+			</statement>
+		</theorem>
+
+		<p>また、三角関数は周期関数のため、次の周期性が成り立つ。</p>
+		<theorem>
+			<title>三角関数の周期性</title>
+			<statement>
+				<m>
+					\sin(\theta + 2n\pi) = \cos\theta,
+					\cos(\theta + 2n\pi) = \sin\theta (n \in \mathbb{Z})
+				</m>
+			</statement>
+		</theorem>
+	</section>
+
+	<section xml:id="sec-triangle-add">
+		<title>加法定理</title>
+
+		<subsection xml:id="ssec-triangle-add">
+			<title>加法定理</title>
+			<p>三角関数の和や積に対して成り立つ関係式は、いずれも次の加法定理が基本となって示される。</p>
+			<theorem>
+				<title>加法定理</title>
+				<statement>
+					<m>\alpha, \beta \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>\sin(\alpha \pm \beta) &amp;= \sin\alpha\cos\beta \pm \cos\alpha\sin\beta (\text{複号同順})</mrow>
+						<mrow>\cos(\alpha \pm \beta) &amp;= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta (\text{複号同順})</mrow>
+						<mrow>\tan(\alpha \pm \beta) &amp;= \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta} (\text{複号同順})</mrow>
+					</md>
+				</statement>
+				<proof>
+					まず、<m>\cos</m>の加法定理を示す。
+					単位円周上に2点<m>P(\cos\alpha,\sin\alpha), Q(\cos\beta, \sin\beta)</m>をとる。
+					<m>\triangle POQ</m>に余弦定理(定理\ref{th:cos2})を用いると、<m>PQ^2 = 1^2 + 1^2 - 2\times 1 \times 1 \cos\angle POQ = 2 - 2\cos(\alpha - \beta)</m>となる。
+					一方、三平方の定理により、
+					<md>
+						<mrow>PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\beta + \sin^2\beta) + (\cos^2\alpha + \sin^2\alpha) - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta)</mrow>
+						<mrow> &amp;= 1 + 1 - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta) = 2 - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta)</mrow>
+					</md>
+					なので、<m>\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta</m>が成り立つ。ここで<m>\beta = -\phi</m>とおくと、
+					<md>
+						<mrow>\cos(\alpha + \phi) = \cos\alpha\cos(-\phi) + \sin\alpha\sin(-\phi) = \cos\alpha\cos\phi - \sin\alpha\sin\phi</mrow>
+					</md>
+					<image source="image/triangle-add"/>
+					次に、<m>\sin</m>の加法定理を示す。
+					<md>
+						<mrow>
+							\sin(\alpha \pm \beta)
+							&amp;= \cos(\frac{\pi}{2} - (\alpha \pm \beta)) = \cos((\frac{\pi}{2} - \alpha) \mp \beta))
+								= \cos(\frac{\pi}{2} - \alpha)\cos\beta \pm \sin(\frac{\pi}{2} - \alpha)\sin\beta</mrow>
+						<mrow>
+							&amp;= \sin\alpha\cos\beta \pm \cos\alpha\sin\beta</mrow>
+					</md>
+					最後に、<m>\tan</m>の加法定理を示す。
+					<md>
+						<mrow>\tan(\alpha \pm \beta)
+						= \frac{\sin(\alpha \pm \beta)}{\sin(\alpha \pm \beta)} = \frac{\sin\alpha\cos\beta \pm \cos\alpha\sin\beta}{\cos\alpha\cos\beta \mp \sin\alpha\sin\beta}
+						= \frac{\frac{\sin\alpha}{\cos\alpha} \pm \frac{\sin\beta}{\cos\beta}}{1 \mp \frac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}
+						= \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}
+						</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<p>加法定理は便利な定理だが、<m>\sin,\cos,\tan</m>のそれぞれにプラスとマイナスの場合があり覚えにくい。
+			語呂合わせで覚える方法の1つに、<m>\sin</m>の加法定理は「サイン・コス・コス・サイン」、<m>\cos</m>の加法定理は「コス・コス・マイナス・サイン・サイン」、<m>\tan</m>の加法定理は「1引くタン・タン、タン足すタン」というものがある。
+			これを覚えておき、マイナスの場合の式が必要な場合は、プラスの場合の式に出てくるプラス・マイナスをひっくり返すようにすれば、覚える量が少なくて済む。</p>
+
+			<p>加法定理を使うと、有名な角度以外の角度でも、三角関数の値を求められることがある。</p>
+			<example>
+				<title>加法定理</title>
+				<statement>
+					<md>
+						<mrow>\sin \frac{\pi}{12} = \sin(\frac{\pi}{4} - \frac{\pi}{6}) = \sin\frac{\pi}{4} \cos\frac{\pi}{6} - \cos\frac{\pi}{4} \sin\frac{\pi}{6} = \frac{1}{\sqrt{2}}\frac{\sqrt{3}}{2} - \frac{1}{\sqrt{2}}\frac{1}{2} = \frac{\sqrt{3} - 1}{2\sqrt{2}} = \frac{\sqrt{6} - \sqrt{2}}{4}</mrow>
+					</md>
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-triangle-double">
+			<title>倍角・半角の公式</title>
+			<p>加法定理から、三角関数に関する多くの公式が示される。
+			以下の公式は数も多いので、式自体を覚えるのではなく、式の導出方法を覚えておくとよい。</p>
+			<theorem>
+				<title>二倍角の公式</title>
+				<statement>
+					<m>\alpha \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>\sin 2\alpha &amp;= 2\sin\alpha\cos\alpha</mrow>
+						<mrow>\cos 2\alpha &amp;= \cos^2\alpha - \sin^2\alpha = 2\cos^2\alpha - 1 = 1 - 2\sin^2\alpha</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>\sin 2\alpha &amp;= \sin(\alpha + \alpha) = \sin\alpha\cos\alpha + \cos\alpha\sin\alpha = 2\sin\alpha\cos\alpha</mrow>
+						<mrow>\cos 2\alpha &amp;= \cos(\alpha + \alpha) = \cos\alpha\cos\alpha - \sin\alpha\sin\alpha = \cos^2\alpha - \sin^2\alpha</mrow>
+						<mrow> &amp;= \cos^2\alpha - (1 - \cos^2\alpha) = 2\cos^2\alpha - 1</mrow>
+						<mrow> &amp;= 2(1 - \sin^2\alpha) - 1 = 1 - 2\sin^2\alpha</mrow>
+					</md>
+				</proof>
+			</theorem>
+			<theorem>
+				<title>半角の公式</title>
+				<statement>
+					<m>\alpha \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>\sin^2 \alpha = \frac{1 - \cos2\alpha}{2}, \cos^2\alpha = \frac{1 + \cos2\alpha}{2}</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>1 - \cos2\alpha &amp;= 1 - (1 - 2\sin^2\alpha) = 2\sin^2\alpha</mrow>
+						<mrow>1 + \cos2\alpha &amp;= 1 + (2\cos^2\alpha - 1) = 2\cos^2\alpha</mrow>
+					</md>
+				</proof>
+			</theorem>
+
+			<theorem>
+				<title>三倍角の公式</title>
+				<statement>
+					<m>\alpha \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>\sin 3\alpha = 3\sin\alpha - 4\sin^3\alpha, \cos 3\alpha = 4\cos^3\alpha - 3\cos\alpha</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>\sin 3\alpha &amp;= \sin(2\alpha + \alpha) = \sin2\alpha\cos\alpha + \cos2\alpha\sin\alpha = 2\sin\alpha\cos^2\alpha + \cos^2\alpha\sin\alpha - \sin^3\alpha</mrow>
+						<mrow>&amp;= 3\sin\alpha\cos^2\alpha - \sin^3\alpha = 3\sin\alpha(1 - \sin^2\alpha) - \sin^3\alpha = 3\sin\alpha - 4\sin^3\alpha</mrow>
+						<mrow>\cos 3\alpha &amp;= \cos(2\alpha + \alpha) = \cos2\alpha\cos\alpha - \sin2\alpha\sin\alpha = (\cos^2\alpha - \sin^2\alpha)\cos\alpha - 2\sin^2\alpha\cos\alpha</mrow>
+						<mrow>&amp;= \cos^3\alpha -3\sin^2\alpha\cos\alpha = \cos^3\alpha - 3(1 - \cos^2\alpha)\cos\alpha = 4\cos^3\alpha - 3\cos\alpha</mrow>
+					</md>
+				</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-triangle-sumprod">
+			<title>和積・積和公式</title>
+			<p>加法定理を用いると、三角関数の積と三角関数の和を相互に変換する公式を導ける。</p>
+			<theorem>
+				<title>積和公式</title>
+				<statement>
+					<m>\alpha, \beta \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>\sin\alpha\cos\beta &amp;=  \frac{1}{2}(\sin(\alpha + \beta) + \sin(\alpha - \beta))</mrow>
+						<mrow>\cos\alpha\sin\beta &amp;=  \frac{1}{2}(\sin(\alpha + \beta) - \sin(\alpha - \beta))</mrow>
+						<mrow>\cos\alpha\cos\beta &amp;=  \frac{1}{2}(\cos(\alpha + \beta) + \cos(\alpha - \beta))</mrow>
+						<mrow>\sin\alpha\sin\beta &amp;= -\frac{1}{2}(\cos(\alpha + \beta) - \cos(\alpha - \beta))</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>\sin(\alpha + \beta) &amp;= \sin\alpha\cos\beta + \cos\alpha\sin\beta</mrow>
+						<mrow>\sin(\alpha - \beta) &amp;= \sin\alpha\cos\beta - \cos\alpha\sin\beta</mrow>
+					</md>
+					この2式の両辺を足し合わせて、<m>\sin(\alpha + \beta) + \sin(\alpha - \beta) = 2\sin\alpha\cos\beta</m>となる。
+					また、2式の両辺の差をとって、<m>\sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta</m>となる。
+					他の2式も、同様にして導かれる。
+				</proof>
+			</theorem>
+
+			<theorem>
+				<title>和積公式</title>
+				<statement>
+					<m>x, y \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>\sin x + \sin y &amp;=  2\sin\frac{x+y}{2}\cos\frac{x-y}{2}</mrow>
+						<mrow>\sin x - \sin y &amp;=  2\cos\frac{x+y}{2}\sin\frac{x-y}{2}</mrow>
+						<mrow>\cos x + \cos y &amp;=  2\cos\frac{x+y}{2}\cos\frac{x-y}{2}</mrow>
+						<mrow>\cos x - \cos y &amp;= -2\sin\frac{x+y}{2}\sin\frac{x-y}{2}</mrow>
+					</md>
+				</statement>
+				<proof>
+					積和公式で<m>x = \alpha + \beta, y = \alpha - \beta</m>とおくと、<m>\alpha = \frac{x+y}{2}, \beta = \frac{x-y}{2}</m>となり示される。
+				</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-triangle-compose">
+			<title>三角関数の合成</title>
+			<p>加法定理を逆向きに用いると、複数の三角関数を一つにまとめることができる。</p>
+			<theorem>
+				<title>三角関数の合成</title>
+				<statement>
+					<m>a, b, \theta \in \mathbb{R}</m>とする。
+					<md>
+						<mrow>a\sin\theta + b\cos\theta &amp;= \sqrt{a^2 + b^2}\sin(\theta + \phi) (\cos\phi = \frac{a}{\sqrt{a^2 + b^2}}, \sin\phi = \frac{b}{\sqrt{a^2 + b^2}})</mrow>
+						<mrow>&amp;= \sqrt{a^2 + b^2}\cos(\theta + \psi) (\sin\psi = \frac{a}{\sqrt{a^2 + b^2}}, \cos\psi = \frac{b}{\sqrt{a^2 + b^2}})</mrow>
+					</md>
+				</statement>
+				<proof>
+					右辺に加法定理を適用すれば左辺が導かれる。
+				</proof>
+			</theorem>
+
+			<p>三角関数の合成を行うことで、三角関数の最大・最小問題が解き易くなることがある。</p>
+			<example>
+				<title>三角関数の合成</title>
+				<statement>
+					<m>\sin\theta+\sqrt{3}\cos\theta (\theta \in [0, \pi])</m>の最大値と最小値を求める。
+					<md>
+						<mrow>\sin\theta + \sqrt{3}\cos\theta = 2\sin(\theta + \phi) (\cos\phi = \frac{1}{2}, \sin\phi = \frac{\sqrt{3}}{2}) = 2\sin(\theta + \frac{\pi}{3})</mrow>
+					</md>
+					と変形できる。<m>\frac{\pi}{3} \leq \theta + \frac{\pi}{3} \leq \frac{4}{3}\pi</m>であるので、<m>\theta + \frac{\pi}{3} = \frac{\pi}{2}</m>で最大、<m>\theta + \frac{\pi}{3} = \frac{4}{3}\pi</m>で最小となる。
+					従って、<m>\theta = \frac{\pi}{6}</m>で最大値2をとり、<m>\theta = \pi</m>で最小値<m>-\sqrt{3}</m>をとる。
+				</statement>
+			</example>
+		</subsection>
+	</section>
+</chapter>
