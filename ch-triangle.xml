@@ -48,7 +48,10 @@
 					半径<m>r</m>の扇形の弧の長さが<m>r</m>になるとき、<dfn en="radian">ラジアン</dfn>という単位を用いて、この扇形の中心角を<em>1 (radian)</em>と定める。
 					半径<m>r</m>の円(中心角<m>360^\circ</m>)の円周は<m>2\pi r</m>で表されるので、<m>360^\circ = 2\pi (radian)</m>である。
 					なお、単位radianは省略することが多い。
-					<image source="image/triangle-radian"/>
+					<figure xml:id="fig-triangle-radian">
+						<image source="image/triangle-radian"/>
+						<caption>弧度法</caption>
+					</figure>
 				</statement>
 			</definition>
 
@@ -74,8 +77,8 @@
 			<table xml:id="table-triangle-radian">
 				<caption>度数法と弧度法の対応</caption>
 				<tbody>
-					<tr><td><m>a^\circ</m></td><td><m>0^\circ</m></td><td><m>30^\circ</m></td><td><m>45^\circ</m></td><td><m>60^\circ</m></td><td><m>90^\circ</m></td><td><m>120^\circ</m></td><td><m>135^\circ</m></td><td><m>150^\circ</m></td><td><m>180^\circ</m></td><td><m>210^\circ</m></td><td><m>225^\circ</m></td><td><m>240^\circ</m></td><td><m>270^\circ</m></td><td><m>300^\circ</m></td><td><m>315^\circ</m></td><td><m>330^\circ</m></td><td><m>360^\circ</m></td></tr>
-					<tr><td><m>\theta(rad)</m></td><td><m>0</m></td><td><m>\frac{\pi}{6}</m></td><td><m>\frac{\pi}{4}</m></td><td><m>\frac{\pi}{3}</m></td><td><m>\frac{\pi}{2}</m></td><td><m>\frac{2\pi}{3}</m></td><td><m>\frac{3\pi}{4}</m></td><td><m>\frac{5\pi}{6}</m></td><td><m>\pi</m></td><td><m>\frac{7\pi}{6}</m></td><td><m>\frac{5\pi}{4}</m></td><td><m>\frac{4\pi}{3}</m></td><td><m>\frac{3\pi}{2}</m></td><td><m>\frac{5\pi}{3}</m></td><td><m>\frac{7\pi}{4}</m></td><td><m>\frac{11\pi}{6}</m></td><td><m>2\pi</m></td></tr>
+					<tr><th><m>\theta^\circ</m></th><td><m>0^\circ</m></td><td><m>30^\circ</m></td><td><m>45^\circ</m></td><td><m>60^\circ</m></td><td><m>90^\circ</m></td><td><m>120^\circ</m></td><td><m>135^\circ</m></td><td><m>150^\circ</m></td><td><m>180^\circ</m></td><td><m>210^\circ</m></td><td><m>225^\circ</m></td><td><m>240^\circ</m></td><td><m>270^\circ</m></td><td><m>300^\circ</m></td><td><m>315^\circ</m></td><td><m>330^\circ</m></td><td><m>360^\circ</m></td></tr>
+					<tr><th><m>\theta(rad)</m></th><td><m>0</m></td><td><m>\frac{\pi}{6}</m></td><td><m>\frac{\pi}{4}</m></td><td><m>\frac{\pi}{3}</m></td><td><m>\frac{\pi}{2}</m></td><td><m>\frac{2\pi}{3}</m></td><td><m>\frac{3\pi}{4}</m></td><td><m>\frac{5\pi}{6}</m></td><td><m>\pi</m></td><td><m>\frac{7\pi}{6}</m></td><td><m>\frac{5\pi}{4}</m></td><td><m>\frac{4\pi}{3}</m></td><td><m>\frac{3\pi}{2}</m></td><td><m>\frac{5\pi}{3}</m></td><td><m>\frac{7\pi}{4}</m></td><td><m>\frac{11\pi}{6}</m></td><td><m>2\pi</m></td></tr>
 				</tbody>
 			</table>
 		</subsection>
@@ -93,11 +96,14 @@
 					<m>\angle B = 90^\circ</m>となる直角三角形<m>\triangle ABC</m>では、<m>\frac{BC}{CA}, \frac{AB}{CA}, \frac{BC}{AB}</m>の値は三角形によらず、<m>\angle A</m>の大きさのみによって定まる。
 				</statement>
 				<proof>
-					<m>\angle A</m>を共有する2つの直角三角形<m>\triangle ABC, \triangle AB'C'</m>があり、<m>\angle B = \angle B' = 90^\circ</m>とする。
+					図<xref ref="fig-triangle-ratio"/>のように、<m>\angle A</m>を共有する2つの直角三角形<m>\triangle ABC, \triangle AB'C'</m>があり、<m>\angle B = \angle B' = 90^\circ</m>とする。
 					このとき、三角形の2つの角が等しいので、<m>\triangle ABC \sim \triangle AB'C'</m>である。
 					相似な三角形では辺の比が等しいので、<m>BC : B'C' = CA : C'A</m>より<m>BC \times C'A = B'C' \times CA</m>となり、<m>\frac{BC}{CA} = \frac{B'C'}{C'A}</m>が成り立つ。
 					同様にして、<m>\frac{AB}{CA} = \frac{AB'}{C'A}, \frac{BC}{AB} = \frac{B'C'}{AB'}</m>も成り立つ。
-					<image source="image/triangle-ratio"/>
+					<figure xml:id="fig-triangle-ratio">
+						<image source="image/triangle-ratio"/>
+						<caption>直角三角形の辺の比</caption>
+					</figure>
 				</proof>
 			</theorem>
 
@@ -113,7 +119,10 @@
 						<li><m>\cos(\theta) = \frac{x}{r} = \frac{AB}{CA} = \frac{\text{底辺}}{\text{斜辺}}</m>を、<m>\angle A</m>の<dfn en="cosine" r="よげん">余弦</dfn>または<dfn>コサイン</dfn>という。</li>
 						<li><m>\tan(\theta) = \frac{y}{x} = \frac{BC}{AB} = \frac{\text{対辺}}{\text{底辺}}</m>を、<m>\angle A</m>の<dfn en="tangent" r="せいせつ">正接</dfn>または<dfn>タンジェント</dfn>という。</li>
 					</ul>
-					<image source="image/triangle-triangle"/>
+					<figure xml:id="fig-triangle-triangle">
+						<image source="image/triangle-triangle"/>
+						<caption>三角比</caption>
+					</figure>
 					<m>\sin(\theta)</m>は<m>\sin \theta</m>のように、括弧を省略して表すことが多い。同様に、<m>\sin 2\theta = \sin(2\theta), \sin 3\theta = \sin(3\theta), \sin \frac{1}{2}\theta = \sin(\frac{1}{2}\theta)</m>のように表す。
 					また、<m>\sin^2\theta = (\sin\theta)^2</m>のように、冪乗の指数を<m>\sin</m>の後に書き、括弧を省略することも多い。
 					ただし、<m>\sin(-\theta)</m>や<m>\sin(\theta + \phi)</m>は括弧を省略せず表す。この略記法は三角関数に特有のもので、他の関数ではこの略記は行わない。
@@ -149,7 +158,10 @@
 					ただし、<m>\theta = (n + \frac{1}{2})\pi (n \in \mathbb{Z})</m>のとき、<m>\tan \theta</m>は定義されない。
 
 					このとき、点<m>P</m>の座標は<m>(r\cos \theta, r\sin \theta)</m>と表される。
-					<image source="image/triangle-triangle2"/>
+					<figure xml:id="fig-triangle-triangle2">
+						<image source="image/triangle-triangle2"/>
+						<caption>三角関数</caption>
+					</figure>
 				</statement>
 			</definition>
 
@@ -164,22 +176,25 @@
 				</statement>
 			</theorem>
 
-			<p>各象限での三角関数の符号は表<xref ref="table-triangle-sign"/>のようになり、これらをグラフにすると図\ref{fig:triangle}のような周期関数になる。</p>
+			<p>各象限での三角関数の符号は表<xref ref="table-triangle-sign"/>のようになり、これらをグラフにすると図<xref id="fig-triangle-graph"/>のような周期関数になる。</p>
 			<p>グラフから明らかなように、<m>\sin\theta, \cos\theta</m>の周期は<m>2\pi</m>、<m>\tan\theta</m>の周期は<m>\pi</m>である。
 			<m>y = \sin\theta, y = \tan\theta</m>は原点について対称な奇関数、<m>y = \cos\theta</m>は<m>y</m>軸について対称な偶関数である。
 			また、<m>y = \tan\theta</m>のグラフは直線<m>\theta = (n+\frac{1}{2})\pi (n \in \mathbb{Z})</m>を漸近線としてもつ。</p>
 			<table xml:id="table-triangle-sign">
 				<caption>三角関数の符号</caption>
 				<tbody>
-					<tr><td>象限</td><td></td><td>第一象限</td><td></td><td>第二象限</td><td></td><td>第三象限</td><td></td><td>第四象限</td><td></td></tr>
-					<tr><td><m>\theta (rad)</m></td><td><m>0</m></td><td><m>0 &lt; \theta &lt; \frac{\pi}{2}</m></td><td><m>\frac{\pi}{2}</m></td><td><m>\frac{\pi}{2} &lt; \theta &lt; \pi</m></td><td><m>\pi</m></td><td><m>\pi &lt; \theta &lt; \frac{3}{2}\pi</m></td><td><m>\frac{3}{2}\pi</m></td><td><m>\frac{3}{2}\pi &lt; \theta &lt; 2\pi</m></td><td><m>2\pi</m></td></tr>
-					<tr><td><m>\theta^\circ</m></td><td><m>0^\circ</m></td><td><m>0^\circ &lt; \theta &lt; 90^\circ</m></td><td><m>90^\circ</m></td><td><m>90^\circ &lt; \theta &lt; 180^\circ</m></td><td><m>180^\circ</m></td><td><m>180^\circ &lt; \theta &lt; 270^\circ</m></td><td><m>270^\circ</m></td><td><m>270^\circ &lt; \theta &lt; 360^\circ</m></td><td><m>360^\circ</m></td></tr>
-					<tr><td><m>\sin\theta</m></td><td><m>0</m></td><td><m>+</m></td><td><m>1</m></td><td><m>+</m></td><td><m> 0</m></td><td><m>-</m></td><td><m>-1</m></td><td><m>-</m></td><td><m>0</m></td></tr>
-					<tr><td><m>\cos\theta</m></td><td><m>1</m></td><td><m>+</m></td><td><m>0</m></td><td><m>-</m></td><td><m>-1</m></td><td><m>-</m></td><td><m> 0</m></td><td><m>+</m></td><td><m>1</m></td></tr>
-					<tr><td><m>\tan\theta</m></td><td><m>0</m></td><td><m>+</m></td><td><m>\times</m></td><td><m>-</m></td><td><m>0</m></td><td><m>+</m></td><td><m>\times</m></td><td><m>-</m></td><td><m>0</m></td></tr>
+					<tr><th>象限</th><th></th><th>第一象限</th><th></th><th>第二象限</th><th></th><th>第三象限</th><th></th><th>第四象限</th><th></th></tr>
+					<tr><th><m>\theta (rad)</m></th><td><m>0</m></td><td><m>0 &lt; \theta &lt; \frac{\pi}{2}</m></td><td><m>\frac{\pi}{2}</m></td><td><m>\frac{\pi}{2} &lt; \theta &lt; \pi</m></td><td><m>\pi</m></td><td><m>\pi &lt; \theta &lt; \frac{3}{2}\pi</m></td><td><m>\frac{3}{2}\pi</m></td><td><m>\frac{3}{2}\pi &lt; \theta &lt; 2\pi</m></td><td><m>2\pi</m></td></tr>
+					<tr><th><m>\theta^\circ</m></th><td><m>0^\circ</m></td><td><m>0^\circ &lt; \theta &lt; 90^\circ</m></td><td><m>90^\circ</m></td><td><m>90^\circ &lt; \theta &lt; 180^\circ</m></td><td><m>180^\circ</m></td><td><m>180^\circ &lt; \theta &lt; 270^\circ</m></td><td><m>270^\circ</m></td><td><m>270^\circ &lt; \theta &lt; 360^\circ</m></td><td><m>360^\circ</m></td></tr>
+					<tr><th><m>\sin\theta</m></th><td><m>0</m></td><td><m>+</m></td><td><m>1</m></td><td><m>+</m></td><td><m> 0</m></td><td><m>-</m></td><td><m>-1</m></td><td><m>-</m></td><td><m>0</m></td></tr>
+					<tr><th><m>\cos\theta</m></th><td><m>1</m></td><td><m>+</m></td><td><m>0</m></td><td><m>-</m></td><td><m>-1</m></td><td><m>-</m></td><td><m> 0</m></td><td><m>+</m></td><td><m>1</m></td></tr>
+					<tr><th><m>\tan\theta</m></th><td><m>0</m></td><td><m>+</m></td><td><m>\times</m></td><td><m>-</m></td><td><m>0</m></td><td><m>+</m></td><td><m>\times</m></td><td><m>-</m></td><td><m>0</m></td></tr>
 				</tbody>
 			</table>
-			<image source="image/triangle-graph"/>
+			<figure xml:id="fig-triangle-graph">
+				<image source="image/triangle-graph"/>
+				<caption>三角関数</caption>
+			</figure>
 		</subsection>
 	</section>
 
@@ -251,7 +266,10 @@
 						<li><m>\frac{\pi}{2} &lt; A &lt; \pi</m>のとき、四角形<m>ABCD</m>は円に内接するので<m>\angle BDC = \pi - A</m>であり、また<m>\angle BCD = \frac{\pi}{2}</m>であるので、<m>a = 2R\sin (\pi - A) = 2R\sin A</m>となる。</li>
 					</ol>
 					<m>[1],[2]</m>より<m>a = 2R\sin A</m>である。<m>B,C</m>についても同様に示せる。
-					<image source="image/triangle-sin"/>
+					<figure xml:id="fig-triangle-sin">
+						<image source="image/triangle-sin"/>
+						<caption>正弦定理</caption>
+					</figure>
 				</proof>
 			</theorem>
 
@@ -332,7 +350,10 @@
 					<md>
 						<mrow>\cos(\alpha + \phi) = \cos\alpha\cos(-\phi) + \sin\alpha\sin(-\phi) = \cos\alpha\cos\phi - \sin\alpha\sin\phi</mrow>
 					</md>
-					<image source="image/triangle-add"/>
+					<figure xml:id="fig-triangle-add">
+						<image source="image/triangle-add"/>
+						<caption><m>\cos</m>の加法定理</caption>
+					</figure>
 					次に、<m>\sin</m>の加法定理を示す。
 					<md>
 						<mrow>
