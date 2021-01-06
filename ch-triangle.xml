@@ -176,7 +176,7 @@
 				</statement>
 			</theorem>
 
-			<p>各象限での三角関数の符号は表<xref ref="table-triangle-sign"/>のようになり、これらをグラフにすると図<xref id="fig-triangle-graph"/>のような周期関数になる。</p>
+			<p>各象限での三角関数の符号は表<xref ref="table-triangle-sign"/>のようになり、これらをグラフにすると図<xref ref="fig-triangle-graph"/>のような周期関数になる。</p>
 			<p>グラフから明らかなように、<m>\sin\theta, \cos\theta</m>の周期は<m>2\pi</m>、<m>\tan\theta</m>の周期は<m>\pi</m>である。
 			<m>y = \sin\theta, y = \tan\theta</m>は原点について対称な奇関数、<m>y = \cos\theta</m>は<m>y</m>軸について対称な偶関数である。
 			また、<m>y = \tan\theta</m>のグラフは直線<m>\theta = (n+\frac{1}{2})\pi (n \in \mathbb{Z})</m>を漸近線としてもつ。</p>
