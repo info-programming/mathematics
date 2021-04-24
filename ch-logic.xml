@@ -4,8 +4,8 @@
 	<introduction>
 		<p>本章では、論理に基づく問題解決の枠組みや、集合、命題などの基礎的な概念を示した上で、一般的な証明法について述べる。</p>
 		<p><xref ref="sec-logic-problem"/>節では、問題解決の基本的な枠組みを示す。
-		<xref ref="sec-logic-prop"/>節では、論理の基礎となる命題と、命題を中心とする命題論理について述べる。
 		<xref ref="sec-logic-set"/>節では、現代数学の基礎となっている集合について述べる。
+		<xref ref="sec-logic-prop"/>節では、論理の基礎となる命題と、命題を中心とする命題論理について述べる。
 		<xref ref="sec-logic-pred"/>節では、命題論理に「すべて」「ある」を加えた枠組みである述語論理について述べる。
 		<xref ref="sec-logic-mode"/>節では、述語論理のうち「必ず」「ありうる」などの様相を扱う様相論理について述べる。
 		<xref ref="sec-logic-infer"/>節では、命題の間をつなぐ推論の種類について述べる。
@@ -39,167 +39,6 @@
 			<image source="image/math-problem" width="75%"/>
 			<caption>OECDによるモデル</caption>
 		</figure>
-	</section>
-
-	<section xml:id="sec-logic-prop">
-		<title>命題論理</title>
-		<introduction>
-			<p>数学では、式や文を命題という形で扱う<dfn en="propositional logic" r="めいだいろんり">命題論理</dfn>の論理が、最も基本的な枠組みである。</p>
-		</introduction>
-		<subsection xml:id="ssec-logic-prop">
-			<title>命題</title>
-			<p>数学が基盤とする論理学では、客観的な分析が可能な文を<dfn en="proposition" r="めいだい">命題</dfn>として扱い、複数の命題を推論で接続することで論理を展開する。</p>
-			<definition>
-				<title>命題</title>
-				<statement>
-					<em>「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn en="proposition" r="めいだい">命題</dfn>という。
-					命題<m>p</m>が「正しい」とき、<m>p</m>は<dfn en="true" r="しん">真</dfn>であるという。また、<m>p</m>が真でないとき、<m>p</m>は<dfn en="false" r="ぎ">偽</dfn>であるという。
-					命題<m>p</m>が真であることを<m>p</m>が<dfn r="なりたつ">成り立つ</dfn>、命題<m>p</m>が偽であることを<m>p</m>が<dfn r="なりたたない">成り立たない</dfn>ともいう。
-				</statement>
-			</definition>
-			<p>特に、真である命題を<dfn en="theorem" r="ていり">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
-			<p>命題を文字で表す場合、propositionの頭文字の<m>p</m>を用い、複数の命題を文字で表すときは<m>q</m>や<m>r</m>も用いることが多い。流儀によっては、命題を大文字の<m>P</m>や<m>Q</m>で表すことも多い。</p>
-			<example>
-				<title>命題の例</title>
-				<statement>
-					「富士山は高い山である」という文は、「高い」という形容詞に対する解釈が人によって異なるため、命題でない。
-					富士山の近辺に住んでいる人は「富士山は高い」と解釈する可能性が高いが、エベレストの近辺に住んでいる人は「富士山は高くない」と解釈する可能性が高い。
-					一方、「富士山は天保山より高い山である」という文にも、同じように「高い」という形容詞が含まれる。
-					だがこの文では、「富士山(の標高)」と「天保山(の標高)」という数値で大小比較可能なものを比べているため、誰が判断しても真になると考えられ、命題だといえる。
-				</statement>
-			</example>
-		</subsection>
-
-		<subsection xml:id="ssec-logic-andornot">
-			<title>「かつ」「または」「でない」</title>
-			<p>命題についての基本的な操作には、1つの命題に対する<dfn r="ひてい">否定</dfn>や、2つ以上の命題に対する「<dfn>かつ</dfn>(連言)」「<dfn>または</dfn>(選言)」がある。</p>
-			<definition>
-				<title>連言・選言・否定</title>
-				<statement>
-					<m>p, q</m>を命題とするとき、<m>p, q</m>の<em>両方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>かつ</dfn><m>q</m>」といい、<m>p \land q</m>と表すことがある。
-					また、<m>p, q</m>の<em>少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>または</dfn><m>q</m>」といい、<m>p \lor q</m>と表すことがある。
-					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn r="ひてい">否定</dfn>」といい、<m>\overline{p}</m>と表す。
-				</statement>
-			</definition>
-			<p>数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em>少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p>
-		</subsection>
-
-		<subsection xml:id="ssec-logic-proplaw">
-			<title>命題に関する計算法則</title>
-			<p>「または」や「かつ」、「でない」については、次のような等式が成り立つ。</p>
-			<theorem>
-				<title>命題に関する計算法則</title>
-				<statement>
-					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
-					<md>
-						<mrow>p \lor  q &amp;= q \lor  p &amp; (\text{交換法則})</mrow>
-						<mrow>p \land q &amp;= q \land p &amp; (\text{交換法則})</mrow>
-						<mrow>(p \lor  q) \lor  r &amp;= p \lor  (q \lor  r) &amp; (\text{結合法則})</mrow>
-						<mrow>(p \land q) \land r &amp;= p \land (q \land r) &amp; (\text{結合法則})</mrow>
-					</md>
-				</statement>
-			</theorem>
-
-			<p>命題に関する分配法則も成り立つが、数の分配法則と異なる部分もある。</p>
-			<theorem>
-				<title>命題に関する分配法則</title>
-				<statement>
-					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
-					<md>
-						<mrow>(p \lor  q) \land r = (p \land r) \lor  (q \land r)</mrow>
-						<mrow>(p \land q) \lor  r = (p \lor  r) \land (q \lor  r)</mrow>
-					</md>
-					2番目の式は数の分配法則とは異なるので、注意が必要である。
-				</statement>
-			</theorem>
-
-			<p>さらに命題については、次のde Morganの法則が成り立つ。</p>
-			<theorem>
-				<title>de Morganの法則</title>
-				<statement>
-					<m>p, q</m>が命題のとき、次の等式が成り立つ。
-					<md>
-						<mrow>\overline{p \land q} &amp; = \overline{p} \lor  \overline{q}</mrow>
-						<mrow>\overline{p \lor  q} &amp; = \overline{p} \land \overline{q}</mrow>
-					</md>
-				</statement>
-				<proof>真理値表を用いて示す。</proof>
-			</theorem>
-		</subsection>
-
-		<subsection xml:id="ssec-logic-inference">
-			<title>推論「ならば」</title>
-			<p>命題を用いてより高度な命題を表すには、次の<dfn en="inference" r="すいろん">推論</dfn>を表す規則が必要となる。</p>
-			<definition>
-				<title>推論</title>
-				<statement>
-					<m>p, q</m>を命題とするとき、「<em>もし<m>p</m>が成り立つならば、<m>q</m>も成り立つ</em>」という命題を「<m>p</m><dfn>ならば</dfn><m>q</m>」といい、<m>p \implies q</m>と表す。
-					命題<m>p \implies q</m>は、「<strong><m>p</m>が偽</strong>のとき」か「<m>p</m>も<m>q</m>も真のとき」に真となる。
-					<md>
-						<mrow>[ p \implies q ] = [ \overline{p} \lor (p \land q) ] = [ (\overline{p} \lor p) \land (\overline{p} \lor q)] (\text{分配法則}) = [ \overline{p} \lor q ] (\text{排中律})</mrow>
-					</md>
-					命題<m>p \implies q</m>について、<m>p</m>を<m>p \implies q</m>の<dfn r="かてい">仮定</dfn>、<m>q</m>を<m>p \implies q</m>の<dfn r="けつろん">結論</dfn>という。
-					また、<m>q</m>を<m>p</m>の<dfn en="necessary condition" r="ひつようじょうけん">必要条件</dfn>、<m>p</m>を<m>q</m>の<dfn en="sufficient condition" r="じゅうぶんじょうけん">十分条件</dfn>という。
-				</statement>
-			</definition>
-			<p>必要条件と十分条件は、「<m>p \implies q</m>」の「<m>\implies</m>」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
-
-			<example>
-				<title>推論の例</title>
-				<statement>
-					「宝くじに当たったら家を買う」という命題では、命題「宝くじに当たる」が仮定、命題「家を買う」が結論である。
-					この命題の真偽について考えると、宝くじに当たった場合には、家を買った場合には真、そうでなければ偽となる。
-					一方、宝くじに当たらなかった場合には、家を買おうと買うまいと、この命題では何も言っていないので、偽だとは言えず真となる。
-				</statement>
-			</example>
-		</subsection>
-
-		<subsection xml:id="ssec-logic-eq">
-			<title>同値</title>
-			<p>この推論規則を用いて、2つの命題が「同じ」であるという関係を定義する。</p>
-			<definition>
-				<title>同値</title>
-				<statement>
-					<m>p, q</m>を命題とするとき、<m>p \implies q</m>かつ<m>q \implies p</m>であれば、<m>p</m>と<m>q</m>は<dfn r="どうち">同値</dfn>であるといい、<m>p \iff q</m>と表す。
-					<md>
-						<mrow>[ p \iff q ] = [ p \implies q ] \land [ q \implies p ]</mrow>
-					</md>
-					このとき、<m>q</m>を<m>p</m>の<dfn r="ひつようじゅうぶんじょうけん">必要十分条件</dfn>であるといい、<m>p</m>も<m>q</m>の必要十分条件であるという。
-				</statement>
-			</definition>
-			<p>同値の記号「<m>\iff</m>」は数の比較に用いる等号「<m>=</m>」と同様の記号で、2つの命題が「同じ」ことを表せる便利な記号である。
-			ただし「<m>\iff</m>」を使う際は、「<m>\implies</m>」方向だけでなく「<m>\impliedby</m>」方向についても命題が成り立っていることを確認する必要がある。
-			「<m>\impliedby</m>」方向が成り立つと言い切れない場合には、「<m>\implies</m>」記号を使うべきである。</p>
-		</subsection>
-
-		<subsection xml:id="ssec-logic-contra">
-			<title>逆・裏・対偶</title>
-
-			<p>更に、推論を用いた命題について、逆や裏、対偶を定義できる。</p>
-			<definition>
-				<title>逆・裏・対偶</title>
-				<statement>
-					<m>p, q</m>を命題とするとき、命題<m>p \implies q</m>に対し、<m>q \implies p</m>を元の命題の<dfn r="ぎゃく">逆</dfn>、<m>\overline{p} \implies \overline{q}</m>を元の命題の<dfn r="うら">裏</dfn>、<m>\overline{q} \implies \overline{p}</m>を元の命題の<dfn r="たいぐう">対偶</dfn>という。
-				</statement>
-			</definition>
-
-			<p>このうち、命題<m>p \implies q</m>と逆<m>q \implies p</m>について、前者は<m>\overline{p} \lor q</m>、後者は<m>\overline{q} \lor p</m>であるので、<strong>命題とその逆の真偽は一致しない</strong>。
-			また、命題<m>p \implies q</m>と対偶<m>\overline{q} \implies \overline{p}</m>については、次の定理が成り立つ。</p>
-			<theorem>
-				<title>命題とその対偶</title>
-				<statement>
-					命題とその対偶の真偽は一致する。つまり、<m>p, q</m>を命題とするとき、
-					<md>
-						<mrow>[ \overline{q} \implies \overline{p} ] = [ p \implies q ]</mrow>
-					</md>
-				</statement>
-				<proof>
-					<md>
-						<mrow>[ \overline{q} \implies \overline{p} ] = [\overline{\overline{q}} \lor \overline{p}] = [ q \lor \overline{p}] = [ \overline{p} \lor q] = [ p \implies q ]</mrow>
-					</md>
-				</proof>
-			</theorem>
-		</subsection>
 	</section>
 
 	<section xml:id="sec-logic-set">
@@ -421,6 +260,167 @@
 				</statement>
 			</definition>
 			<p>直積を使うと、<m>xy</m>平面上の点<m>(x, y)</m>は<m>\mathbb{R}^2</m>の要素として定義することができる。</p>
+		</subsection>
+	</section>
+
+	<section xml:id="sec-logic-prop">
+		<title>命題論理</title>
+		<introduction>
+			<p>数学では、式や文を命題という形で扱う<dfn en="propositional logic" r="めいだいろんり">命題論理</dfn>の論理が、最も基本的な枠組みである。</p>
+		</introduction>
+		<subsection xml:id="ssec-logic-prop">
+			<title>命題</title>
+			<p>数学が基盤とする論理学では、客観的な分析が可能な文を<dfn en="proposition" r="めいだい">命題</dfn>として扱い、複数の命題を推論で接続することで論理を展開する。</p>
+			<definition>
+				<title>命題</title>
+				<statement>
+					<em>「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn en="proposition" r="めいだい">命題</dfn>という。
+					命題<m>p</m>が「正しい」とき、<m>p</m>は<dfn en="true" r="しん">真</dfn>であるという。また、<m>p</m>が真でないとき、<m>p</m>は<dfn en="false" r="ぎ">偽</dfn>であるという。
+					命題<m>p</m>が真であることを<m>p</m>が<dfn r="なりたつ">成り立つ</dfn>、命題<m>p</m>が偽であることを<m>p</m>が<dfn r="なりたたない">成り立たない</dfn>ともいう。
+				</statement>
+			</definition>
+			<p>特に、真である命題を<dfn en="theorem" r="ていり">定理</dfn>という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em>重要なもの</em>」を指すことが多い。</p>
+			<p>命題を文字で表す場合、propositionの頭文字の<m>p</m>を用い、複数の命題を文字で表すときは<m>q</m>や<m>r</m>も用いることが多い。流儀によっては、命題を大文字の<m>P</m>や<m>Q</m>で表すことも多い。</p>
+			<example>
+				<title>命題の例</title>
+				<statement>
+					「富士山は高い山である」という文は、「高い」という形容詞に対する解釈が人によって異なるため、命題でない。
+					富士山の近辺に住んでいる人は「富士山は高い」と解釈する可能性が高いが、エベレストの近辺に住んでいる人は「富士山は高くない」と解釈する可能性が高い。
+					一方、「富士山は天保山より高い山である」という文にも、同じように「高い」という形容詞が含まれる。
+					だがこの文では、「富士山(の標高)」と「天保山(の標高)」という数値で大小比較可能なものを比べているため、誰が判断しても真になると考えられ、命題だといえる。
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-andornot">
+			<title>「かつ」「または」「でない」</title>
+			<p>命題についての基本的な操作には、1つの命題に対する<dfn r="ひてい">否定</dfn>や、2つ以上の命題に対する「<dfn>かつ</dfn>(連言)」「<dfn>または</dfn>(選言)」がある。</p>
+			<definition>
+				<title>連言・選言・否定</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、<m>p, q</m>の<em>両方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>かつ</dfn><m>q</m>」といい、<m>p \land q</m>と表すことがある。
+					また、<m>p, q</m>の<em>少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「<m>p</m><dfn>または</dfn><m>q</m>」といい、<m>p \lor q</m>と表すことがある。
+					更に、<m>p</m>が偽のときに真となり、真のときに偽となる命題を「<m>p</m>の<dfn r="ひてい">否定</dfn>」といい、<m>\overline{p}</m>と表す。
+				</statement>
+			</definition>
+			<p>数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em>少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-proplaw">
+			<title>命題に関する計算法則</title>
+			<p>「または」や「かつ」、「でない」については、次のような等式が成り立つ。</p>
+			<theorem>
+				<title>命題に関する計算法則</title>
+				<statement>
+					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
+					<md>
+						<mrow>p \lor  q &amp;= q \lor  p &amp; (\text{交換法則})</mrow>
+						<mrow>p \land q &amp;= q \land p &amp; (\text{交換法則})</mrow>
+						<mrow>(p \lor  q) \lor  r &amp;= p \lor  (q \lor  r) &amp; (\text{結合法則})</mrow>
+						<mrow>(p \land q) \land r &amp;= p \land (q \land r) &amp; (\text{結合法則})</mrow>
+					</md>
+				</statement>
+			</theorem>
+
+			<p>命題に関する分配法則も成り立つが、数の分配法則と異なる部分もある。</p>
+			<theorem>
+				<title>命題に関する分配法則</title>
+				<statement>
+					<m>p, q, r</m>が命題のとき、次の等式が成り立つ。
+					<md>
+						<mrow>(p \lor  q) \land r = (p \land r) \lor  (q \land r)</mrow>
+						<mrow>(p \land q) \lor  r = (p \lor  r) \land (q \lor  r)</mrow>
+					</md>
+					2番目の式は数の分配法則とは異なるので、注意が必要である。
+				</statement>
+			</theorem>
+
+			<p>さらに命題については、次のde Morganの法則が成り立つ。</p>
+			<theorem>
+				<title>de Morganの法則</title>
+				<statement>
+					<m>p, q</m>が命題のとき、次の等式が成り立つ。
+					<md>
+						<mrow>\overline{p \land q} &amp; = \overline{p} \lor  \overline{q}</mrow>
+						<mrow>\overline{p \lor  q} &amp; = \overline{p} \land \overline{q}</mrow>
+					</md>
+				</statement>
+				<proof>真理値表を用いて示す。</proof>
+			</theorem>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-inference">
+			<title>推論「ならば」</title>
+			<p>命題を用いてより高度な命題を表すには、次の<dfn en="inference" r="すいろん">推論</dfn>を表す規則が必要となる。</p>
+			<definition>
+				<title>推論</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、「<em>もし<m>p</m>が成り立つならば、<m>q</m>も成り立つ</em>」という命題を「<m>p</m><dfn>ならば</dfn><m>q</m>」といい、<m>p \implies q</m>と表す。
+					命題<m>p \implies q</m>は、「<strong><m>p</m>が偽</strong>のとき」か「<m>p</m>も<m>q</m>も真のとき」に真となる。
+					<md>
+						<mrow>[ p \implies q ] = [ \overline{p} \lor (p \land q) ] = [ (\overline{p} \lor p) \land (\overline{p} \lor q)] (\text{分配法則}) = [ \overline{p} \lor q ] (\text{排中律})</mrow>
+					</md>
+					命題<m>p \implies q</m>について、<m>p</m>を<m>p \implies q</m>の<dfn r="かてい">仮定</dfn>、<m>q</m>を<m>p \implies q</m>の<dfn r="けつろん">結論</dfn>という。
+					また、<m>q</m>を<m>p</m>の<dfn en="necessary condition" r="ひつようじょうけん">必要条件</dfn>、<m>p</m>を<m>q</m>の<dfn en="sufficient condition" r="じゅうぶんじょうけん">十分条件</dfn>という。
+				</statement>
+			</definition>
+			<p>必要条件と十分条件は、「<m>p \implies q</m>」の「<m>\implies</m>」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
+
+			<example>
+				<title>推論の例</title>
+				<statement>
+					「宝くじに当たったら家を買う」という命題では、命題「宝くじに当たる」が仮定、命題「家を買う」が結論である。
+					この命題の真偽について考えると、宝くじに当たった場合には、家を買った場合には真、そうでなければ偽となる。
+					一方、宝くじに当たらなかった場合には、家を買おうと買うまいと、この命題では何も言っていないので、偽だとは言えず真となる。
+				</statement>
+			</example>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-eq">
+			<title>同値</title>
+			<p>この推論規則を用いて、2つの命題が「同じ」であるという関係を定義する。</p>
+			<definition>
+				<title>同値</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、<m>p \implies q</m>かつ<m>q \implies p</m>であれば、<m>p</m>と<m>q</m>は<dfn r="どうち">同値</dfn>であるといい、<m>p \iff q</m>と表す。
+					<md>
+						<mrow>[ p \iff q ] = [ p \implies q ] \land [ q \implies p ]</mrow>
+					</md>
+					このとき、<m>q</m>を<m>p</m>の<dfn r="ひつようじゅうぶんじょうけん">必要十分条件</dfn>であるといい、<m>p</m>も<m>q</m>の必要十分条件であるという。
+				</statement>
+			</definition>
+			<p>同値の記号「<m>\iff</m>」は数の比較に用いる等号「<m>=</m>」と同様の記号で、2つの命題が「同じ」ことを表せる便利な記号である。
+			ただし「<m>\iff</m>」を使う際は、「<m>\implies</m>」方向だけでなく「<m>\impliedby</m>」方向についても命題が成り立っていることを確認する必要がある。
+			「<m>\impliedby</m>」方向が成り立つと言い切れない場合には、「<m>\implies</m>」記号を使うべきである。</p>
+		</subsection>
+
+		<subsection xml:id="ssec-logic-contra">
+			<title>逆・裏・対偶</title>
+
+			<p>更に、推論を用いた命題について、逆や裏、対偶を定義できる。</p>
+			<definition>
+				<title>逆・裏・対偶</title>
+				<statement>
+					<m>p, q</m>を命題とするとき、命題<m>p \implies q</m>に対し、<m>q \implies p</m>を元の命題の<dfn r="ぎゃく">逆</dfn>、<m>\overline{p} \implies \overline{q}</m>を元の命題の<dfn r="うら">裏</dfn>、<m>\overline{q} \implies \overline{p}</m>を元の命題の<dfn r="たいぐう">対偶</dfn>という。
+				</statement>
+			</definition>
+
+			<p>このうち、命題<m>p \implies q</m>と逆<m>q \implies p</m>について、前者は<m>\overline{p} \lor q</m>、後者は<m>\overline{q} \lor p</m>であるので、<strong>命題とその逆の真偽は一致しない</strong>。
+			また、命題<m>p \implies q</m>と対偶<m>\overline{q} \implies \overline{p}</m>については、次の定理が成り立つ。</p>
+			<theorem>
+				<title>命題とその対偶</title>
+				<statement>
+					命題とその対偶の真偽は一致する。つまり、<m>p, q</m>を命題とするとき、
+					<md>
+						<mrow>[ \overline{q} \implies \overline{p} ] = [ p \implies q ]</mrow>
+					</md>
+				</statement>
+				<proof>
+					<md>
+						<mrow>[ \overline{q} \implies \overline{p} ] = [\overline{\overline{q}} \lor \overline{p}] = [ q \lor \overline{p}] = [ \overline{p} \lor q] = [ p \implies q ]</mrow>
+					</md>
+				</proof>
+			</theorem>
 		</subsection>
 	</section>
 
