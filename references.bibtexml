@@ -35,6 +35,26 @@
 	<pages>38-40</pages>
 </book></entry>
 
+<entry id="peirce-reason"><incollection>
+	<author>Charles Sanders Peirce</author>
+	<title>Deduction, Induction and Hypothesis</title>
+	<booktitle>Collected Papers of Charles Sanders Peirce</booktitle>
+	<volume>2</volume>
+	<year>1878</year>
+	<publisher>Belknap Press</publisher>
+	<pages>619-624</pages>
+</incollection></entry>
+
+<entry id="peirce-reason2"><incollection>
+	<author>Charles Sanders Peirce</author>
+	<title>Lessons from the History of Science</title>
+	<booktitle>Collected Papers of Charles Sanders Peirce</booktitle>
+	<volume>1</volume>
+	<year>1896?</year>
+	<publisher>Belknap Press</publisher>
+	<pages>65-68</pages>
+</incollection></entry>
+
 <entry id="yonemori"><book>
 	<author>米盛 裕二</author>
 	<title>アブダクション――仮説と発見の論理</title>

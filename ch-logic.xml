@@ -616,7 +616,7 @@
 		<introduction>
 			<p>いくつかの命題から一つの命題を導くことを<dfn en="inference" r="すいろん">推論</dfn>という。
 			推論には次に示す複数の方法があり、推論で導かれた命題がどの程度正しいかという<em>厳密性</em>の高さと、推論で導かれた命題がどの程度元の命題にないことを述べているかという<em>拡張性</em>の高さが、それぞれ異なる。
-			代表的な推論法には、厳密性の高い順に演繹・帰納・アブダクションがある。
+			<ruby r="パース">Peirce</ruby>は推論の対象により推論法を分類し、厳密性の高い順に演繹・帰納・アブダクションがあるとした<xref ref="bib-peirce-reason"/><xref ref="bib-peirce-reason2"/><xref ref="bib-yonemori"/>。
 			このうち、演繹とアブダクションに対応する思考法が、de Bonoの垂直思考と水平思考である。</p>
 			<p><ruby r="トゥールミン">Toulmin</ruby>は、<em>前提</em>、<em>規則</em>、<em>結論</em>という3つの命題が存在し、前提に規則を適用すると結論が得られるとした<xref ref="bib-toulmin"/>。
 			この「三角ロジック」と呼ばれる形式に従えば、演繹・帰納・アブダクションの3つの推論法は、図<xref ref="fig-logic-inference"/>のように対比できる。
@@ -642,7 +642,7 @@
 
 		<subsection xml:id="ssec-logic-infer-deduction">
 			<title>演繹</title>
-			<p><dfn en="deduction" r="えんえき" ruby="1">演繹</dfn>は、前提と規則から結論を導く推論である。
+			<p><dfn en="deduction" r="えんえき" ruby="1">演繹</dfn>は、前提と規則から結論を導く推論である<xref ref="bib-peirce-reason"/><xref ref="bib-peirce-reason2"/>。
 			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em>結論が真だと推論</em>する。
 			Aristotleによる三段論法<xref ref="bib-aristotle-ana"/><xref ref="bib-aristotle-ana-j"/>は演繹の代表的な推論法で、「<m>A \implies B, B \implies C</m>」のとき「<m>A \implies C</m>」が成り立つという推論を行う。</p>
 			<p>演繹による推論では、前提と規則の命題が真なら、<strong>推論した結論が真であることが保証</strong>され、<em>高い厳密性</em>をもつ。
@@ -652,7 +652,7 @@
 
 		<subsection xml:id="ssec-logic-infer-induction">
 			<title>帰納</title>
-			<p><dfn en="induction" r="きのう" ruby="1">帰納</dfn>は、前提と結論から規則を導く推論である。
+			<p><dfn en="induction" r="きのう" ruby="1">帰納</dfn>は、前提と結論から規則を導く推論である<xref ref="bib-peirce-reason"/><xref ref="bib-peirce-reason2"/>。
 			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは人である」「プラトンは人である」「ゼノンは人である」という前提と、「ソクラテスは死ぬ」「プラトンは死ぬ」「ゼノンは死ぬ」という結論が与えられたときに、「人は死ぬ」という<em>規則が真だと推論</em>する<xref ref="bib-aristotle-ana2"/><xref ref="bib-aristotle-ana-j2"/><xref ref="bib-bacon"/>。
 			<em>経験則</em>や<dfn en="heuristics">ヒューリスティクス</dfn>は、帰納による推論の例である。</p>
 			<p>帰納による推論では、前提と結論が真でも、<strong>推論した規則が真であることは保証されない</strong>ため、<em>厳密性は十分でない</em>。
@@ -662,7 +662,7 @@
 
 		<subsection xml:id="ssec-logic-infer-abduction">
 			<title>アブダクション</title>
-			<p><dfn en="abduction">アブダクション</dfn>は、規則と結論から前提を導く推論である。
+			<p><dfn en="abduction">アブダクション</dfn>は、規則と結論から前提を導く推論である<xref ref="bib-peirce-reason"/><xref ref="bib-peirce-reason2"/>。
 			図<xref ref="fig-logic-inference"/>の例では、「ソクラテスは死ぬ」という結論と「人は死ぬ」という規則が与えられたときに、「ソクラテスは人である」という<em>前提が真だと推論</em>する。
 			アブダクションに類似する手法はAristotle<xref ref="bib-aristotle-ana2"/><xref ref="bib-aristotle-ana-j2"/>も言及しているが、近代的な提唱を行ったのは<ruby r="パース">Peirce</ruby>である<xref ref="bib-yonemori"/>。</p>
 			<p>アブダクションによる推論では、結論と規則が真でも、<strong>推論した前提が真であることは保証されない</strong>。
