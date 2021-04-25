@@ -38,31 +38,34 @@
 <entry id="peirce-reason"><incollection>
 	<author>Charles Sanders Peirce</author>
 	<title>Deduction, Induction and Hypothesis</title>
-	<booktitle>Collected Papers of Charles Sanders Peirce</booktitle>
+	<booktitle>Collected Papers of Charles Sanders Peirce vol.2: Elements of Logic</booktitle>
 	<volume>2</volume>
 	<year>1878</year>
 	<publisher>Belknap Press</publisher>
 	<pages>619-624</pages>
+	<note>CP2.619-624</note>
 </incollection></entry>
 
 <entry id="peirce-reason2"><incollection>
 	<author>Charles Sanders Peirce</author>
 	<title>Lessons from the History of Science</title>
-	<booktitle>Collected Papers of Charles Sanders Peirce</booktitle>
+	<booktitle>Collected Papers of Charles Sanders Peirce vol.1: Principles of Philosophy</booktitle>
 	<volume>1</volume>
 	<year>1896?</year>
 	<publisher>Belknap Press</publisher>
 	<pages>65-68</pages>
+	<note>CP1.65-68</note>
 </incollection></entry>
 
 <entry id="peirce-hypothesis"><incollection>
 	<author>Charles Sanders Peirce</author>
 	<title>Classification of Arguments</title>
-	<booktitle>Collected Papers of Charles Sanders Peirce</booktitle>
+	<booktitle>Collected Papers of Charles Sanders Peirce vol.2: Elements of Logic</booktitle>
 	<volume>2</volume>
 	<year>1867</year>
 	<publisher>Belknap Press</publisher>
 	<pages>508-511</pages>
+	<note>CP2.508-511</note>
 </incollection></entry>
 
 <entry id="yonemori"><book>
