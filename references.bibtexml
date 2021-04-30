@@ -82,7 +82,7 @@
 	<title>Discourse on the Method of Rightly Conducting the Reason, and Seeking the Truth in the Sciences</title>
 	<year>1637</year>
 	<chapter>2, 4</chapter>
-	<url>https://ebooks.adelaide.edu.au/d/descartes/rene/d44dm</url>
+	<url>https://gutenberg.org/files/59/59-h/59-h.htm</url>
 </book></entry>
 
 <entry id="descartes-j"><book>
@@ -98,8 +98,8 @@
 <entry id="aristotle-int"><book>
 	<author>Aristotle</author>
 	<title>On Interpretation</title>
-	<publisher>The University of Adelaide</publisher>
-	<url>https://ebooks.adelaide.edu.au/a/aristotle/interpretation</url>
+	<publisher>The Internet Classics Archive</publisher>
+	<url>http://classics.mit.edu/Aristotle/interpretation.1.1.html</url>
 	<chapter>4-7</chapter>
 	<note>E. M. Edghill訳</note>
 </book></entry>
@@ -118,8 +118,8 @@
 <entry id="aristotle-ana"><book>
 	<author>Aristotle</author>
 	<title>Prior Analytics</title>
-	<publisher>The University of Adelaide</publisher>
-	<url>https://ebooks.adelaide.edu.au/a/aristotle/a8pra</url>
+	<publisher>The Internet Classics Archive</publisher>
+	<url>http://classics.mit.edu/Aristotle/prior.1.i.html</url>
 	<volume>1</volume>
 	<chapter>4</chapter>
 	<note>A. J. Jenkinson訳</note>
@@ -128,8 +128,8 @@
 <entry id="aristotle-ana2"><book>
 	<author>Aristotle</author>
 	<title>Prior Analytics</title>
-	<publisher>The University of Adelaide</publisher>
-	<url>https://ebooks.adelaide.edu.au/a/aristotle/a8pra</url>
+	<publisher>The Internet Classics Archive</publisher>
+	<url>http://classics.mit.edu/Aristotle/prior.2.ii.html</url>
 	<volume>2</volume>
 	<chapter>23, 25</chapter>
 	<note>A. J. Jenkinson訳</note>
@@ -174,22 +174,22 @@
 <entry id="aristotle-e1"><book>
 	<author>Aristotle</author>
 	<title>Metaphysics</title>
-	<publisher>The University of Adelaide</publisher>
-	<url>https://ebooks.adelaide.edu.au/p/plato/p71so</url>
+	<publisher>The Internet Classics Archive</publisher>
+	<url>http://classics.mit.edu/Aristotle/metaphysics.5.v.html</url>
 	<volume>5</volume>
 	<chapter>26-27</chapter>
-	<note>Benjamin Jowett訳</note>
+	<note>W. D. Ross訳</note>
 	<!--<url>http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-eng1:5.1023b</url>-->
 </book></entry>
 
 <entry id="aristotle-e2"><book>
 	<author>Aristotle</author>
 	<title>Metaphysics</title>
-	<publisher>The University of Adelaide</publisher>
-	<url>https://ebooks.adelaide.edu.au/p/plato/p71so</url>
+	<publisher>The Internet Classics Archive</publisher>
+	<url>http://classics.mit.edu/Aristotle/metaphysics.8.viii.html</url>
 	<volume>8</volume>
 	<chapter>6</chapter>
-	<note>Benjamin Jowett訳</note>
+	<note>W. D. Ross訳</note>
 	<!--<url>http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-eng1:8.1045a</url>-->
 </book></entry>
 
